@@ -2094,10 +2094,12 @@ def extract_or_find_icon_from_atlas(atlas_name, atlas_lookup, portrait_index, ic
         if output_folder:
             icon_path = Path(output_folder) / atlas_folder / icon_filename
             if os.path.exists(str(icon_path)):
-                return f"{output_folder}/{atlas_folder}/{icon_filename}"
+                # Return path relative to OUTPUT_FOLDER (web root for GitHub Pages)
+                relative_path = Path(output_folder).relative_to(OUTPUT_FOLDER) / atlas_folder / icon_filename
+                return str(relative_path).replace('\\', '/')
 
         return None
-    
+
     print(f"Exporting index {portrait_index} from atlas {filename}: {icon_name}")
 
     # Calculate position in grid (row-major order)
@@ -2125,7 +2127,9 @@ def extract_or_find_icon_from_atlas(atlas_name, atlas_lookup, portrait_index, ic
         icon = atlas_img.crop((left, top, left + icon_size, top + icon_size))
         icon.save(str(icon_path))
 
-        return f"{output_folder}/{atlas_folder}/{icon_filename}"
+        # Return path relative to OUTPUT_FOLDER (web root for GitHub Pages)
+        relative_path = Path(output_folder).relative_to(OUTPUT_FOLDER) / atlas_folder / icon_filename
+        return str(relative_path).replace('\\', '/')
 
     with WandImage(filename=str(dds_path)) as atlas:
         width, height = atlas.width, atlas.height
@@ -2139,7 +2143,9 @@ def extract_or_find_icon_from_atlas(atlas_name, atlas_lookup, portrait_index, ic
             icon.crop(left, top, left + icon_size, top + icon_size)
             icon.save(filename=str(icon_path))
 
-    return f"{output_folder}/{atlas_folder}/{icon_filename}"
+    # Return path relative to OUTPUT_FOLDER (web root for GitHub Pages)
+    relative_path = Path(output_folder).relative_to(OUTPUT_FOLDER) / atlas_folder / icon_filename
+    return str(relative_path).replace('\\', '/')
 
 
 def process_icons(data):
