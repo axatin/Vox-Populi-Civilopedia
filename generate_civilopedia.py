@@ -44,10 +44,10 @@ OUTPUT_FOLDER = "generated_files"
 CIVILOPEDIA_VERSION = LOC['CIVILOPEDIA_VERSION']
 
 # Folder for icons from the BNW atlases
-BNW_ICONS_FOLDER = "bnw_icons"
+BNW_ICONS_FOLDER = "generated_files/bnw_icons"
 
 # Folder for generated icons (icons from VP)
-GENERATED_ICONS_FOLDER = "generated_icons"
+GENERATED_ICONS_FOLDER = "generated_files/generated_icons"
 
 # BNW atlases don't change so they usually don't need to be regenerated.
 # If you do need to regenerate them, put the BNW dds files into BNW_ATLASES_FOLDER.
@@ -59,7 +59,7 @@ BNW_ATLASES_FOLDER = "AtlasesBNW"
 
 # If png icons need to be updates, copy the corresponding atlases from 
 # "Community-Patch-DLL/(2) Vox Populi/Assets/Atlases" into ATLAS_BASE_PATHS
-ATLAS_BASE_PATH = [
+ATLAS_BASE_PATHS = [
 "Atlases"
 ]
 
@@ -549,7 +549,7 @@ main {
 }
 
 .text-box a:visited {
-    color: #9b59b6;
+    color: #3498db;
 }
 
 footer {
@@ -824,7 +824,7 @@ SIDEBAR_TEMPLATE = """<!DOCTYPE html>
                             <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1rem;">
                                 {% if item.IconPath %}
                                 <div class="icon-frame">
-                                    <img src="../{{ item.IconPath }}" alt="{{ (item.Name if item.Name else item.Description) }}" />
+                                    <img src="{{ item.IconPath }}" alt="{{ (item.Name if item.Name else item.Description) }}" />
                                 </div>
                                 {% endif %}
                                 <h2 style="margin: 0;">{{ (item.Name if item.Name else item.Description) | civ5format | safe }}</h2>
@@ -2084,8 +2084,6 @@ def extract_or_find_icon_from_atlas(atlas_name, atlas_lookup, portrait_index, ic
             break
 
     if not dds_path or not dds_path.exists():
-        print(f"Warning: Atlas {atlas_name} ({filename}) not found")
-
         # Atlas not found, check for existing exported icons
         output_folder = None
         if os.path.exists(Path(BNW_ICONS_FOLDER) / atlas_folder):
@@ -2247,18 +2245,28 @@ def generate_html(json_file):
     with open(json_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    # Create output directory (remove existing files first)
+    # Create output directory and clean HTML/CSS files (preserve icon folders)
     output_path = Path(OUTPUT_FOLDER)
-    if output_path.exists():
-        print(f"Cleaning existing output directory: {output_path}")
-        shutil.rmtree(output_path)
     output_path.mkdir(exist_ok=True)
 
+    if output_path.exists():
+        print(f"Cleaning HTML and CSS files from {output_path}...")
+        # Remove HTML files
+        for html_file in output_path.glob('*.html'):
+            html_file.unlink()
+        for js_file in output_path.glob('*.js'):
+            js_file.unlink()
+        # Remove and recreate CSS directory
+        css_path = output_path / 'css'
+        if css_path.exists():
+            shutil.rmtree(css_path)
+
+    # Create icon directories inside generated_files (if they don't exist)
     bnw_icons_path = Path(BNW_ICONS_FOLDER)
-    bnw_icons_path.mkdir(exist_ok=True)
+    bnw_icons_path.mkdir(parents=True, exist_ok=True)
 
     gen_icons_path = Path(GENERATED_ICONS_FOLDER)
-    gen_icons_path.mkdir(exist_ok=True)
+    gen_icons_path.mkdir(parents=True, exist_ok=True)
 
     # Create CSS directory
     css_path = output_path / 'css'
