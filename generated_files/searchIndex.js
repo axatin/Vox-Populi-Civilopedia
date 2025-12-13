@@ -3894,6 +3894,24 @@ window.globalSearchIndex = [
     "page": "units"
   },
   {
+    "nameFormatted": "<span class=\"positive\">(Barbarian)</span> Archer",
+    "name": "[COLOR_POSITIVE_TEXT](Barbarian)[ENDCOLOR] Archer",
+    "type": "UNIT_BARBARIAN_ARCHER",
+    "page": "units"
+  },
+  {
+    "nameFormatted": "<span class=\"positive\">(Barbarian)</span> Spearman",
+    "name": "[COLOR_POSITIVE_TEXT](Barbarian)[ENDCOLOR] Spearman",
+    "type": "UNIT_BARBARIAN_SPEARMAN",
+    "page": "units"
+  },
+  {
+    "nameFormatted": "<span class=\"positive\">(Barbarian)</span> Swordsman",
+    "name": "[COLOR_POSITIVE_TEXT](Barbarian)[ENDCOLOR] Swordsman",
+    "type": "UNIT_BARBARIAN_SWORDSMAN",
+    "page": "units"
+  },
+  {
     "nameFormatted": "Skirmisher",
     "name": "Skirmisher",
     "type": "UNIT_MONGOLIAN_KESHIK",
@@ -4185,6 +4203,12 @@ window.globalSearchIndex = [
     "nameFormatted": "<span class=\"positive\">(Indonesian)</span> Kris Swordsman",
     "name": "[COLOR_POSITIVE_TEXT](Indonesian)[ENDCOLOR] Kris Swordsman",
     "type": "UNIT_KRIS_SWORDSMAN",
+    "page": "units"
+  },
+  {
+    "nameFormatted": "<span class=\"positive\">(Barbarian)</span> Horseman",
+    "name": "[COLOR_POSITIVE_TEXT](Barbarian)[ENDCOLOR] Horseman",
+    "type": "UNIT_BARBARIAN_HORSEMAN",
     "page": "units"
   },
   {
