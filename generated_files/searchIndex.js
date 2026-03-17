@@ -30,12 +30,6 @@ window.globalSearchIndex = [
     "page": "concepts"
   },
   {
-    "nameFormatted": "<span style=\"color: rgba(255, 255, 0, 1)\">Combat Units in Cities</span>",
-    "name": "[COLOR_YELLOW]Combat Units in Cities[ENDCOLOR]",
-    "type": "CONCEPT_CITY_COMBATUNITS",
-    "page": "concepts"
-  },
-  {
     "nameFormatted": "Construction in Cities",
     "name": "Construction in Cities",
     "type": "CONCEPT_CITY_CONSTRUCTION",
@@ -3762,8 +3756,8 @@ window.globalSearchIndex = [
     "page": "units"
   },
   {
-    "nameFormatted": "Longbowman",
-    "name": "Longbowman",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(English)</span> Longbowman",
+    "name": "[COLOR_POSITIVE_TEXT](English)[ENDCOLOR] Longbowman",
     "type": "UNIT_ENGLISH_LONGBOWMAN",
     "page": "units"
   },
@@ -3960,8 +3954,8 @@ window.globalSearchIndex = [
     "page": "units"
   },
   {
-    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Korean)</span> Hwach'a",
-    "name": "[COLOR_POSITIVE_TEXT](Korean)[ENDCOLOR] Hwach'a",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Korean)</span> Hwacha",
+    "name": "[COLOR_POSITIVE_TEXT](Korean)[ENDCOLOR] Hwacha",
     "type": "UNIT_KOREAN_HWACHA",
     "page": "units"
   },
@@ -4350,12 +4344,6 @@ window.globalSearchIndex = [
     "page": "units"
   },
   {
-    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Carthaginian)</span> Asamu",
-    "name": "[COLOR_POSITIVE_TEXT](Carthaginian)[ENDCOLOR] Asamu",
-    "type": "UNIT_ASAMU",
-    "page": "units"
-  },
-  {
     "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Ottoman)</span> Great Bombard",
     "name": "[COLOR_POSITIVE_TEXT](Ottoman)[ENDCOLOR] Great Bombard",
     "type": "UNIT_GREAT_BOMBARD",
@@ -4434,12 +4422,6 @@ window.globalSearchIndex = [
     "page": "units"
   },
   {
-    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(English)</span> Redcoat",
-    "name": "[COLOR_POSITIVE_TEXT](English)[ENDCOLOR] Redcoat",
-    "type": "UNIT_REDCOAT",
-    "page": "units"
-  },
-  {
     "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Ethiopian)</span> Chewa",
     "name": "[COLOR_POSITIVE_TEXT](Ethiopian)[ENDCOLOR] Chewa",
     "type": "UNIT_CHEWA",
@@ -4506,9 +4488,9 @@ window.globalSearchIndex = [
     "page": "units"
   },
   {
-    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Japanese)</span> Yamato",
-    "name": "[COLOR_POSITIVE_TEXT](Japanese)[ENDCOLOR] Yamato",
-    "type": "UNIT_YAMATO",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Japanese)</span> Mikasa",
+    "name": "[COLOR_POSITIVE_TEXT](Japanese)[ENDCOLOR] Mikasa",
+    "type": "UNIT_MIKASA",
     "page": "units"
   },
   {
@@ -4599,6 +4581,18 @@ window.globalSearchIndex = [
     "nameFormatted": "Mercenary",
     "name": "Mercenary",
     "type": "UNIT_MERCENARY",
+    "page": "units"
+  },
+  {
+    "nameFormatted": "Redcoat",
+    "name": "Redcoat",
+    "type": "UNIT_REDCOAT",
+    "page": "units"
+  },
+  {
+    "nameFormatted": "Yamato",
+    "name": "Yamato",
+    "type": "UNIT_YAMATO",
     "page": "units"
   },
   {
@@ -4932,8 +4926,8 @@ window.globalSearchIndex = [
     "page": "buildings"
   },
   {
-    "nameFormatted": "Amphitheater",
-    "name": "Amphitheater",
+    "nameFormatted": "Theater",
+    "name": "Theater",
     "type": "BUILDING_AMPHITHEATER",
     "page": "buildings"
   },
@@ -5127,6 +5121,12 @@ window.globalSearchIndex = [
     "nameFormatted": "Wire Service",
     "name": "Wire Service",
     "type": "BUILDING_WIRE_SERVICE",
+    "page": "buildings"
+  },
+  {
+    "nameFormatted": "Shopping Mall",
+    "name": "Shopping Mall",
+    "type": "BUILDING_SHOPPING_MALL",
     "page": "buildings"
   },
   {
@@ -5370,6 +5370,12 @@ window.globalSearchIndex = [
     "page": "buildings"
   },
   {
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Carthaginian)</span> Tophet",
+    "name": "[COLOR_POSITIVE_TEXT](Carthaginian)[ENDCOLOR] Tophet",
+    "type": "BUILDING_TOPHET",
+    "page": "buildings"
+  },
+  {
     "nameFormatted": "Scrivener's Office",
     "name": "Scrivener's Office",
     "type": "BUILDING_SCRIVENERS_OFFICE",
@@ -5538,6 +5544,12 @@ window.globalSearchIndex = [
     "page": "buildings"
   },
   {
+    "nameFormatted": "Populi Medicine Office",
+    "name": "Populi Medicine Office",
+    "type": "BUILDING_POPULI_MEDICINE",
+    "page": "buildings"
+  },
+  {
     "nameFormatted": "Trader Sid's Franchise",
     "name": "Trader Sid's Franchise",
     "type": "BUILDING_TRADER_SIDS_FRANCHISE",
@@ -5577,6 +5589,12 @@ window.globalSearchIndex = [
     "nameFormatted": "Civilized Jewelers Franchise",
     "name": "Civilized Jewelers Franchise",
     "type": "BUILDING_CIVILIZED_JEWELERS_FRANCHISE",
+    "page": "buildings"
+  },
+  {
+    "nameFormatted": "Populi Medicine Franchise",
+    "name": "Populi Medicine Franchise",
+    "type": "BUILDING_POPULI_MEDICINE_FRANCHISE",
     "page": "buildings"
   },
   {
@@ -6054,6 +6072,12 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
+    "nameFormatted": "World Trade Center",
+    "name": "World Trade Center",
+    "type": "BUILDING_WORLD_TRADE_CENTER",
+    "page": "wonders"
+  },
+  {
     "nameFormatted": "West Point",
     "name": "West Point",
     "type": "BUILDING_WEST_POINT",
@@ -6201,6 +6225,12 @@ window.globalSearchIndex = [
     "nameFormatted": "Civilized Jewelers Headquarters",
     "name": "Civilized Jewelers Headquarters",
     "type": "BUILDING_CIVILIZED_JEWELERS_HQ",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Populi Medicine Headquarters",
+    "name": "Populi Medicine Headquarters",
+    "type": "BUILDING_POPULI_MEDICINE_HQ",
     "page": "wonders"
   },
   {
@@ -6852,14 +6882,14 @@ window.globalSearchIndex = [
     "page": "policies"
   },
   {
-    "nameFormatted": "Divine Right",
-    "name": "Divine Right",
+    "nameFormatted": "Fiefdoms",
+    "name": "Fiefdoms",
     "type": "POLICY_THEOCRACY",
     "page": "policies"
   },
   {
-    "nameFormatted": "Fiefdoms",
-    "name": "Fiefdoms",
+    "nameFormatted": "Divine Right",
+    "name": "Divine Right",
     "type": "POLICY_REFORMATION",
     "page": "policies"
   },
@@ -6930,14 +6960,14 @@ window.globalSearchIndex = [
     "page": "policies"
   },
   {
-    "nameFormatted": "Free Trade",
-    "name": "Free Trade",
+    "nameFormatted": "Subsidies",
+    "name": "Subsidies",
     "type": "POLICY_CARAVANS",
     "page": "policies"
   },
   {
-    "nameFormatted": "Protectionism",
-    "name": "Protectionism",
+    "nameFormatted": "Gold Standard",
+    "name": "Gold Standard",
     "type": "POLICY_PROTECTIONISM",
     "page": "policies"
   },
@@ -6948,32 +6978,32 @@ window.globalSearchIndex = [
     "page": "policies"
   },
   {
-    "nameFormatted": "Scientific Revolution",
-    "name": "Scientific Revolution",
+    "nameFormatted": "Liberalism",
+    "name": "Liberalism",
     "type": "POLICY_SECULARISM",
     "page": "policies"
   },
   {
-    "nameFormatted": "Enlightenment",
-    "name": "Enlightenment",
+    "nameFormatted": "Mass Education",
+    "name": "Mass Education",
     "type": "POLICY_HUMANISM",
     "page": "policies"
   },
   {
-    "nameFormatted": "Free Thought",
-    "name": "Free Thought",
+    "nameFormatted": "Secularism",
+    "name": "Secularism",
     "type": "POLICY_FREE_THOUGHT",
     "page": "policies"
   },
   {
-    "nameFormatted": "Rights of Man",
-    "name": "Rights of Man",
+    "nameFormatted": "Emancipation",
+    "name": "Emancipation",
     "type": "POLICY_SOVEREIGNTY",
     "page": "policies"
   },
   {
-    "nameFormatted": "Empiricism",
-    "name": "Empiricism",
+    "nameFormatted": "Employment Law",
+    "name": "Employment Law",
     "type": "POLICY_SCIENTIFIC_REVOLUTION",
     "page": "policies"
   },
@@ -8094,6 +8124,12 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
+    "nameFormatted": "War Canoes",
+    "name": "War Canoes",
+    "type": "PROMOTION_WAR_CANOES",
+    "page": "promotions"
+  },
+  {
     "nameFormatted": "Spear Throw",
     "name": "Spear Throw",
     "type": "PROMOTION_ANTI_GUNPOWDER",
@@ -8697,12 +8733,6 @@ window.globalSearchIndex = [
     "nameFormatted": "Embarkation with Ocean Movement",
     "name": "Embarkation with Ocean Movement",
     "type": "PROMOTION_ALLWATER_EMBARKATION",
-    "page": "promotions"
-  },
-  {
-    "nameFormatted": "War Canoes",
-    "name": "War Canoes",
-    "type": "PROMOTION_WAR_CANOES",
     "page": "promotions"
   },
   {
@@ -9432,9 +9462,15 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
-    "nameFormatted": "Shrapnel Rounds",
-    "name": "Shrapnel Rounds",
-    "type": "PROMOTION_SHRAPNEL_ROUNDS",
+    "nameFormatted": "Shrapnel Rounds I",
+    "name": "Shrapnel Rounds I",
+    "type": "PROMOTION_SHRAPNEL_ROUNDS_1",
+    "page": "promotions"
+  },
+  {
+    "nameFormatted": "Shrapnel Rounds II",
+    "name": "Shrapnel Rounds II",
+    "type": "PROMOTION_SHRAPNEL_ROUNDS_2",
     "page": "promotions"
   },
   {
@@ -9522,9 +9558,9 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
-    "nameFormatted": "Steppe Nomads",
-    "name": "Steppe Nomads",
-    "type": "PROMOTION_MONGOL_TERROR",
+    "nameFormatted": "Sewn Canoes",
+    "name": "Sewn Canoes",
+    "type": "PROMOTION_SEWN_CANOES",
     "page": "promotions"
   },
   {
@@ -9984,8 +10020,8 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
-    "nameFormatted": "Siege Volley",
-    "name": "Siege Volley",
+    "nameFormatted": "Singijeon",
+    "name": "Singijeon",
     "type": "PROMOTION_SIEGE_VOLLEY",
     "page": "promotions"
   },
@@ -10059,12 +10095,6 @@ window.globalSearchIndex = [
     "nameFormatted": "Greek Fire",
     "name": "Greek Fire",
     "type": "PROMOTION_GREEK_FIRE",
-    "page": "promotions"
-  },
-  {
-    "nameFormatted": "Elisha's Guile",
-    "name": "Elisha's Guile",
-    "type": "PROMOTION_ELISHAS_GUILE",
     "page": "promotions"
   },
   {
@@ -10170,9 +10200,9 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
-    "nameFormatted": "Taikan Kyoho",
-    "name": "Taikan Kyoho",
-    "type": "PROMOTION_TAIKAN_KYOHO",
+    "nameFormatted": "Kantai Kessen",
+    "name": "Kantai Kessen",
+    "type": "PROMOTION_KANTAI_KESSEN",
     "page": "promotions"
   },
   {
@@ -10266,6 +10296,12 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
+    "nameFormatted": "Cíbola",
+    "name": "Cíbola",
+    "type": "PROMOTION_CIBOLA",
+    "page": "promotions"
+  },
+  {
     "nameFormatted": "Santa Maria",
     "name": "Santa Maria",
     "type": "PROMOTION_SANTA_MARIA",
@@ -10281,6 +10317,12 @@ window.globalSearchIndex = [
     "nameFormatted": "Agincourt",
     "name": "Agincourt",
     "type": "PROMOTION_AGINCOURT",
+    "page": "promotions"
+  },
+  {
+    "nameFormatted": "Taikan Kyoho",
+    "name": "Taikan Kyoho",
+    "type": "PROMOTION_TAIKAN_KYOHO",
     "page": "promotions"
   },
   {
@@ -12213,6 +12255,12 @@ window.globalSearchIndex = [
     "nameFormatted": "Civilized Jewelers, Inc.",
     "name": "Civilized Jewelers, Inc.",
     "type": "CORPORATION_CIVILIZED_JEWELERS",
+    "page": "corporations"
+  },
+  {
+    "nameFormatted": "Populi Medicine, Inc.",
+    "name": "Populi Medicine, Inc.",
+    "type": "CORPORATION_POPULI_MEDICINE",
     "page": "corporations"
   },
   {
