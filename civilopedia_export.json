@@ -3207,7 +3207,7 @@
       "PediaType": "PEDIA_SHARED",
       "CannotBeChosen": true,
       "Sound": "AS2D_IF_LEVELUP",
-      "Name": "Unity",
+      "Name": "Phalanx",
       "IconAtlas": "PROMOTION_ATLAS_VP_00",
       "ID": 176,
       "PediaTypeLabel": "Shared Promotions",
@@ -32066,12 +32066,12 @@
       "PolicyBranchType": "POLICY_BRANCH_RATIONALISM",
       "GridY": 2,
       "PolicyBranchID": 8,
-      "Name": "Liberalism",
-      "Civilopedia": "Philosopher John Locke is often credited with founding liberalism as a distinct tradition based on the social contract, arguing that each man has a natural right to life, liberty and property, and governments must not violate these rights. From the Glorious Revolution of 1688, through the American Revolution and French Revolutions of late 1700s, to the Tanzimat reform of the Ottoman empire beginning in 1839, liberal philosophy was used to justify the armed overthrow of royal sovereignty and the rise of consitutionalism.",
+      "Name": "Secularism",
+      "Civilopedia": "Secularism is the belief that government should be separate from religion and religious faiths. Religions should not be taught in schools, nor should one's religion determine whether he or she can work in the government or serve in the military. Secularists don't necessarily disbelieve in a Supreme Being; they just think that mixing religion and government is ultimately bad for both institutions. The United States is largely a secular country, although traces of its early inhabitants' dominant religion can still be found on the country's money, its leaders' oaths of office, in its judicial system, and so forth, often to the dismay of the citizens who do not belong to that religion.",
       "ID": 37,
       "IconAtlas": "POLICY_ATLAS",
       "PortraitIndex": 52,
-      "Help": "[COLOR_POSITIVE_TEXT]Liberalism[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production from Specialists.[NEWLINE][ICON_BULLET]+25% [ICON_GREAT_PEOPLE] Great Person Rate during [ICON_GOLDEN_AGE] Golden Ages."
+      "Help": "[COLOR_POSITIVE_TEXT]Secularism[ENDCOLOR][NEWLINE][ICON_BULLET]-5 [ICON_HAPPINESS_3] Unhappiness from Religious Unrest in all Cities.[NEWLINE][ICON_BULLET]+10% [ICON_RESEARCH] Science during [ICON_GOLDEN_AGE] Golden Ages.[NEWLINE][ICON_BULLET]+3 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Academies."
     },
     {
       "Type": "POLICY_HUMANISM",
@@ -32096,12 +32096,12 @@
       "PolicyBranchType": "POLICY_BRANCH_RATIONALISM",
       "GridY": 3,
       "PolicyBranchID": 8,
-      "Name": "Secularism",
-      "Civilopedia": "Free thought is the belief that knowledge should be gained through the application of science and reason, rather than from tradition or religious dogma. Theories should be tested scientifically and logically. If something can't be proven, it's foolish to believe in it. Blind faith is the arch enemy of free thinkers everywhere. Free thinking is an important part of Buddhist tradition. In the \"Kalama Sutta,\" the Buddha states, \"Do not accept anything by mere tradition... Do not accept anything because it accords with your scriptures... But when you know for yourselves - then do you live accordingly.\"",
+      "Name": "Employment Law",
+      "Civilopedia": "The Code of Hammurabi (c. 1755-1750 BC) stipulated a 2 shekel prevailing wage for each 60 gur (300 bushel) vessel constructed in an employment contract between a shipbuilder and a ship-owner. Since then, protections to trade have been a central part of jurisprudence. Sadly, one of the appalling consequences of the industrial revolution was a reversal of this norm and an almost unregulated economic framework that led to much misery and death. In Britain, a great milestone in labour law was reached with the Factories Act 1833, which limited the employment of children under eighteen years of age, prohibited all night work, and, crucially, provided for inspectors to enforce the law.",
       "ID": 39,
       "IconAtlas": "POLICY_ATLAS",
       "PortraitIndex": 51,
-      "Help": "[COLOR_POSITIVE_TEXT]Secularism[ENDCOLOR][NEWLINE][ICON_BULLET]-5 [ICON_HAPPINESS_3] Unhappiness from Religious Unrest in all Cities.[NEWLINE][ICON_BULLET]+10% [ICON_RESEARCH] Science during [ICON_GOLDEN_AGE] Golden Ages.[NEWLINE][ICON_BULLET]+3 [ICON_PRODUCTION] Production and [ICON_GOLD] Gold from Academies."
+      "Help": "[COLOR_POSITIVE_TEXT]Employment Law[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production in Cities for every 2 non-Specialist [ICON_CITIZEN] Citizen.[NEWLINE][ICON_BULLET]Specialists consume 1 [ICON_FOOD] Food less than normal (minimum 1 [ICON_FOOD] Food).[NEWLINE][ICON_BULLET]50% of [ICON_HAPPINESS_1] Happiness in each City is converted into [ICON_CULTURE] Culture."
     },
     {
       "Type": "POLICY_SOVEREIGNTY",
@@ -32126,12 +32126,12 @@
       "PolicyBranchType": "POLICY_BRANCH_RATIONALISM",
       "GridY": 1,
       "PolicyBranchID": 8,
-      "Name": "Employment Law",
-      "Civilopedia": "The Code of Hammurabi (c. 1755-1750 BC) stipulated a 2 shekel prevailing wage for each 60 gur (300 bushel) vessel constructed in an employment contract between a shipbuilder and a ship-owner. Since then, protections to trade have been a central part of jurisprudence. Sadly, one of the appalling consequences of the industrial revolution was a reversal of this norm and an almost unregulated economic framework that led to much misery and death. In Britain, a great milestone in labour law was reached with the Factories Act 1833, which limited the employment of children under eighteen years of age, prohibited all night work, and, crucially, provided for inspectors to enforce the law.",
+      "Name": "Liberalism",
+      "Civilopedia": "Philosopher John Locke is often credited with founding liberalism as a distinct tradition based on the social contract, arguing that each man has a natural right to life, liberty and property, and governments must not violate these rights. From the Glorious Revolution of 1688, through the American Revolution and French Revolutions of late 1700s, to the Tanzimat reform of the Ottoman empire beginning in 1839, liberal philosophy was used to justify the armed overthrow of royal sovereignty and the rise of consitutionalism.",
       "ID": 41,
       "IconAtlas": "POLICY_ATLAS",
       "PortraitIndex": 53,
-      "Help": "[COLOR_POSITIVE_TEXT]Employment Law[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] Production in Cities for every 2 non-Specialist [ICON_CITIZEN] Citizen.[NEWLINE][ICON_BULLET]Specialists consume 1 [ICON_FOOD] Food less than normal (minimum 1 [ICON_FOOD] Food).[NEWLINE][ICON_BULLET]50% of [ICON_HAPPINESS_1] Happiness in each City is converted into [ICON_CULTURE] Culture."
+      "Help": "[COLOR_POSITIVE_TEXT]Liberalism[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production from Specialists.[NEWLINE][ICON_BULLET]+25% [ICON_GREAT_PEOPLE] Great Person Rate during [ICON_GOLDEN_AGE] Golden Ages."
     },
     {
       "Type": "POLICY_AESTHETICS",
@@ -36328,9 +36328,6 @@
           "YieldName": "[ICON_RESEARCH] Science"
         }],
       "Type": "IMPROVEMENT_ACADEMY",
-      "Name": "Academy",
-      "Civilopedia": "An academy is an institution where children can get an advanced lower (that is, pre-college) education. Academies come in all flavors - military, religious, government, and the like. Some are private, open only to the children of wealth or power or influence, while others are open to all children who meet their strict requirements. England's Eton College is one of the most famous academies in the world, taking in England's best and brightest boys between the ages of 13 and 18 since 1440.",
-      "ID": 16,
       "Terrains": [
         {
           "Name": "Grassland",
@@ -36353,32 +36350,27 @@
           "Type": "TERRAIN_SNOW"
         }
       ],
+      "Name": "Academy",
+      "IconAtlas": "TERRAIN_ATLAS",
+      "ID": 16,
+      "Help": "Counts as every type of Improvement for [COLOR_POSITIVE_TEXT]Adjacency Bonuses[ENDCOLOR], e.g. providing +0.5 [ICON_FOOD] Food to adjacent Farms.",
       "PortraitIndex": 38,
-      "IconAtlas": "TERRAIN_ATLAS"
+      "Civilopedia": "Counts as every type of Improvement for [COLOR_POSITIVE_TEXT]Adjacency Bonuses[ENDCOLOR], e.g. providing +0.5 [ICON_FOOD] Food to adjacent Farms.[NEWLINE][NEWLINE]An academy is an institution where children can get an advanced lower (that is, pre-college) education. Academies come in all flavors - military, religious, government, and the like. Some are private, open only to the children of wealth or power or influence, while others are open to all children who meet their strict requirements. England's Eton College is one of the most famous academies in the world, taking in boys between the ages of 13 and 18 since 1440."
     },
     {
-      "Terrains": [
-        {
-          "Name": "Grassland",
-          "Type": "TERRAIN_GRASS"
-        },
-        {
-          "Name": "Plains",
-          "Type": "TERRAIN_PLAINS"
-        },
-        {
-          "Name": "Desert",
-          "Type": "TERRAIN_DESERT"
-        },
-        {
-          "Name": "Tundra",
-          "Type": "TERRAIN_TUNDRA"
-        },
-        {
-          "Name": "Snow",
-          "Type": "TERRAIN_SNOW"
-        }
-      ],
+      "BaseYields": [{
+          "YieldType": "YIELD_GOLD",
+          "Yield": 6,
+          "YieldName": "[ICON_GOLD] Gold"
+        }, {
+          "YieldType": "YIELD_FOOD",
+          "Yield": 2,
+          "YieldName": "[ICON_FOOD] Food"
+        }, {
+          "YieldType": "YIELD_CULTURE",
+          "Yield": 1,
+          "YieldName": "[ICON_CULTURE] Culture"
+        }],
       "Type": "IMPROVEMENT_CUSTOMS_HOUSE",
       "RouteBonuses": [
         {
@@ -36410,35 +36402,6 @@
           "YieldName": "[ICON_PRODUCTION] Production"
         }
       ],
-      "Name": "Town",
-      "IconAtlas": "TERRAIN_ATLAS",
-      "ID": 17,
-      "BaseYields": [{
-          "YieldType": "YIELD_GOLD",
-          "Yield": 6,
-          "YieldName": "[ICON_GOLD] Gold"
-        }, {
-          "YieldType": "YIELD_FOOD",
-          "Yield": 2,
-          "YieldName": "[ICON_FOOD] Food"
-        }, {
-          "YieldType": "YIELD_CULTURE",
-          "Yield": 1,
-          "YieldName": "[ICON_CULTURE] Culture"
-        }],
-      "PortraitIndex": 33,
-      "Civilopedia": "A town is a human settlement larger than a village but smaller than a city. The size definition for what constitutes a \"town\" varies considerably in different parts of the world. The word town shares an origin with the German word Zaun, the Dutch word tuin, and the Old Norse tun. The German word Zaun comes closest to the original meaning of the word: a fence of any material.[NEWLINE][NEWLINE]Towns receive +2 [ICON_GOLD] Gold and [ICON_PRODUCTION] Production if built on a Road that connects two owned Cities, and +4 [ICON_GOLD] and [ICON_PRODUCTION] Production if a Railroad. Receive additional [ICON_GOLD] Gold and [ICON_PRODUCTION] Production (+2 for Roads, +4 for Railroads) if a Trade Route, either internal or international, passes over this Town."
-    },
-    {
-      "BaseYields": [{
-          "YieldType": "YIELD_PRODUCTION",
-          "Yield": 6,
-          "YieldName": "[ICON_PRODUCTION] Production"
-        }],
-      "Type": "IMPROVEMENT_MANUFACTORY",
-      "Name": "Manufactory",
-      "Civilopedia": "A Manufactory is a plant consisting of one or more buildings in which things are built. The buildings might be foundries, factories, assembly lines, and so forth, usually all working on related items - the foundry creates the steel that the factory rolls into sheets which the workers on the assembly line make into cans, and so forth. A well-run Manufactory can be incredibly productive.",
-      "ID": 18,
       "Terrains": [
         {
           "Name": "Grassland",
@@ -36461,8 +36424,48 @@
           "Type": "TERRAIN_SNOW"
         }
       ],
+      "Name": "Town",
+      "IconAtlas": "TERRAIN_ATLAS",
+      "ID": 17,
+      "Help": "Towns receive +2 [ICON_GOLD] Gold and [ICON_PRODUCTION] Production if built on a Road that connects two owned Cities, and +4 [ICON_GOLD] and [ICON_PRODUCTION] Production if on a Railroad. Receive additional [ICON_GOLD] Gold and [ICON_PRODUCTION] Production (+2 for Roads, +4 for Railroads) if a Trade Route, either internal or international, passes over this Town.",
+      "PortraitIndex": 33,
+      "Civilopedia": "Towns receive +2 [ICON_GOLD] Gold and [ICON_PRODUCTION] Production if built on a Road that connects two owned Cities, and +4 [ICON_GOLD] and [ICON_PRODUCTION] Production if on a Railroad. Receive additional [ICON_GOLD] Gold and [ICON_PRODUCTION] Production (+2 for Roads, +4 for Railroads) if a Trade Route, either internal or international, passes over this Town.[NEWLINE][NEWLINE]A town is a human settlement larger than a village but smaller than a city. The size definition for what constitutes a \"town\" varies considerably in different parts of the world. The word town shares an origin with the German word Zaun, the Dutch word tuin, and the Old Norse tun. The German word Zaun comes closest to the original meaning of the word: a fence of any material."
+    },
+    {
+      "BaseYields": [{
+          "YieldType": "YIELD_PRODUCTION",
+          "Yield": 6,
+          "YieldName": "[ICON_PRODUCTION] Production"
+        }],
+      "Type": "IMPROVEMENT_MANUFACTORY",
+      "Terrains": [
+        {
+          "Name": "Grassland",
+          "Type": "TERRAIN_GRASS"
+        },
+        {
+          "Name": "Plains",
+          "Type": "TERRAIN_PLAINS"
+        },
+        {
+          "Name": "Desert",
+          "Type": "TERRAIN_DESERT"
+        },
+        {
+          "Name": "Tundra",
+          "Type": "TERRAIN_TUNDRA"
+        },
+        {
+          "Name": "Snow",
+          "Type": "TERRAIN_SNOW"
+        }
+      ],
+      "Name": "Manufactory",
+      "IconAtlas": "TERRAIN_ATLAS",
+      "ID": 18,
+      "Help": "Provides +1 [COLOR_POSITIVE_TEXT]Additional Copy[ENDCOLOR] of any Luxury or Strategic Resource it connects. For [ICON_MONOPOLY] Monopoly calculations, additional copies count towards ownership (numerator) while not counting towards the total number available in the world (denominator).",
       "PortraitIndex": 37,
-      "IconAtlas": "TERRAIN_ATLAS"
+      "Civilopedia": "Provides +1 [COLOR_POSITIVE_TEXT]Additional Copy[ENDCOLOR] of any Luxury or Strategic Resource it connects. For [ICON_MONOPOLY] Monopoly calculations, additional copies count towards ownership (numerator) while not counting towards the total number available in the world (denominator).[NEWLINE][NEWLINE]A Manufactory is a plant consisting of one or more buildings in which things are built. The buildings might be foundries, factories, assembly lines, and so forth, usually all working on related items - the foundry creates the steel that the factory rolls into sheets which the workers on the assembly line make into cans, and so forth. A well-run Manufactory can be incredibly productive."
     },
     {
       "BaseYields": [{
@@ -36633,6 +36636,20 @@
       "Name": "[COLOR_POSITIVE_TEXT](Polynesian)[ENDCOLOR] Moai"
     },
     {
+      "BaseYields": [{
+          "YieldType": "YIELD_FAITH",
+          "Yield": 4,
+          "YieldName": "[ICON_PEACE] Faith"
+        }, {
+          "YieldType": "YIELD_CULTURE",
+          "Yield": 5,
+          "YieldName": "[ICON_CULTURE] Culture"
+        }, {
+          "YieldType": "YIELD_TOURISM",
+          "Yield": 3,
+          "YieldName": "[ICON_TOURISM] Tourism"
+        }],
+      "Type": "IMPROVEMENT_HOLY_SITE",
       "Terrains": [
         {
           "Name": "Grassland",
@@ -36655,7 +36672,6 @@
           "Type": "TERRAIN_SNOW"
         }
       ],
-      "Type": "IMPROVEMENT_HOLY_SITE",
       "AdjacencyBonuses": [{
           "YieldType": "YIELD_FAITH",
           "Type": "Terrain",
@@ -36666,21 +36682,9 @@
       "Name": "Holy Site",
       "IconAtlas": "EXPANSION_TERRAIN_ATLAS",
       "ID": 22,
-      "BaseYields": [{
-          "YieldType": "YIELD_FAITH",
-          "Yield": 4,
-          "YieldName": "[ICON_PEACE] Faith"
-        }, {
-          "YieldType": "YIELD_CULTURE",
-          "Yield": 5,
-          "YieldName": "[ICON_CULTURE] Culture"
-        }, {
-          "YieldType": "YIELD_TOURISM",
-          "Yield": 3,
-          "YieldName": "[ICON_TOURISM] Tourism"
-        }],
+      "Help": "+1 [ICON_PEACE] Faith per adjacent Mountain. Notably, the National Wonders that unlock [COLOR_POSITIVE_TEXT]Reformation Beliefs[ENDCOLOR] provide +5 of a single yield to all Holy Sites in the Empire.",
       "PortraitIndex": 1,
-      "Civilopedia": "A place of religious significance, holy sites are locations held sacred as a testament to the gods, prophets, and traditions of a given religion. Often the destination for religious pilgrims, these sites are often visited by the faithful in the hopes of strengthening their connection to God, while also paying their respects."
+      "Civilopedia": "+1 [ICON_PEACE] Faith per adjacent Mountain. Notably, the National Wonders that unlock [COLOR_POSITIVE_TEXT]Reformation Beliefs[ENDCOLOR] provide +5 of a single yield to all Holy Sites in the Empire.[NEWLINE][NEWLINE]A place of religious significance, holy sites are locations held sacred as a testament to the gods, prophets, and traditions of a given religion. Often the destination for religious pilgrims, these sites are often visited by the faithful in the hopes of strengthening their connection to God, while also paying their respects."
     },
     {
       "BaseYields": [{
@@ -50476,7 +50480,7 @@
       "EraName": "Ancient Era",
       "Combat": 13,
       "FreePromotions": [{
-          "Name": "Unity",
+          "Name": "Phalanx",
           "Type": "PROMOTION_ADJACENT_BONUS"
         }, {
           "Name": "Formation I",
@@ -50489,7 +50493,7 @@
           "Name": "Greece",
           "Adjective": "Greek"
         }],
-      "Help": "Greek Unique [COLOR_YELLOW]Spearman[ENDCOLOR][NEWLINE]----------------[NEWLINE]Cost: 70 [ICON_PRODUCTION] / 150 [ICON_PEACE][NEWLINE][ICON_MOVES] Moves: 2[NEWLINE][ICON_STRENGTH] Strength: 13[NEWLINE]----------------[NEWLINE]Free Promotions:[NEWLINE][ICON_BULLET]Unity[NEWLINE][ICON_BULLET]Formation I[NEWLINE]----------------[NEWLINE]Prerequisite Technologies: [COLOR_CYAN]Bronze Working[ENDCOLOR][NEWLINE]Becomes Obsolete With: [COLOR_CYAN]Gunpowder[ENDCOLOR]",
+      "Help": "Greek Unique [COLOR_YELLOW]Spearman[ENDCOLOR][NEWLINE]----------------[NEWLINE]Cost: 70 [ICON_PRODUCTION] / 150 [ICON_PEACE][NEWLINE][ICON_MOVES] Moves: 2[NEWLINE][ICON_STRENGTH] Strength: 13[NEWLINE]----------------[NEWLINE]Free Promotions:[NEWLINE][ICON_BULLET]Phalanx[NEWLINE][ICON_BULLET]Formation I[NEWLINE]----------------[NEWLINE]Prerequisite Technologies: [COLOR_CYAN]Bronze Working[ENDCOLOR][NEWLINE]Becomes Obsolete With: [COLOR_CYAN]Gunpowder[ENDCOLOR]",
       "IconAtlas": "UNIT_ATLAS_1",
       "ID": 79,
       "Moves": 2,

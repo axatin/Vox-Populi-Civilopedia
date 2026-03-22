@@ -6978,8 +6978,8 @@ window.globalSearchIndex = [
     "page": "policies"
   },
   {
-    "nameFormatted": "Liberalism",
-    "name": "Liberalism",
+    "nameFormatted": "Secularism",
+    "name": "Secularism",
     "type": "POLICY_SECULARISM",
     "page": "policies"
   },
@@ -6990,8 +6990,8 @@ window.globalSearchIndex = [
     "page": "policies"
   },
   {
-    "nameFormatted": "Secularism",
-    "name": "Secularism",
+    "nameFormatted": "Employment Law",
+    "name": "Employment Law",
     "type": "POLICY_FREE_THOUGHT",
     "page": "policies"
   },
@@ -7002,8 +7002,8 @@ window.globalSearchIndex = [
     "page": "policies"
   },
   {
-    "nameFormatted": "Employment Law",
-    "name": "Employment Law",
+    "nameFormatted": "Liberalism",
+    "name": "Liberalism",
     "type": "POLICY_SCIENTIFIC_REVOLUTION",
     "page": "policies"
   },
@@ -9018,8 +9018,8 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
-    "nameFormatted": "Unity",
-    "name": "Unity",
+    "nameFormatted": "Phalanx",
+    "name": "Phalanx",
     "type": "PROMOTION_ADJACENT_BONUS",
     "page": "promotions"
   },
