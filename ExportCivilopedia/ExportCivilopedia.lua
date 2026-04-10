@@ -450,7 +450,7 @@ function ExportCivilizations()
                         if buildingClass then
                             if buildingClass.MaxGlobalInstances > 0 then
                                 buildingData.IsWonder = true
-                            elseif buildingClass.MaxPlayerInstances == 1 and safeGet(building, "SpecialistCount", 0) == 0 then
+                            elseif buildingClass.MaxPlayerInstances == 1 then
                                 buildingData.IsNationalWonder = true
                             end
                         end
@@ -776,7 +776,7 @@ function ExportBuildings()
         if buildingClass then
             if buildingClass.MaxGlobalInstances > 0 then
                 buildingData.IsWonder = true
-            elseif buildingClass.MaxPlayerInstances == 1 and safeGet(row, "SpecialistCount", 0) == 0 then
+            elseif buildingClass.MaxPlayerInstances == 1 then
                 buildingData.IsNationalWonder = true
             end
         end
@@ -1827,7 +1827,7 @@ function ExportWonders()
         if buildingClass then
             if buildingClass.MaxGlobalInstances > 0 then
                 isWonder = true
-            elseif buildingClass.MaxPlayerInstances == 1 and safeGet(row, "SpecialistCount", 0) == 0 then
+            elseif buildingClass.MaxPlayerInstances == 1 then
                 isNationalWonder = true
             end
         end
