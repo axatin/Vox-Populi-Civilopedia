@@ -1236,6 +1236,46 @@ function ExportTerrain()
             terrainData.BaseYields = baseYields
         end
 
+        -- Add tech yield changes (Terrain_TechYieldChanges)
+        local tTechYieldsMap = {}
+        for yieldRow in GameInfo.Terrain_TechYieldChanges(condition) do
+            local tech = GameInfo.Technologies[yieldRow.TechType]
+            local yieldInfo = GameInfo.Yields[yieldRow.YieldType]
+            if tech and yieldInfo then
+                if not tTechYieldsMap[tech.ID] then
+                    tTechYieldsMap[tech.ID] = { techType = tech.Type, techName = Locale.ConvertTextKey(tech.Description), cost = tech.Cost, yields = {} }
+                end
+                local entry = tTechYieldsMap[tech.ID]
+                entry.yields[yieldRow.YieldType] = { info = yieldInfo, amount = (entry.yields[yieldRow.YieldType] and entry.yields[yieldRow.YieldType].amount or 0) + yieldRow.Yield }
+            end
+        end
+        local sortedTechEntries = {}
+        for _, v in pairs(tTechYieldsMap) do table.insert(sortedTechEntries, v) end
+        table.sort(sortedTechEntries, function(a, b) return a.cost < b.cost end)
+        local techYields = {}
+        for _, techEntry in ipairs(sortedTechEntries) do
+            local yieldsList = {}
+            for _, yieldEntry in pairs(techEntry.yields) do
+                if yieldEntry.amount ~= 0 then
+                    table.insert(yieldsList, {
+                        YieldType = yieldEntry.info.Type,
+                        YieldName = yieldEntry.info.IconString .. " " .. Locale.ConvertTextKey(yieldEntry.info.Description),
+                        Yield = yieldEntry.amount
+                    })
+                end
+            end
+            if #yieldsList > 0 then
+                table.insert(techYields, {
+                    Type = techEntry.techType,
+                    Name = techEntry.techName,
+                    Yields = yieldsList
+                })
+            end
+        end
+        if #techYields > 0 then
+            terrainData.TechYields = techYields
+        end
+
         -- Add features that can exist on this terrain
         local features = {}
         for featureRow in GameInfo.Feature_TerrainBooleans(condition) do
@@ -1275,10 +1315,12 @@ function ExportTerrain()
             Type = row.Type,
             ID = row.ID + 1000,  -- Offset feature IDs to avoid collision
             Name = Locale.ConvertTextKey(row.Description),
+            Help = safeGet(row, "Help") and Locale.ConvertTextKey(row.Help) or nil,
             Civilopedia = safeGet(row, "Civilopedia") and Locale.ConvertTextKey(row.Civilopedia) or nil,
             IconAtlas = safeGet(row, "IconAtlas"),
             PortraitIndex = safeGet(row, "PortraitIndex"),
-            IsFeature = true  -- Mark as feature
+            IsFeature = true,  -- Mark as feature
+            IsNaturalWonder = (safeGet(row, "NaturalWonder") or safeGet(row, "PseudoNaturalWonder")) and true or false
         }
 
         -- Add movement cost
@@ -1318,6 +1360,46 @@ function ExportTerrain()
         end
         if #eraYields > 0 then
             featureData.EraYields = eraYields
+        end
+
+        -- Add tech yield changes (Feature_TechYieldChanges)
+        local tFeatTechYieldsMap = {}
+        for yieldRow in GameInfo.Feature_TechYieldChanges(condition) do
+            local tech = GameInfo.Technologies[yieldRow.TechType]
+            local yieldInfo = GameInfo.Yields[yieldRow.YieldType]
+            if tech and yieldInfo then
+                if not tFeatTechYieldsMap[tech.ID] then
+                    tFeatTechYieldsMap[tech.ID] = { techType = tech.Type, techName = Locale.ConvertTextKey(tech.Description), cost = tech.Cost, yields = {} }
+                end
+                local entry = tFeatTechYieldsMap[tech.ID]
+                entry.yields[yieldRow.YieldType] = { info = yieldInfo, amount = (entry.yields[yieldRow.YieldType] and entry.yields[yieldRow.YieldType].amount or 0) + yieldRow.Yield }
+            end
+        end
+        local sortedFeatTechEntries = {}
+        for _, v in pairs(tFeatTechYieldsMap) do table.insert(sortedFeatTechEntries, v) end
+        table.sort(sortedFeatTechEntries, function(a, b) return a.cost < b.cost end)
+        local featTechYields = {}
+        for _, techEntry in ipairs(sortedFeatTechEntries) do
+            local yieldsList = {}
+            for _, yieldEntry in pairs(techEntry.yields) do
+                if yieldEntry.amount ~= 0 then
+                    table.insert(yieldsList, {
+                        YieldType = yieldEntry.info.Type,
+                        YieldName = yieldEntry.info.IconString .. " " .. Locale.ConvertTextKey(yieldEntry.info.Description),
+                        Yield = yieldEntry.amount
+                    })
+                end
+            end
+            if #yieldsList > 0 then
+                table.insert(featTechYields, {
+                    Type = techEntry.techType,
+                    Name = techEntry.techName,
+                    Yields = yieldsList
+                })
+            end
+        end
+        if #featTechYields > 0 then
+            featureData.TechYields = featTechYields
         end
 
         -- Add terrains this feature can appear on
@@ -1700,6 +1782,88 @@ function ExportImprovements()
         if #routeBonuses > 0 then
             improvementData.RouteBonuses = routeBonuses
         end
+
+        -- Add feature yield changes (Improvement_FeatureYieldChanges)
+        local tFeatureYieldsMap = {}
+        for yieldRow in GameInfo.Improvement_FeatureYieldChanges(condition) do
+            local feature = GameInfo.Features[yieldRow.FeatureType]
+            local yieldInfo = GameInfo.Yields[yieldRow.YieldType]
+            if feature and yieldInfo then
+                if not tFeatureYieldsMap[feature.ID] then
+                    tFeatureYieldsMap[feature.ID] = { featureType = feature.Type, featureName = Locale.ConvertTextKey(feature.Description), yields = {} }
+                end
+                local entry = tFeatureYieldsMap[feature.ID]
+                entry.yields[yieldRow.YieldType] = { info = yieldInfo, amount = (entry.yields[yieldRow.YieldType] and entry.yields[yieldRow.YieldType].amount or 0) + yieldRow.Yield }
+            end
+        end
+        local featureYields = {}
+        for _, featureEntry in pairs(tFeatureYieldsMap) do
+            local yieldsList = {}
+            for _, yieldEntry in pairs(featureEntry.yields) do
+                table.insert(yieldsList, { YieldType = yieldEntry.info.Type, YieldName = yieldEntry.info.IconString .. " " .. Locale.ConvertTextKey(yieldEntry.info.Description), Yield = yieldEntry.amount })
+            end
+            table.insert(featureYields, { Type = featureEntry.featureType, Name = featureEntry.featureName, Yields = yieldsList })
+        end
+        if #featureYields > 0 then
+            improvementData.FeatureYields = featureYields
+        end
+
+        -- Add adjacent city yields (Improvement_AdjacentCityYields)
+        local adjacentCityYields = {}
+        for yieldRow in GameInfo.Improvement_AdjacentCityYields(condition) do
+            local yieldInfo = GameInfo.Yields[yieldRow.YieldType]
+            if yieldInfo then
+                table.insert(adjacentCityYields, {
+                    YieldType = yieldRow.YieldType,
+                    YieldName = yieldInfo.IconString .. " " .. Locale.ConvertTextKey(yieldInfo.Description),
+                    Yield = yieldRow.Yield
+                })
+            end
+        end
+        if #adjacentCityYields > 0 then
+            improvementData.AdjacentCityYields = adjacentCityYields
+        end
+
+        -- Helper to build a pre-grouped tech yield list from a table
+        local function BuildTechYieldGroups(tableName)
+            local tMap = {}
+            for yieldRow in GameInfo[tableName](condition) do
+                local tech = GameInfo.Technologies[yieldRow.TechType]
+                local yieldInfo = GameInfo.Yields[yieldRow.YieldType]
+                if tech and yieldInfo then
+                    if not tMap[tech.ID] then
+                        tMap[tech.ID] = { techType = tech.Type, techName = Locale.ConvertTextKey(tech.Description), cost = tech.Cost, yields = {} }
+                    end
+                    local entry = tMap[tech.ID]
+                    entry.yields[yieldRow.YieldType] = { info = yieldInfo, amount = (entry.yields[yieldRow.YieldType] and entry.yields[yieldRow.YieldType].amount or 0) + yieldRow.Yield }
+                end
+            end
+            local sorted = {}
+            for _, v in pairs(tMap) do table.insert(sorted, v) end
+            table.sort(sorted, function(a, b) return a.cost < b.cost end)
+            local result = {}
+            for _, techEntry in ipairs(sorted) do
+                local yieldsList = {}
+                for _, yieldEntry in pairs(techEntry.yields) do
+                    if yieldEntry.amount ~= 0 then
+                        table.insert(yieldsList, { YieldType = yieldEntry.info.Type, YieldName = yieldEntry.info.IconString .. " " .. Locale.ConvertTextKey(yieldEntry.info.Description), Yield = yieldEntry.amount })
+                    end
+                end
+                if #yieldsList > 0 then
+                    table.insert(result, { Type = techEntry.techType, Name = techEntry.techName, Yields = yieldsList })
+                end
+            end
+            return result
+        end
+
+        local techYields = BuildTechYieldGroups("Improvement_TechYieldChanges")
+        if #techYields > 0 then improvementData.TechYields = techYields end
+
+        local techFreshWaterYields = BuildTechYieldGroups("Improvement_TechFreshWaterYieldChanges")
+        if #techFreshWaterYields > 0 then improvementData.TechFreshWaterYields = techFreshWaterYields end
+
+        local techNoFreshWaterYields = BuildTechYieldGroups("Improvement_TechNoFreshWaterYieldChanges")
+        if #techNoFreshWaterYields > 0 then improvementData.TechNoFreshWaterYields = techNoFreshWaterYields end
 
         table.insert(improvements, improvementData)
     end
@@ -2541,7 +2705,13 @@ function ExportAllData()
                 -- Inline text
                 connectsResourceText = Locale.ConvertTextKey("TXT_KEY_PEDIA_CONNECTS_RESOURCE_TEXT"),
                 impassableText = Locale.ConvertTextKey("TXT_KEY_PEDIA_IMPASSABLE"),
-                noYieldText = Locale.ConvertTextKey("TXT_KEY_PEDIA_NO_YIELD")
+                noYieldText = Locale.ConvertTextKey("TXT_KEY_PEDIA_NO_YIELD"),
+                -- Tech/feature yield section headers
+                techYieldBonusHeader = Locale.ConvertTextKey("TXT_KEY_PEDIA_TECH_IMPROV_YIELD_LABEL"),
+                featureYieldBonusHeader = Locale.ConvertTextKey("TXT_KEY_PEDIA_FEATURE_IMPROV_YIELD_LABEL"),
+                adjacentCityYieldHeader = Locale.ConvertTextKey("TXT_KEY_PEDIA_ADJACENT_CITY_IMPROV_YIELD_LABEL"),
+                techFreshWaterYieldBonusHeader = Locale.ConvertTextKey("TXT_KEY_PEDIA_TECH_FRESH_WATER_IMPROV_YIELD_LABEL"),
+                techNoFreshWaterYieldBonusHeader = Locale.ConvertTextKey("TXT_KEY_PEDIA_TECH_NO_FRESH_WATER_IMPROV_YIELD_LABEL")
             }
         },
         concepts = ExportConcepts(),

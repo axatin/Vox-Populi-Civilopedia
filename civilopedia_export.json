@@ -27846,7 +27846,7 @@
       "SpecialistCount": 1,
       "SpecialistType": "SPECIALIST_ENGINEER",
       "GreatPeopleRateChange": 0,
-      "Help": "Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_PRODUCTION] Production: +3[NEWLINE][ICON_BULLET][ICON_STRENGTH] City Strength: +2[NEWLINE][ICON_BULLET][ICON_STRENGTH] Hit Points: +50[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Engineer Slots: 1[NEWLINE][ICON_BULLET]+20% [ICON_SILVER_FIST] Military Supply from Population[NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] to [COLOR_YIELD_FOOD]Forge[ENDCOLOR] and [COLOR_YIELD_FOOD]Council[ENDCOLOR] in all Cities[NEWLINE]----------------[NEWLINE][ICON_CAPITAL] Capital Only[NEWLINE]Max 1 per Player ",
+      "Help": "Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_PRODUCTION] Production: +3[NEWLINE][ICON_BULLET][ICON_STRENGTH] City Strength: +2[NEWLINE][ICON_BULLET][ICON_STRENGTH] Hit Points: +50[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Engineer Slots: 1[NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+10% [ICON_SILVER_FIST] Military Supply from Population in all Cities[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] to [COLOR_YIELD_FOOD]Forge[ENDCOLOR] and [COLOR_YIELD_FOOD]Council[ENDCOLOR] in all Cities[NEWLINE]----------------[NEWLINE][ICON_CAPITAL] Capital Only[NEWLINE]Max 1 per Player ",
       "IconAtlas": "BUILDING_ATLAS_VP_2",
       "ID": 229,
       "YieldChanges": [{
@@ -35727,6 +35727,44 @@
         "Name": "Agriculture",
         "Type": "TECH_AGRICULTURE"
       },
+      "TechYields": [
+        {
+          "Type": "TECH_MATHEMATICS",
+          "Name": "Mathematics",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_CIVIL_SERVICE",
+          "Name": "Civil Service",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_FERTILIZER",
+          "Name": "Fertilizer",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": 2,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_ROBOTICS",
+          "Name": "Robotics",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": 3,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }
+      ],
       "Terrains": [{
           "Name": "Grassland",
           "Type": "TERRAIN_GRASS"
@@ -35798,6 +35836,44 @@
         "Name": "Mining",
         "Type": "TECH_MINING"
       },
+      "TechYields": [
+        {
+          "Type": "TECH_STEEL",
+          "Name": "Steel",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_STEAM_POWER",
+          "Name": "Steam Power",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 2,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_COMBUSTION",
+          "Name": "Combustion",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_ROBOTICS",
+          "Name": "Robotics",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 3,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }
+      ],
       "Type": "IMPROVEMENT_MINE",
       "Terrains": [{
           "Name": "Hill",
@@ -35844,13 +35920,38 @@
       "Civilopedia": "Mines are among the most important improvements in Civilization V. Not only do they increase a hex's productivity output - and high productivity allows quicker construction of units, buildings, and wonders - but they also provide access to some of the most important resources in the game: iron, coal, and aluminium, to name a few."
     },
     {
+      "Type": "IMPROVEMENT_QUARRY",
+      "TechYields": [{
+          "Type": "TECH_MACHINERY",
+          "Name": "Machinery",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }, {
+          "Type": "TECH_STEAM_POWER",
+          "Name": "Steam Power",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }, {
+          "Type": "TECH_DYNAMITE",
+          "Name": "Dynamite",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 2,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }],
       "PrereqTech": {
         "Name": "Construction",
         "Type": "TECH_MASONRY"
       },
-      "Type": "IMPROVEMENT_QUARRY",
       "Name": "Quarry",
-      "Civilopedia": "In common usage a quarry is a place that produces any stone or gravel. In Civilization V quarries boost production from the stone resource and provide access to the marble luxury resource, a highly-valued stone used for construction and artwork.",
+      "IconAtlas": "TERRAIN_ATLAS",
       "ID": 5,
       "Resources": [
         {
@@ -35879,7 +35980,7 @@
         }
       ],
       "PortraitIndex": 31,
-      "IconAtlas": "TERRAIN_ATLAS"
+      "Civilopedia": "In common usage a quarry is a place that produces any stone or gravel. In Civilization V quarries boost production from the stone resource and provide access to the marble luxury resource, a highly-valued stone used for construction and artwork."
     },
     {
       "BaseYields": [{
@@ -35925,6 +36026,23 @@
           "YieldName": "[ICON_PRODUCTION] Production"
         }
       ],
+      "TechYields": [{
+          "Type": "TECH_GUILDS",
+          "Name": "Guilds",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }, {
+          "Type": "TECH_RAILROAD",
+          "Name": "Railroad",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }],
       "Terrains": [
         {
           "Name": "Grassland",
@@ -35960,6 +36078,44 @@
         "Name": "Metal Casting",
         "Type": "TECH_METAL_CASTING"
       },
+      "TechYields": [{
+          "Type": "TECH_METALLURGY",
+          "Name": "Metallurgy",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }, {
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }, {
+          "Type": "TECH_COMBUSTION",
+          "Name": "Combustion",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }, {
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }],
+      "FeatureYields": [{
+          "Type": "FEATURE_JUNGLE",
+          "Name": "Jungle",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": -1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }],
       "Features": [{
           "Name": "Forest",
           "Type": "FEATURE_FOREST"
@@ -36006,6 +36162,31 @@
     },
     {
       "Type": "IMPROVEMENT_PASTURE",
+      "TechYields": [{
+          "Type": "TECH_CIVIL_SERVICE",
+          "Name": "Civil Service",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": 2,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }, {
+          "Type": "TECH_FERTILIZER",
+          "Name": "Fertilizer",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 2,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }, {
+          "Type": "TECH_ROBOTICS",
+          "Name": "Robotics",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": 3,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }],
       "PrereqTech": {
         "Name": "Animal Husbandry",
         "Type": "TECH_ANIMAL_HUSBANDRY"
@@ -36047,6 +36228,31 @@
     },
     {
       "Type": "IMPROVEMENT_FISHING_BOATS",
+      "TechYields": [{
+          "Type": "TECH_COMPASS",
+          "Name": "Compass",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }, {
+          "Type": "TECH_NAVIGATION",
+          "Name": "Navigation",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }, {
+          "Type": "TECH_REFRIGERATION",
+          "Name": "Refrigeration",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": 2,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }],
       "PrereqTech": {
         "Name": "Fishing",
         "Type": "TECH_SAILING"
@@ -36088,6 +36294,31 @@
     },
     {
       "Type": "IMPROVEMENT_PLANTATION",
+      "TechYields": [{
+          "Type": "TECH_CHEMISTRY",
+          "Name": "Chemistry",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }, {
+          "Type": "TECH_ECONOMICS",
+          "Name": "Economics",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }, {
+          "Type": "TECH_PLASTIC",
+          "Name": "Plastics",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }],
       "PrereqTech": {
         "Name": "Calendar",
         "Type": "TECH_CALENDAR"
@@ -36190,13 +36421,60 @@
       "Civilopedia": "A plantation is a fancy name for a farm. It is generally applied to large estates located in semi-tropical or tropical locations, and especially those which grow crops for export rather than for local consumption. The term has acquired an unsavory flavor because of its association with slavery in the United States and the Caribbean, but there's nothing inherently evil about a well-run plantation which employs free workers."
     },
     {
+      "Type": "IMPROVEMENT_CAMP",
+      "TechYields": [
+        {
+          "Type": "TECH_GUILDS",
+          "Name": "Guilds",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        },
+        {
+          "Type": "TECH_GUNPOWDER",
+          "Name": "Gunpowder",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        },
+        {
+          "Type": "TECH_RIFLING",
+          "Name": "Rifling",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        },
+        {
+          "Type": "TECH_REFRIGERATION",
+          "Name": "Refrigeration",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 2,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }
+      ],
+      "FeatureYields": [{
+          "Type": "FEATURE_MARSH",
+          "Name": "Marsh",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": -2,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }],
       "PrereqTech": {
         "Name": "Trapping",
         "Type": "TECH_TRAPPING"
       },
-      "Type": "IMPROVEMENT_CAMP",
       "Name": "Camp",
-      "Civilopedia": "Hunting wild animals is one of the first ways in which ancient Man harvested the resources of the world around him. A hunting camp allows access to deer, fur, truffles, and ivory resources.",
+      "IconAtlas": "TERRAIN_ATLAS",
       "ID": 11,
       "Resources": [
         {
@@ -36221,7 +36499,7 @@
         }
       ],
       "PortraitIndex": 19,
-      "IconAtlas": "TERRAIN_ATLAS"
+      "Civilopedia": "Hunting wild animals is one of the first ways in which ancient Man harvested the resources of the world around him. A hunting camp allows access to deer, fur, truffles, and ivory resources."
     },
     {
       "BaseYields": [{
@@ -36233,6 +36511,23 @@
         "Name": "Dynamite",
         "Type": "TECH_DYNAMITE"
       },
+      "TechYields": [{
+          "Type": "TECH_PLASTIC",
+          "Name": "Plastics",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 2,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }, {
+          "Type": "TECH_ELECTRONICS",
+          "Name": "Electronics",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 2,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }],
       "Type": "IMPROVEMENT_WELL",
       "Name": "Oil Well",
       "IconAtlas": "TERRAIN_ATLAS",
@@ -36275,6 +36570,44 @@
         "Name": "Engineering",
         "Type": "TECH_ENGINEERING"
       },
+      "TechYields": [
+        {
+          "Type": "TECH_CHEMISTRY",
+          "Name": "Chemistry",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 2,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        },
+        {
+          "Type": "TECH_MILITARY_SCIENCE",
+          "Name": "Military Science",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE_LOCAL",
+              "Yield": 2,
+              "YieldName": "[ICON_CULTURE_LOCAL] Border Growth Points"
+            }]
+        },
+        {
+          "Type": "TECH_ELECTRONICS",
+          "Name": "Electronics",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE_LOCAL",
+              "Yield": 4,
+              "YieldName": "[ICON_CULTURE_LOCAL] Border Growth Points"
+            }]
+        },
+        {
+          "Type": "TECH_STEALTH",
+          "Name": "Stealth",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 4,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        }
+      ],
       "Terrains": [
         {
           "Name": "Grassland",
@@ -36318,6 +36651,15 @@
       "Name": "Landmark",
       "Civilopedia": "Landmarks provide +3 Empire-Wide [ICON_HAPPINESS_1] Happiness to the builder and plot owner when constructed, as well as +1 [ICON_CULTURE] Culture and +1 [ICON_GOLD] Gold on the Tile for each additional Era that has passed in comparison to the original Era of the Artifact.[NEWLINE][NEWLINE]A Landmark is any magnificent artifact, structure, work of art, or wonder of nature that draws visitors to a location. Nelson's Column in London is a landmark, as is Mount Rushmore in the United States. Not every significantly sized object, however, is a landmark: the World's Largest Ball of Twine may never rise to that stature (though it might well be worth a visit).",
       "ID": 15,
+      "TechYields": [{
+          "Type": "TECH_SATELLITES",
+          "Name": "Satellites",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 2,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }],
       "PortraitIndex": 36,
       "IconAtlas": "TERRAIN_ATLAS"
     },
@@ -36328,6 +36670,44 @@
           "YieldName": "[ICON_RESEARCH] Science"
         }],
       "Type": "IMPROVEMENT_ACADEMY",
+      "TechYields": [
+        {
+          "Type": "TECH_PHYSICS",
+          "Name": "Physics",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 3,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        },
+        {
+          "Type": "TECH_SCIENTIFIC_THEORY",
+          "Name": "Scientific Theory",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 3,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        },
+        {
+          "Type": "TECH_ROCKETRY",
+          "Name": "Rocketry",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 3,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        },
+        {
+          "Type": "TECH_NUCLEAR_FISSION",
+          "Name": "Nuclear Fission",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 3,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        }
+      ],
       "Terrains": [
         {
           "Name": "Grassland",
@@ -36402,6 +36782,48 @@
           "YieldName": "[ICON_PRODUCTION] Production"
         }
       ],
+      "TechYields": [
+        {
+          "Type": "TECH_BANKING",
+          "Name": "Banking",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 3,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        },
+        {
+          "Type": "TECH_ARCHITECTURE",
+          "Name": "Architecture",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": 3,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_RAILROAD",
+          "Name": "Railroad",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 3,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_REFRIGERATION",
+          "Name": "Refrigeration",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 3,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }
+      ],
       "Terrains": [
         {
           "Name": "Grassland",
@@ -36438,6 +36860,31 @@
           "YieldName": "[ICON_PRODUCTION] Production"
         }],
       "Type": "IMPROVEMENT_MANUFACTORY",
+      "TechYields": [{
+          "Type": "TECH_METAL_CASTING",
+          "Name": "Metal Casting",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 3,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }, {
+          "Type": "TECH_FERTILIZER",
+          "Name": "Fertilizer",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 3,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }, {
+          "Type": "TECH_COMBINED_ARMS",
+          "Name": "Combined Arms",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 3,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }],
       "Terrains": [
         {
           "Name": "Grassland",
@@ -36468,19 +36915,6 @@
       "Civilopedia": "Provides +1 [COLOR_POSITIVE_TEXT]Additional Copy[ENDCOLOR] of any Luxury or Strategic Resource it connects. For [ICON_MONOPOLY] Monopoly calculations, additional copies count towards ownership (numerator) while not counting towards the total number available in the world (denominator).[NEWLINE][NEWLINE]A Manufactory is a plant consisting of one or more buildings in which things are built. The buildings might be foundries, factories, assembly lines, and so forth, usually all working on related items - the foundry creates the steel that the factory rolls into sheets which the workers on the assembly line make into cans, and so forth. A well-run Manufactory can be incredibly productive."
     },
     {
-      "BaseYields": [{
-          "YieldType": "YIELD_PRODUCTION",
-          "Yield": 1,
-          "YieldName": "[ICON_PRODUCTION] Production"
-        }, {
-          "YieldType": "YIELD_SCIENCE",
-          "Yield": 1,
-          "YieldName": "[ICON_RESEARCH] Science"
-        }],
-      "Type": "IMPROVEMENT_CITADEL",
-      "Name": "Citadel",
-      "Civilopedia": "A Citadel is a mighty fortification that can only be constructed by a Great General, usually near a city or on a particularly defensible piece of terrain. The Acropolis in Athens, Greece, is an example of an early powerful Citadel. Such structures were almost impossible to take by direct attack, and they were capable of withstanding protracted sieges before they fell.[NEWLINE][NEWLINE]You can construct a Citadel anywhere within your territory, or directly adjacent to your territory. Upon constructing the Citadel, your Military Unit Supply Cap will increase by 1, and your Culture borders will also expand to surround the Citadel on all sides by one hex. If the new Culture border claims hexes already owned by another civilization, you will incur a diplomatic penalty as a result. Any unit stationed within a Citadel receives a 100% defensive strength bonus. Additionally, any enemy unit which ends its turn next to a Citadel takes 30 damage (damage does not stack with other Citadels). Contains [COLOR_POSITIVE_TEXT]Fortifications[ENDCOLOR], allowing owned Units to stay stationed in this tile after attacking and a [COLOR_POSITIVE_TEXT]Canal[ENDCOLOR], allowing friendly [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] Units to traverse through it.",
-      "ID": 19,
       "Terrains": [
         {
           "Name": "Grassland",
@@ -36503,8 +36937,59 @@
           "Type": "TERRAIN_SNOW"
         }
       ],
+      "Type": "IMPROVEMENT_CITADEL",
+      "TechYields": [
+        {
+          "Type": "TECH_CHEMISTRY",
+          "Name": "Chemistry",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 2,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        },
+        {
+          "Type": "TECH_MILITARY_SCIENCE",
+          "Name": "Military Science",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 2,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_ELECTRONICS",
+          "Name": "Electronics",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 4,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_STEALTH",
+          "Name": "Stealth",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 4,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        }
+      ],
+      "Name": "Citadel",
+      "IconAtlas": "TERRAIN_ATLAS",
+      "ID": 19,
+      "BaseYields": [{
+          "YieldType": "YIELD_PRODUCTION",
+          "Yield": 1,
+          "YieldName": "[ICON_PRODUCTION] Production"
+        }, {
+          "YieldType": "YIELD_SCIENCE",
+          "Yield": 1,
+          "YieldName": "[ICON_RESEARCH] Science"
+        }],
       "PortraitIndex": 35,
-      "IconAtlas": "TERRAIN_ATLAS"
+      "Civilopedia": "A Citadel is a mighty fortification that can only be constructed by a Great General, usually near a city or on a particularly defensible piece of terrain. The Acropolis in Athens, Greece, is an example of an early powerful Citadel. Such structures were almost impossible to take by direct attack, and they were capable of withstanding protracted sieges before they fell.[NEWLINE][NEWLINE]You can construct a Citadel anywhere within your territory, or directly adjacent to your territory. Upon constructing the Citadel, your Military Unit Supply Cap will increase by 1, and your Culture borders will also expand to surround the Citadel on all sides by one hex. If the new Culture border claims hexes already owned by another civilization, you will incur a diplomatic penalty as a result. Any unit stationed within a Citadel receives a 100% defensive strength bonus. Additionally, any enemy unit which ends its turn next to a Citadel takes 30 damage (damage does not stack with other Citadels). Contains [COLOR_POSITIVE_TEXT]Fortifications[ENDCOLOR], allowing owned Units to stay stationed in this tile after attacking and a [COLOR_POSITIVE_TEXT]Canal[ENDCOLOR], allowing friendly [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] Units to traverse through it."
     },
     {
       "BaseYields": [{
@@ -36517,11 +37002,65 @@
           "YieldName": "[ICON_PRODUCTION] Production"
         }],
       "Type": "IMPROVEMENT_TERRACE_FARM",
-      "CivilizationType": "CIVILIZATION_INCA",
       "PrereqTech": {
         "Name": "Masonry",
         "Type": "TECH_CONSTRUCTION"
       },
+      "CivilizationType": "CIVILIZATION_INCA",
+      "TechYields": [
+        {
+          "Type": "TECH_CIVIL_SERVICE",
+          "Name": "Civil Service",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_CHEMISTRY",
+          "Name": "Chemistry",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_FERTILIZER",
+          "Name": "Fertilizer",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_BALLISTICS",
+          "Name": "Ballistics",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 1,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }
+      ],
       "Civilizations": [{
           "Type": "CIVILIZATION_INCA",
           "Name": "The Inca",
@@ -36583,11 +37122,79 @@
           "YieldName": "[ICON_CULTURE_LOCAL] Border Growth Points"
         }],
       "Type": "IMPROVEMENT_MOAI",
-      "CivilizationType": "CIVILIZATION_POLYNESIA",
       "PrereqTech": {
         "Name": "Construction",
         "Type": "TECH_MASONRY"
       },
+      "AdjacentCityYields": [{
+          "YieldType": "YIELD_CULTURE",
+          "Yield": 1,
+          "YieldName": "[ICON_CULTURE] Culture"
+        }],
+      "CivilizationType": "CIVILIZATION_POLYNESIA",
+      "TechYields": [
+        {
+          "Type": "TECH_ENGINEERING",
+          "Name": "Engineering",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_ASTRONOMY",
+          "Name": "Astronomy",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_CULTURE_LOCAL",
+              "Yield": -1,
+              "YieldName": "[ICON_CULTURE_LOCAL] Border Growth Points"
+            }]
+        },
+        {
+          "Type": "TECH_ARCHITECTURE",
+          "Name": "Architecture",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_CULTURE_LOCAL",
+              "Yield": -1,
+              "YieldName": "[ICON_CULTURE_LOCAL] Border Growth Points"
+            }]
+        },
+        {
+          "Type": "TECH_ARCHAEOLOGY",
+          "Name": "Archaeology",
+          "Yields": [{
+              "YieldType": "YIELD_TOURISM",
+              "Yield": 1,
+              "YieldName": "[ICON_TOURISM] Tourism"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_REFRIGERATION",
+          "Name": "Refrigeration",
+          "Yields": [{
+              "YieldType": "YIELD_TOURISM",
+              "Yield": 1,
+              "YieldName": "[ICON_TOURISM] Tourism"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }
+      ],
       "Civilizations": [{
           "Type": "CIVILIZATION_POLYNESIA",
           "Name": "Polynesia",
@@ -36650,6 +37257,31 @@
           "YieldName": "[ICON_TOURISM] Tourism"
         }],
       "Type": "IMPROVEMENT_HOLY_SITE",
+      "TechYields": [{
+          "Type": "TECH_ACOUSTICS",
+          "Name": "Acoustics",
+          "Yields": [{
+              "YieldType": "YIELD_FAITH",
+              "Yield": 4,
+              "YieldName": "[ICON_PEACE] Faith"
+            }]
+        }, {
+          "Type": "TECH_ARCHAEOLOGY",
+          "Name": "Archaeology",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 4,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }, {
+          "Type": "TECH_FLIGHT",
+          "Name": "Flight",
+          "Yields": [{
+              "YieldType": "YIELD_TOURISM",
+              "Yield": 4,
+              "YieldName": "[ICON_TOURISM] Tourism"
+            }]
+        }],
       "Terrains": [
         {
           "Name": "Grassland",
@@ -36702,6 +37334,27 @@
         }],
       "Type": "IMPROVEMENT_POLDER",
       "CivilizationType": "CIVILIZATION_NETHERLANDS",
+      "TechYields": [{
+          "Type": "TECH_CHEMISTRY",
+          "Name": "Chemistry",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }, {
+          "Type": "TECH_ECONOMICS",
+          "Name": "Economics",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 2,
+              "YieldName": "[ICON_GOLD] Gold"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }],
       "Civilizations": [{
           "Type": "CIVILIZATION_NETHERLANDS",
           "Name": "The Netherlands",
@@ -36748,8 +37401,33 @@
           "YieldName": "[ICON_GOLD] Gold"
         }],
       "Type": "IMPROVEMENT_BRAZILWOOD_CAMP",
-      "CivilizationType": "CIVILIZATION_BRAZIL",
       "IconAtlas": "TERRAIN_IMPROVEMENT_ICON_ATLAS_EXP2",
+      "CivilizationType": "CIVILIZATION_BRAZIL",
+      "TechYields": [{
+          "Type": "TECH_PHYSICS",
+          "Name": "Physics",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 2,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }, {
+          "Type": "TECH_ACOUSTICS",
+          "Name": "Acoustics",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 2,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }, {
+          "Type": "TECH_RADIO",
+          "Name": "Radio",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 2,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }],
       "Civilizations": [{
           "Type": "CIVILIZATION_BRAZIL",
           "Name": "Brazil",
@@ -36801,6 +37479,27 @@
       ],
       "Type": "IMPROVEMENT_KASBAH",
       "CivilizationType": "CIVILIZATION_MOROCCO",
+      "TechYields": [{
+          "Type": "TECH_ARCHITECTURE",
+          "Name": "Architecture",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }, {
+          "Type": "TECH_RADIO",
+          "Name": "Radio",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }],
       "Civilizations": [{
           "Type": "CIVILIZATION_MOROCCO",
           "Name": "Morocco",
@@ -36836,6 +37535,31 @@
         }],
       "Type": "IMPROVEMENT_FEITORIA",
       "CivilizationType": "CIVILIZATION_PORTUGAL",
+      "TechYields": [{
+          "Type": "TECH_PRINTING_PRESS",
+          "Name": "Printing Press",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 2,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        }, {
+          "Type": "TECH_ASTRONOMY",
+          "Name": "Astronomy",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 2,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }, {
+          "Type": "TECH_INDUSTRIALIZATION",
+          "Name": "Industrialization",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 2,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }],
       "Civilizations": [{
           "Type": "CIVILIZATION_PORTUGAL",
           "Name": "Portugal",
@@ -36890,6 +37614,27 @@
         }],
       "Type": "IMPROVEMENT_CHATEAU",
       "CivilizationType": "CIVILIZATION_FRANCE",
+      "TechYields": [{
+          "Type": "TECH_PRINTING_PRESS",
+          "Name": "Printing Press",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }, {
+          "Type": "TECH_FLIGHT",
+          "Name": "Flight",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 2,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_GOLD",
+              "Yield": 2,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }],
       "Civilizations": [{
           "Type": "CIVILIZATION_FRANCE",
           "Name": "France",
@@ -36929,23 +37674,6 @@
       "Name": "[COLOR_POSITIVE_TEXT](French)[ENDCOLOR] Chateau"
     },
     {
-      "BaseYields": [{
-          "YieldType": "YIELD_GOLD",
-          "Yield": 2,
-          "YieldName": "[ICON_GOLD] Gold"
-        }, {
-          "YieldType": "YIELD_CULTURE",
-          "Yield": 2,
-          "YieldName": "[ICON_CULTURE] Culture"
-        }, {
-          "YieldType": "YIELD_SCIENCE",
-          "Yield": 2,
-          "YieldName": "[ICON_RESEARCH] Science"
-        }],
-      "Type": "IMPROVEMENT_EMBASSY",
-      "Name": "Embassy",
-      "Civilopedia": "Embassies can only be built in City-State territory by Great Diplomats.[NEWLINE][NEWLINE]The first player (and only the first!) to construct an Embassy in a City-State's land [COLOR_POSITIVE_TEXT]earns an extra vote in the World Congress[ENDCOLOR]. No player will receive additional votes for Embassies beyond the first one placed in a City-State's territory.[NEWLINE][NEWLINE]An Embassy cannot be pillaged - once built, they can never be removed, and they will always grant their additional World Congress vote to the original builder. If, however, the original builder is conquered, the conqueror will take ownership of their Embassies, and their votes!",
-      "ID": 29,
       "Terrains": [
         {
           "Name": "Grassland",
@@ -36968,8 +37696,76 @@
           "Type": "TERRAIN_SNOW"
         }
       ],
+      "Type": "IMPROVEMENT_EMBASSY",
+      "TechYields": [
+        {
+          "Type": "TECH_CIVIL_SERVICE",
+          "Name": "Civil Service",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        },
+        {
+          "Type": "TECH_PRINTING_PRESS",
+          "Name": "Printing Press",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        },
+        {
+          "Type": "TECH_MILITARY_SCIENCE",
+          "Name": "Military Science",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 1,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        },
+        {
+          "Type": "TECH_ATOMIC_THEORY",
+          "Name": "Atomic Theory",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 1,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }, {
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        },
+        {
+          "Type": "TECH_TELECOM",
+          "Name": "Telecommunications",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }
+      ],
+      "Name": "Embassy",
+      "IconAtlas": "IMPROVEMENT_ATLAS_VP",
+      "ID": 29,
+      "BaseYields": [{
+          "YieldType": "YIELD_GOLD",
+          "Yield": 2,
+          "YieldName": "[ICON_GOLD] Gold"
+        }, {
+          "YieldType": "YIELD_CULTURE",
+          "Yield": 2,
+          "YieldName": "[ICON_CULTURE] Culture"
+        }, {
+          "YieldType": "YIELD_SCIENCE",
+          "Yield": 2,
+          "YieldName": "[ICON_RESEARCH] Science"
+        }],
       "PortraitIndex": 4,
-      "IconAtlas": "IMPROVEMENT_ATLAS_VP"
+      "Civilopedia": "Embassies can only be built in City-State territory by Great Diplomats.[NEWLINE][NEWLINE]The first player (and only the first!) to construct an Embassy in a City-State's land [COLOR_POSITIVE_TEXT]earns an extra vote in the World Congress[ENDCOLOR]. No player will receive additional votes for Embassies beyond the first one placed in a City-State's territory.[NEWLINE][NEWLINE]An Embassy cannot be pillaged - once built, they can never be removed, and they will always grant their additional World Congress vote to the original builder. If, however, the original builder is conquered, the conqueror will take ownership of their Embassies, and their votes!"
     },
     {
       "Type": "IMPROVEMENT_MOUNTAIN_CITY",
@@ -37002,6 +37798,60 @@
       ],
       "Type": "IMPROVEMENT_APLEKTON",
       "CivilizationType": "CIVILIZATION_BYZANTIUM",
+      "TechYields": [
+        {
+          "Type": "TECH_CHEMISTRY",
+          "Name": "Chemistry",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 2,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        },
+        {
+          "Type": "TECH_MILITARY_SCIENCE",
+          "Name": "Military Science",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }, {
+              "YieldType": "YIELD_CULTURE_LOCAL",
+              "Yield": 2,
+              "YieldName": "[ICON_CULTURE_LOCAL] Border Growth Points"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_ELECTRONICS",
+          "Name": "Electronics",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 2,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }, {
+              "YieldType": "YIELD_CULTURE_LOCAL",
+              "Yield": 4,
+              "YieldName": "[ICON_CULTURE_LOCAL] Border Growth Points"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 2,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_STEALTH",
+          "Name": "Stealth",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 4,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        }
+      ],
       "Civilizations": [{
           "Type": "CIVILIZATION_BYZANTIUM",
           "Name": "Byzantium",
@@ -37065,6 +37915,35 @@
       ],
       "Type": "IMPROVEMENT_CHARBAGH",
       "CivilizationType": "CIVILIZATION_PERSIA",
+      "TechYields": [{
+          "Type": "TECH_BANKING",
+          "Name": "Banking",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }, {
+          "Type": "TECH_FERTILIZER",
+          "Name": "Fertilizer",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": 2,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }, {
+          "Type": "TECH_FLIGHT",
+          "Name": "Flight",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 2,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }],
       "Civilizations": [{
           "Type": "CIVILIZATION_PERSIA",
           "Name": "Persia",
@@ -37096,11 +37975,40 @@
           "YieldName": "[ICON_CULTURE] Culture"
         }],
       "Type": "IMPROVEMENT_EKI",
-      "CivilizationType": "CIVILIZATION_HUNS",
       "PrereqTech": {
         "Name": "Military Strategy",
         "Type": "TECH_ARCHERY"
       },
+      "CivilizationType": "CIVILIZATION_HUNS",
+      "TechYields": [{
+          "Type": "TECH_CHIVALRY",
+          "Name": "Chivalry",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }, {
+          "Type": "TECH_FERTILIZER",
+          "Name": "Fertilizer",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }, {
+          "Type": "TECH_ROBOTICS",
+          "Name": "Robotics",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 3,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }],
       "Civilizations": [{
           "Type": "CIVILIZATION_HUNS",
           "Name": "The Huns",
@@ -37181,6 +38089,56 @@
         }],
       "Type": "IMPROVEMENT_VP_ENCAMPMENT",
       "CivilizationType": "CIVILIZATION_SHOSHONE",
+      "TechYields": [
+        {
+          "Type": "TECH_DRAMA",
+          "Name": "Drama and Poetry",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_GUNPOWDER",
+          "Name": "Gunpowder",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_RIFLING",
+          "Name": "Rifling",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 1,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_ADVANCED_BALLISTICS",
+          "Name": "Advanced Ballistics",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 1,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }
+      ],
       "Civilizations": [{
           "Type": "CIVILIZATION_SHOSHONE",
           "Name": "The Shoshone",
@@ -37227,6 +38185,31 @@
         }],
       "Type": "IMPROVEMENT_HACIENDA",
       "CivilizationType": "CIVILIZATION_SPAIN",
+      "TechYields": [{
+          "Type": "TECH_ARCHITECTURE",
+          "Name": "Architecture",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 2,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }, {
+          "Type": "TECH_FERTILIZER",
+          "Name": "Fertilizer",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }, {
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }],
       "Civilizations": [{
           "Type": "CIVILIZATION_SPAIN",
           "Name": "Spain",
@@ -37289,6 +38272,44 @@
         }
       ],
       "Type": "IMPROVEMENT_ISIBAYA",
+      "TechYields": [
+        {
+          "Type": "TECH_CHEMISTRY",
+          "Name": "Chemistry",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 2,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        },
+        {
+          "Type": "TECH_MILITARY_SCIENCE",
+          "Name": "Military Science",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 2,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_ELECTRONICS",
+          "Name": "Electronics",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 4,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_STEALTH",
+          "Name": "Stealth",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 4,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        }
+      ],
       "Terrains": [
         {
           "Name": "Grassland",
@@ -37334,6 +38355,44 @@
         }],
       "Type": "IMPROVEMENT_KAMPONG",
       "CivilizationType": "CIVILIZATION_INDONESIA",
+      "TechYields": [
+        {
+          "Type": "TECH_COMPASS",
+          "Name": "Compass",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_NAVIGATION",
+          "Name": "Navigation",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        },
+        {
+          "Type": "TECH_DYNAMITE",
+          "Name": "Dynamite",
+          "Yields": [{
+              "YieldType": "YIELD_FOOD",
+              "Yield": 2,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_ECOLOGY",
+          "Name": "Alternative Energy",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 2,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        }
+      ],
       "Civilizations": [{
           "Type": "CIVILIZATION_INDONESIA",
           "Name": "Indonesia",
@@ -37366,6 +38425,61 @@
         }],
       "Type": "IMPROVEMENT_KUNA",
       "CivilizationType": "CIVILIZATION_MAYA",
+      "TechYields": [
+        {
+          "Type": "TECH_MATHEMATICS",
+          "Name": "Mathematics",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 1,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        },
+        {
+          "Type": "TECH_THEOLOGY",
+          "Name": "Theology",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 1,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        },
+        {
+          "Type": "TECH_ASTRONOMY",
+          "Name": "Astronomy",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 2,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        },
+        {
+          "Type": "TECH_ARCHAEOLOGY",
+          "Name": "Archaeology",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 2,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_FLIGHT",
+          "Name": "Flight",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 2,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }
+      ],
       "Civilizations": [{
           "Type": "CIVILIZATION_MAYA",
           "Name": "The Maya",
@@ -37446,6 +38560,44 @@
       ],
       "Type": "IMPROVEMENT_OBELISK",
       "CivilizationType": "CIVILIZATION_EGYPT",
+      "TechYields": [
+        {
+          "Type": "TECH_ENGINEERING",
+          "Name": "Engineering",
+          "Yields": [{
+              "YieldType": "YIELD_GOLDEN_AGE_POINTS",
+              "Yield": 3,
+              "YieldName": "[ICON_GOLDEN_AGE] Golden Age Points"
+            }]
+        },
+        {
+          "Type": "TECH_CIVIL_SERVICE",
+          "Name": "Civil Service",
+          "Yields": [{
+              "YieldType": "YIELD_FAITH",
+              "Yield": 2,
+              "YieldName": "[ICON_PEACE] Faith"
+            }]
+        },
+        {
+          "Type": "TECH_ARCHITECTURE",
+          "Name": "Architecture",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 2,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        },
+        {
+          "Type": "TECH_ARCHAEOLOGY",
+          "Name": "Archaeology",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 2,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        }
+      ],
       "Civilizations": [{
           "Type": "CIVILIZATION_EGYPT",
           "Name": "Egypt",
@@ -37504,6 +38656,112 @@
       ],
       "Type": "IMPROVEMENT_OPPIDUM",
       "CivilizationType": "CIVILIZATION_CELTS",
+      "TechYields": [
+        {
+          "Type": "TECH_METAL_CASTING",
+          "Name": "Metal Casting",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_PHYSICS",
+          "Name": "Physics",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 1,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }, {
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        },
+        {
+          "Type": "TECH_CHEMISTRY",
+          "Name": "Chemistry",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 1,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        },
+        {
+          "Type": "TECH_ARCHITECTURE",
+          "Name": "Architecture",
+          "Yields": [{
+              "YieldType": "YIELD_FAITH",
+              "Yield": 1,
+              "YieldName": "[ICON_PEACE] Faith"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_RAILROAD",
+          "Name": "Railroad",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        },
+        {
+          "Type": "TECH_FERTILIZER",
+          "Name": "Fertilizer",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 1,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        },
+        {
+          "Type": "TECH_FLIGHT",
+          "Name": "Flight",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        },
+        {
+          "Type": "TECH_ELECTRONICS",
+          "Name": "Electronics",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 1,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }
+      ],
       "Civilizations": [{
           "Type": "CIVILIZATION_CELTS",
           "Name": "The Celts",
@@ -37648,6 +38906,44 @@
         }
       ],
       "Type": "IMPROVEMENT_ORDO",
+      "TechYields": [
+        {
+          "Type": "TECH_CHEMISTRY",
+          "Name": "Chemistry",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 2,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        },
+        {
+          "Type": "TECH_MILITARY_SCIENCE",
+          "Name": "Military Science",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 2,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_ELECTRONICS",
+          "Name": "Electronics",
+          "Yields": [{
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 4,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_STEALTH",
+          "Name": "Stealth",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 4,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }
+      ],
       "Terrains": [
         {
           "Name": "Grassland",
@@ -37693,6 +38989,39 @@
         }],
       "Type": "IMPROVEMENT_SIHEYUAN",
       "CivilizationType": "CIVILIZATION_CHINA",
+      "TechYields": [{
+          "Type": "TECH_CIVIL_SERVICE",
+          "Name": "Civil Service",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }, {
+          "Type": "TECH_ARCHITECTURE",
+          "Name": "Architecture",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 1,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }, {
+          "Type": "TECH_ELECTRICITY",
+          "Name": "Electricity",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }],
       "Civilizations": [{
           "Type": "CIVILIZATION_CHINA",
           "Name": "China",
@@ -37725,6 +39054,52 @@
         }],
       "Type": "IMPROVEMENT_TERSANE",
       "CivilizationType": "CIVILIZATION_OTTOMAN",
+      "TechYields": [
+        {
+          "Type": "TECH_CHEMISTRY",
+          "Name": "Chemistry",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 2,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        },
+        {
+          "Type": "TECH_MILITARY_SCIENCE",
+          "Name": "Military Science",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 2,
+              "YieldName": "[ICON_GOLD] Gold"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 2,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_ELECTRONICS",
+          "Name": "Electronics",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 4,
+              "YieldName": "[ICON_GOLD] Gold"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 4,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        },
+        {
+          "Type": "TECH_STEALTH",
+          "Name": "Stealth",
+          "Yields": [{
+              "YieldType": "YIELD_SCIENCE",
+              "Yield": 4,
+              "YieldName": "[ICON_RESEARCH] Science"
+            }]
+        }
+      ],
       "Civilizations": [{
           "Type": "CIVILIZATION_OTTOMAN",
           "Name": "The Ottomans",
@@ -37745,6 +39120,43 @@
         }],
       "Type": "IMPROVEMENT_VILLA",
       "CivilizationType": "CIVILIZATION_ROME",
+      "TechYields": [{
+          "Type": "TECH_CIVIL_SERVICE",
+          "Name": "Civil Service",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }, {
+          "Type": "TECH_ECONOMICS",
+          "Name": "Economics",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_GOLD",
+              "Yield": 1,
+              "YieldName": "[ICON_GOLD] Gold"
+            }]
+        }, {
+          "Type": "TECH_FERTILIZER",
+          "Name": "Fertilizer",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }, {
+              "YieldType": "YIELD_FOOD",
+              "Yield": 1,
+              "YieldName": "[ICON_FOOD] Food"
+            }]
+        }],
       "Civilizations": [{
           "Type": "CIVILIZATION_ROME",
           "Name": "Rome",
@@ -37798,6 +39210,27 @@
           "YieldName": "[ICON_GOLD] Gold"
         }],
       "Type": "IMPROVEMENT_POLDER_WATER",
+      "TechYields": [{
+          "Type": "TECH_CHEMISTRY",
+          "Name": "Chemistry",
+          "Yields": [{
+              "YieldType": "YIELD_CULTURE",
+              "Yield": 1,
+              "YieldName": "[ICON_CULTURE] Culture"
+            }]
+        }, {
+          "Type": "TECH_ECONOMICS",
+          "Name": "Economics",
+          "Yields": [{
+              "YieldType": "YIELD_GOLD",
+              "Yield": 2,
+              "YieldName": "[ICON_GOLD] Gold"
+            }, {
+              "YieldType": "YIELD_PRODUCTION",
+              "Yield": 1,
+              "YieldName": "[ICON_PRODUCTION] Production"
+            }]
+        }],
       "Terrains": [{
           "Name": "Coast",
           "Type": "TERRAIN_COAST"
@@ -38512,10 +39945,11 @@
       "Type": "FEATURE_ICE",
       "DefenseModifier": 0,
       "MovementCost": 1,
+      "IsNaturalWonder": false,
       "Name": "Ice",
-      "IconAtlas": "TERRAIN_ATLAS",
-      "ID": 1000,
       "Civilopedia": "Ice is impassable, except to air and submarine units. It provides nothing to cities.",
+      "ID": 1000,
+      "IconAtlas": "TERRAIN_ATLAS",
       "PortraitIndex": 6,
       "IsFeature": true
     },
@@ -38526,7 +39960,7 @@
           "YieldName": "[ICON_FOOD] Food"
         }],
       "Type": "FEATURE_JUNGLE",
-      "Civilopedia": "Dark, forbidding, and deadly to the uninitiated, jungles are a rich source of food to those with the skill and knowledge to live within them. However, jungles do not provide much in the way of materials, and a growing civilization may be tempted to mine them or turn them into cropland. However, military units situated in jungles receive a significant defensive bonus.",
+      "IconAtlas": "TERRAIN_ATLAS",
       "Terrains": [{
           "Name": "Grassland",
           "Type": "TERRAIN_GRASS"
@@ -38536,8 +39970,9 @@
         }],
       "DefenseModifier": 25,
       "MovementCost": 2,
+      "IsNaturalWonder": false,
       "Name": "Jungle",
-      "IconAtlas": "TERRAIN_ATLAS",
+      "Civilopedia": "Dark, forbidding, and deadly to the uninitiated, jungles are a rich source of food to those with the skill and knowledge to live within them. However, jungles do not provide much in the way of materials, and a growing civilization may be tempted to mine them or turn them into cropland. However, military units situated in jungles receive a significant defensive bonus.",
       "ID": 1001,
       "Resources": [
         {
@@ -38611,15 +40046,16 @@
           "YieldName": "[ICON_FOOD] Food"
         }],
       "Type": "FEATURE_MARSH",
-      "Civilopedia": "Although rich in biodiversity, marshes require significant infrastructure and/or unique societal decisions (policies or beliefs) to make use of. They must be drained before their tiles can be improved, which is costly in time and (unlike forests and jungles) provides no benefit itself. Camps for resource improvement are the exception, but on marsh they lower the food output of the tile by 2, as your hunters ravage the natural ecosystem.",
+      "IconAtlas": "TERRAIN_ATLAS",
       "Terrains": [{
           "Name": "Grassland",
           "Type": "TERRAIN_GRASS"
         }],
       "DefenseModifier": 5,
       "MovementCost": 3,
+      "IsNaturalWonder": false,
       "Name": "Marsh",
-      "IconAtlas": "TERRAIN_ATLAS",
+      "Civilopedia": "Although rich in biodiversity, marshes require significant infrastructure and/or unique societal decisions (policies or beliefs) to make use of. They must be drained before their tiles can be improved, which is costly in time and (unlike forests and jungles) provides no benefit itself. Camps for resource improvement are the exception, but on marsh they lower the food output of the tile by 2, as your hunters ravage the natural ecosystem.",
       "ID": 1002,
       "Resources": [
         {
@@ -38679,10 +40115,11 @@
         }],
       "DefenseModifier": 5,
       "MovementCost": 1,
+      "IsNaturalWonder": false,
       "Name": "Oasis",
-      "IconAtlas": "NEW_TERRAIN_ATLAS_DLC",
-      "ID": 1003,
       "Civilopedia": "An oasis is an especially lush and verdant area within a desert, usually because it sits atop a source of clean and plentiful water. Oases are extremely valuable resources in an otherwise barren and lifeless desert, and countless battles have been fought between desperate desert tribesmen to possess them.",
+      "ID": 1003,
+      "IconAtlas": "NEW_TERRAIN_ATLAS_DLC",
       "PortraitIndex": 0,
       "IsFeature": true
     },
@@ -38697,15 +40134,16 @@
           "YieldName": "[ICON_PRODUCTION] Production"
         }],
       "Type": "FEATURE_FLOOD_PLAINS",
-      "Civilopedia": "Flood plains are low-lying areas adjacent to rivers. Every year the river floods, providing natural irrigation and rich nutrients to the land, making flood plains incredibly fertile and the most productive farmland in the world. Ancient Egypt owed most of its wealth and power to the annual flood of the mighty Nile river.",
+      "IconAtlas": "TERRAIN_ATLAS",
       "Terrains": [{
           "Name": "Desert",
           "Type": "TERRAIN_DESERT"
         }],
       "DefenseModifier": 5,
       "MovementCost": 1,
+      "IsNaturalWonder": false,
       "Name": "Flood Plains",
-      "IconAtlas": "TERRAIN_ATLAS",
+      "Civilopedia": "Flood plains are low-lying areas adjacent to rivers. Every year the river floods, providing natural irrigation and rich nutrients to the land, making flood plains incredibly fertile and the most productive farmland in the world. Ancient Egypt owed most of its wealth and power to the annual flood of the mighty Nile river.",
       "ID": 1004,
       "Resources": [
         {
@@ -38755,7 +40193,7 @@
           "YieldName": "[ICON_PRODUCTION] Production"
         }],
       "Type": "FEATURE_FOREST",
-      "Civilopedia": "For early man, the forests were a great source of bounty, providing wood for fire, tools and shelter, and also many animals for sustenance and clothing. As a city grows there is a great temptation to cut down the forests for farmland, but a wise leader will always leave some standing - for productivity and to lift his people's spirits. Also, military units stationed in forests receive a significant defensive bonus.",
+      "IconAtlas": "TERRAIN_ATLAS",
       "Terrains": [{
           "Name": "Grassland",
           "Type": "TERRAIN_GRASS"
@@ -38768,8 +40206,9 @@
         }],
       "DefenseModifier": 25,
       "MovementCost": 2,
+      "IsNaturalWonder": false,
       "Name": "Forest",
-      "IconAtlas": "TERRAIN_ATLAS",
+      "Civilopedia": "For early man, the forests were a great source of bounty, providing wood for fire, tools and shelter, and also many animals for sustenance and clothing. As a city grows there is a great temptation to cut down the forests for farmland, but a wise leader will always leave some standing - for productivity and to lift his people's spirits. Also, military units stationed in forests receive a significant defensive bonus.",
       "ID": 1005,
       "Resources": [
         {
@@ -38849,10 +40288,11 @@
       "Type": "FEATURE_FALLOUT",
       "DefenseModifier": 5,
       "MovementCost": 2,
+      "IsNaturalWonder": false,
       "Name": "Fallout",
-      "IconAtlas": "TERRAIN_ATLAS",
-      "ID": 1006,
       "Civilopedia": "[COLOR_NEGATIVE_TEXT]Fallout deals 15 Damage to Units that end their turn on a tile with Fallout.[ENDCOLOR][NEWLINE][NEWLINE]Fallout is the residual radiation left over following a nuclear explosion. The fallout \"falls out\" of the air as a layer of radioactive particles which are highly dangerous to plants and animals, killing them immediately or damaging their DNA, giving them cancer, other diseases, or unfortunate mutations. Depending upon the type of nuclear explosion, the land may remain poisoned for decades, possibly centuries. Cleanup requires the replacement of the contaminated buildings, soil and vegetation.",
+      "ID": 1006,
+      "IconAtlas": "TERRAIN_ATLAS",
       "PortraitIndex": 17,
       "IsFeature": true
     },
@@ -38874,10 +40314,11 @@
         }],
       "DefenseModifier": 10,
       "MovementCost": 2,
+      "IsNaturalWonder": true,
       "Name": "The Barringer Crater",
-      "IconAtlas": "NW_ATLAS",
-      "ID": 1007,
       "Civilopedia": "+2 [ICON_RESEARCH] Science from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]The Barringer Crater is a huge meteorite crater located in Arizona, in the United States of America. The crater is four thousand feet in diameter, and scientists believe that it was created some 50,000 years ago when the site was hit by a large nickel-iron meteorite weighing, at time of impact, 160,000 tons and moving at perhaps 27,000 miles per hour.",
+      "ID": 1007,
+      "IconAtlas": "NW_ATLAS",
       "PortraitIndex": 2,
       "IsFeature": true
     },
@@ -38899,10 +40340,11 @@
         }],
       "DefenseModifier": 0,
       "MovementCost": 1,
+      "IsNaturalWonder": true,
       "Name": "Mt. Fuji",
-      "IconAtlas": "NW_ATLAS",
-      "ID": 1008,
       "Civilopedia": "+2 [ICON_CULTURE] Culture from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]An active volcano, Mount Fuji is the highest mountain in Japan. Standing some 12,000 feet high and often wreathed in clouds, its famous snow-capped silhouette can be seen from Tokyo. The stately mountain is the subject of uncounted works of art - poems, songs, photographs, sculptures and paintings. Mount Fuji is a symbol of pride and beauty for all of Japan.",
+      "ID": 1008,
+      "IconAtlas": "NW_ATLAS",
       "PortraitIndex": 3,
       "IsFeature": true
     },
@@ -38924,10 +40366,11 @@
         }],
       "DefenseModifier": 10,
       "MovementCost": 2,
+      "IsNaturalWonder": true,
       "Name": "The Grand Mesa",
-      "IconAtlas": "NW_ATLAS",
-      "ID": 1009,
       "Civilopedia": "+2 [ICON_FOOD] Food from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]The Grand Mesa is a large geologic formation in Colorado, the United States of America. Rising some 5,000 feet above the surrounding territory and with an area of 500 square miles, it is the largest mesa in the world. The Grand Mesa has a layer of volcanic basalt on top, which resists erosion. It did not so much rise into the air, as it remained at its original height as the surrounding terrain was eroded by the action of the Colorado and Gunnison rivers.",
+      "ID": 1009,
+      "IconAtlas": "NW_ATLAS",
       "PortraitIndex": 7,
       "IsFeature": true
     },
@@ -38953,10 +40396,11 @@
         }],
       "DefenseModifier": 10,
       "MovementCost": 2,
+      "IsNaturalWonder": true,
       "Name": "The Great Barrier Reef",
-      "IconAtlas": "NW_ATLAS",
-      "ID": 1010,
       "Civilopedia": "+2 [ICON_RESEARCH] Science from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]The Great Barrier Reef is the world's largest reef. A chain of almost 3000 reefs and 1000 islands, it stretches almost 1600 miles along the coast of north-east Australia. Constructed over 500,000 years by billions of coral polyps, the Great Barrier Reef is the largest single structure made by living creatures. The Great Barrier Reef is home to a hugely diverse population of whales, dolphins, porpoises, dugongs, turtles, fish, octopi, and snakes, not to mention over 200 species of birds.",
+      "ID": 1010,
+      "IconAtlas": "NW_ATLAS",
       "PortraitIndex": 1,
       "IsFeature": true
     },
@@ -38978,10 +40422,11 @@
         }],
       "DefenseModifier": 0,
       "MovementCost": 1,
+      "IsNaturalWonder": true,
       "Name": "Krakatoa",
-      "IconAtlas": "NW_ATLAS",
-      "ID": 1011,
       "Civilopedia": "+2 [ICON_RESEARCH] Science from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]Krakatoa is a volcanic island located in Indonesia, between the islands of Java and Sumatra. The volcano exploded violently in August 1883 with a force equivalent to 13,000 times the power of the Hiroshima nuclear bomb. The eruption destroyed over half of the island, and was heard in parts of Australia, some 2,000 miles away. Some 37,000 people were killed by the eruption and subsequent tsunamis. The volcano has been emitting lava steadily for the past eighty years, rebuilding the cone at a rate of about 15 feet per year.",
+      "ID": 1011,
+      "IconAtlas": "NW_ATLAS",
       "PortraitIndex": 5,
       "IsFeature": true
     },
@@ -39016,10 +40461,11 @@
         }],
       "DefenseModifier": 0,
       "MovementCost": 1,
+      "IsNaturalWonder": true,
       "Name": "Rock of Gibraltar",
-      "IconAtlas": "NW_ATLAS",
-      "ID": 1012,
       "Civilopedia": "+2 [ICON_GOLD] Gold from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]Gibraltar is a peninsula containing a remarkable rock formation at the mouth of the Mediterranean Sea. Captured from Spain by the English and Dutch in 1704 and ceded to England in 1713, Gibraltar has been a British possession ever since (much to the annoyance of Spain, which wants it back). Commanding the entrance to the Atlantic from the Mediterranean, Gibraltar has been a major British naval base for three hundred years.[NEWLINE]Most of Gibraltar is covered by the \"Rock,\" a huge formation of shale, sandstone and limestone thrust up by the unimaginable power of plate tectonics. The Rock stands some 1400 feet in height. At one time Gibraltar was a massive fortification allowing Britain to dominate the narrow Mediterranean-Atlantic passage, but today the peninsula is more of a nature preserve and tourist destination than it is a military base.",
+      "ID": 1012,
+      "IconAtlas": "NW_ATLAS",
       "PortraitIndex": 8,
       "IsFeature": true
     },
@@ -39037,10 +40483,11 @@
         }],
       "DefenseModifier": 10,
       "MovementCost": 2,
+      "IsNaturalWonder": true,
       "Name": "Old Faithful",
-      "IconAtlas": "NW_ATLAS",
-      "ID": 1013,
       "Civilopedia": "+2 [ICON_CULTURE] Culture from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]Old Faithful is a geyser found in Yellowstone National Park, in Wyoming, United States of America. First seen by Europeans in 1870 (and by natives some 10,000 years before that), Old Faithful was thus named because of the regularity of its eruption. The geyser shoots a column of boiling water to a height of some 100-175 feet every 60-90 minutes (the interval determined by the ferocity of the previous eruption). Geysers occur when subterranean water hits magma (molten rock). The water is instantly turned to steam, which rushes out the nearest available opening at tremendously high pressure. Old Faithful and the other 250 geysers in Yellowstone are enjoyed by some three million visitors each year.",
+      "ID": 1013,
+      "IconAtlas": "NW_ATLAS",
       "PortraitIndex": 4,
       "IsFeature": true
     },
@@ -39058,10 +40505,12 @@
         }],
       "DefenseModifier": 10,
       "MovementCost": 2,
+      "IsNaturalWonder": true,
+      "Help": "All Melee, Recon, Mounted Melee, Gunpowder and Armored Units produced by the owner of this Natural Wonder gain the [COLOR_POSITIVE_TEXT]Everlasting Youth[ENDCOLOR] Promotion, allowing them to heal for much higher amounts than normal.",
       "Name": "Fountain of Youth",
-      "IconAtlas": "NW_ATLAS_DLC",
-      "ID": 1014,
       "Civilopedia": "+2 [ICON_RESEARCH] Science from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]One of the earliest accounts of this legendary spring comes from Herodotus, who describes it as a special \"Water of Life\" giving any who drinks of it exceptionally long life. Similar stories have also been told among the indigenous people of the Caribbean and South America, which brought the Fountain of Youth to prominence during Spain's era of exploration. According to one popular story, in 1513 the Spanish conquistador Juan Ponce de Leon heard tales of the fountain during his travels in Puerto Rico, and set sail to search for eternal life. In doing so, he discovered Florida (and become one of the first Europeans to set foot on American soil) but never did locate the mythical fountain. The Fountain of Youth continues to captivate audiences today - movies, books, comics, and games have all featured the fabled spring and man's eternal quest to obtain it.",
+      "ID": 1014,
+      "IconAtlas": "NW_ATLAS_DLC",
       "PortraitIndex": 1,
       "IsFeature": true
     },
@@ -39083,10 +40532,11 @@
         }],
       "DefenseModifier": 0,
       "MovementCost": 1,
+      "IsNaturalWonder": true,
       "Name": "Cerro de Potosi",
-      "IconAtlas": "NW_ATLAS_DLC",
-      "ID": 1015,
       "Civilopedia": "+2 [ICON_PRODUCTION] Production from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]Located in southern Bolivia, the mountain of Potosi produced nearly all of the silver mined by the Spanish during their imperial days. Once removed from the mountain, it was taken by llama and mule to the coast where it was then loaded onto treasure ships sailing back to Europe. Nearly 41,000 tons of pure silver were mined over the course of 200 years, 8,200 of which went directly to the Spanish crown. After 1800, the main silver mines were depleted, but the mining of Potosi still continues today - some for silver but now mostly for tin.",
+      "ID": 1015,
+      "IconAtlas": "NW_ATLAS_DLC",
       "PortraitIndex": 2,
       "IsFeature": true
     },
@@ -39104,10 +40554,11 @@
         }],
       "DefenseModifier": 10,
       "MovementCost": 2,
+      "IsNaturalWonder": true,
       "Name": "El Dorado",
-      "IconAtlas": "NW_ATLAS_DLC",
-      "ID": 1016,
       "Civilopedia": "+2 [ICON_CULTURE] Culture from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]This fabled \"Lost City of Gold\" drew many Spanish conquistadors to the New World, all hoping to stumble upon its untold riches. For nearly three centuries, the myth of precious gems and gold drew explorers to the South American coasts, who often sacked other cities they found along the way. El Dorado has captivated explorers throughout the centuries, and expeditions as late as 1804 were arranged to divine its location. However, it is now believed that the mythical city was inspired by the name of a Muisca chief, who reportedly, as part of an initiation, covered himself in a fine layer of gold dust and dove into the Guatavita Lake.",
+      "ID": 1016,
+      "IconAtlas": "NW_ATLAS_DLC",
       "PortraitIndex": 0,
       "IsFeature": true
     },
@@ -39131,10 +40582,11 @@
         }],
       "DefenseModifier": 25,
       "MovementCost": 4,
+      "IsNaturalWonder": false,
       "Name": "Atoll",
-      "IconAtlas": "NEW_TERRAIN_ATLAS_DLC",
-      "ID": 1017,
       "Civilopedia": "An atoll is a formation of coral which creates an island. Atolls are typically ring-shaped, encompassing a central shallow lagoon, and the islands are typically low and small. Atolls are one of the most common island types in the Pacific, the other being islands of volcanic origin. Atolls are akin to oases, in that they are often the only points of land in hundreds of square miles of pelagic expanse. Marine life and birds make ready use of atolls, and though humans have inhabited some, atolls are often hostile for larger land animals. Their low profile means that storms regularly engulf them, and there is often little shade from the powerful sun. As a result of his experiences and observations on the Beagle Voyage, Charles Darwin was the first Westerner to correctly hypothesize how atolls were formed.",
+      "ID": 1017,
+      "IconAtlas": "NEW_TERRAIN_ATLAS_DLC",
       "PortraitIndex": 1,
       "IsFeature": true
     },
@@ -39156,10 +40608,12 @@
         }],
       "DefenseModifier": 0,
       "MovementCost": 1,
+      "IsNaturalWonder": true,
+      "Help": "All new and existing Workers, Work Boats, Missionaries, Inquisitors, and Settler Units produced by the owner of this Natural Wonder gain the [COLOR_POSITIVE_TEXT]Sacred Steps[ENDCOLOR] Promotion, granting them +2 [ICON_MOVES] Movement.",
       "Name": "Sri Pada",
-      "IconAtlas": "EXPANSION_BW_ATLAS_2",
-      "ID": 1018,
       "Civilopedia": "+2 [ICON_FOOD] Food from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]Towering above Sri Lanka, Sri Pada is a large mountain peak with an unusually conical shape that is held sacred by a number of religions for the \"footprint\" found at its peak. The footprint, a large depression found in a rock formation on the mountain's summit, has been attributed to Buddha, Shiva, and the biblical figure Adam, leading to the mountain's reverence among followers of Buddhism, Hinduism, and Islam. Each year, thousands of pilgrims trek for hours up the mountain to pay their respects at the holy site.",
+      "ID": 1018,
+      "IconAtlas": "EXPANSION_BW_ATLAS_2",
       "PortraitIndex": 10,
       "IsFeature": true
     },
@@ -39181,10 +40635,11 @@
         }],
       "DefenseModifier": 0,
       "MovementCost": 1,
+      "IsNaturalWonder": true,
       "Name": "Mt. Sinai",
-      "IconAtlas": "EXPANSION_BW_ATLAS_2",
-      "ID": 1019,
       "Civilopedia": "+2 [ICON_PEACE] Faith from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]Found on the Sinai Peninsula of Egypt, Mount Sinai is among the most revered holy sites recognized by the followers of Judaism, Christianity, and Islam. Mount Sinai is believed to be the location where Moses first received the Ten Commandments from God during the Israelites' exodus from Egypt, making the peak an important site for religious pilgrims from around the world.",
+      "ID": 1019,
+      "IconAtlas": "EXPANSION_BW_ATLAS_2",
       "PortraitIndex": 9,
       "IsFeature": true
     },
@@ -39202,10 +40657,11 @@
         }],
       "DefenseModifier": 0,
       "MovementCost": 1,
+      "IsNaturalWonder": true,
       "Name": "Mt. Kailash",
-      "IconAtlas": "EXPANSION_BW_ATLAS_2",
-      "ID": 1020,
       "Civilopedia": "+2 [ICON_PEACE] Faith from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]The sacred peak of Mount Kailash, found in the Himalayas of Tibet, is cherished by a number of religions, particularly the followers of Hinduism. It is believed to be the home of Lord Shiva, who dwells on the mountain in a state of eternal bliss. Mount Kailash is said to be among the most difficult of all religious pilgrimages, as the harsh conditions dissuade many would-be pilgrims, and the mountain is not accessible by any forms of modern transportation.",
+      "ID": 1020,
+      "IconAtlas": "EXPANSION_BW_ATLAS_2",
       "PortraitIndex": 8,
       "IsFeature": true
     },
@@ -39227,10 +40683,11 @@
         }],
       "DefenseModifier": 10,
       "MovementCost": 2,
+      "IsNaturalWonder": true,
       "Name": "Uluru",
-      "IconAtlas": "EXPANSION_BW_ATLAS_2",
-      "ID": 1021,
       "Civilopedia": "+2 [ICON_PRODUCTION] Production from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]Commonly referred to as \"Ayers Rock,\" the massive red sandstone formation in central Australia has, over the past century, become one of Australia's most recognizable landmarks. Long before it was discovered by English explorers in the late 1800s, the mountain was known as \"Uluru,\" a name given by the indigenous tribesmen of the area who share varying legends as to its creation and significance. Designated as a UNESCO World Heritage Site in 1987, this led to an immediate upsurge in tourism, with several hundred thousand visitors exploring the site each year.",
+      "ID": 1021,
+      "IconAtlas": "EXPANSION_BW_ATLAS_2",
       "PortraitIndex": 11,
       "IsFeature": true
     },
@@ -39252,10 +40709,11 @@
         }],
       "DefenseModifier": 0,
       "MovementCost": 1,
+      "IsNaturalWonder": true,
       "Name": "Lake Victoria",
-      "IconAtlas": "EXPANSION2_WONDER_ATLAS",
-      "ID": 1022,
       "Civilopedia": "+2 [ICON_FOOD] Food from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]With a surface area over 26,000 square miles, Lake Victoria is the largest lake in Africa, the second largest freshwater lake on Earth, and the largest tropical lake in the world. Two large rivers leave the lake, the White Nile and the Katonga. The first historical records of the lake come from Arab traders seeking gold, ivory and other commodities from the natives as they pushed inland from the coast. The search by European explorers for the source of the Nile led to the discovery of the lake by the Englishman John Speke in 1858 AD, who named it after the then British monarch.",
+      "ID": 1022,
+      "IconAtlas": "EXPANSION2_WONDER_ATLAS",
       "PortraitIndex": 3,
       "IsFeature": true
     },
@@ -39273,10 +40731,12 @@
         }],
       "DefenseModifier": 0,
       "MovementCost": 1,
+      "IsNaturalWonder": true,
+      "Help": "All Military Units on adjacent tiles gain the [COLOR_POSITIVE_TEXT]Altitude Training[ENDCOLOR] Promotion, granting a combat bonus on Hills.",
       "Name": "Mt. Kilimanjaro",
-      "IconAtlas": "EXPANSION2_WONDER_ATLAS",
-      "ID": 1023,
       "Civilopedia": "+2 [ICON_CULTURE] Culture from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]Composed of three volcanic cones, the highest reaching 19,340 feet - making it the highest point in Africa and the highest free-standing mountain in the world - the Kilimanjaro massif lies in northeastern Tanzania. Considered a strato-volcano, two of its peaks (Mawenzi and Shira) are extinct, while its highest (Kibo) is dormant; its last eruption dates back approximately 150 thousand years. According to Johann Krapf in 1860 the mountain was called \"Kilimanjaro\" by the Swahilis along the coast, meaning either \"mountain of greatness\" or \"mountain of caravans.\"",
+      "ID": 1023,
+      "IconAtlas": "EXPANSION2_WONDER_ATLAS",
       "PortraitIndex": 4,
       "IsFeature": true
     },
@@ -39298,10 +40758,11 @@
         }],
       "DefenseModifier": 10,
       "MovementCost": 2,
+      "IsNaturalWonder": true,
       "Name": "King Solomon's Mines",
-      "IconAtlas": "EXPANSION2_WONDER_ATLAS",
-      "ID": 1024,
       "Civilopedia": "+2 [ICON_PRODUCTION] Production from this Natural Wonder for every Era after the Ancient Era.[NEWLINE][NEWLINE]King Solomon's Mines exerted a pull on European explorers in 19th Century Africa akin to that of El Dorado on Spanish conquistadors in the 16th Century New World. When Europeans first encountered the mysterious ruins of the ancient city of Zimbabwe in East Africa, they were baffled by its location. Numerous explanations were put forth for its existence, but the one that captured the popular imagination was that Great Zimbabwe served to shelter and protect the workers in King Solomon's mines in the nearby Chimanimani Mountains. Here, it was believed, could be found the source of the Biblical king's legendary treasure of precious metals and gems. For several decades adventurers and fortune hunters sought the legendary mines without success.",
+      "ID": 1024,
+      "IconAtlas": "EXPANSION2_WONDER_ATLAS",
       "PortraitIndex": 2,
       "IsFeature": true
     }
@@ -39710,6 +41171,7 @@
   ],
   "metadata": {
     "localizedLabels": {
+      "featureYieldBonusHeader": "Feature Yield Bonus:",
       "requiredMonopolyResourcesHeader": "Monopoly Required (Any):",
       "worldCongressHelpText": "Some great things are only possible through international cooperation. History has seen many examples of nations coming together for mutual benefit and decision making, from the trade-focused Hanseatic League to the more recent League of Nations. The twentieth century saw a new level of international cooperation begin with the United Nations.[NEWLINE][NEWLINE]In Civilization V, the \"World Congress\" represents these diplomatic interactions between multiple parties and acts as the path to Diplomatic Victory. In this diplomatic body, all civilizations have the chance to decide on game-changing effects in the form of \"Resolutions.\" In addition, \"International Projects\" can be built, which combine the production efforts of multiple civilizations to benefit those who contribute.",
       "civilopediaCategoryGameConcepts": "Game Concepts",
@@ -39778,13 +41240,17 @@
       "gameConceptPageLabel": "Game Concepts Home Page",
       "unitsHelpText": "Units represent the more mobile aspects of your civilization, the workers who till the fields, the settlers who build new cities, the Great People who can singlehandedly change the course of a country through their genius or creativity. And of course units also represent your civ's military.[NEWLINE][NEWLINE]Most units are built in your cities. Use them wisely. Always make sure that you have enough combat units to accomplish the military task at hand and to defend your cities, but don't overbuild, or the cost of supporting them will beggar your civ. Upgrade your military units when you can, but don't be shy about destroying them if you're overburdened. Similarly, have enough workers to handle the job, but they are expensive to maintain, so keep an eye on your finances.[NEWLINE][NEWLINE]Whatever you do, early in the game send out units to explore the world! If you don't know what's going on in the world around you, you're liable to face some really ugly and possibly fatal surprises from greedy neighbors!",
       "cityStatesHelpText": "City-States represent the many smaller civilizations that occupy the world. City-States are just that: states centered upon a city. They cannot build settlers and thus cannot create new cities (their territory can expand, however, but it will never contain more than one city). The exception to this is through conquest. City-States at war are capable of capturing enemy cities.[NEWLINE][NEWLINE]If you befriend a City-State, it may provide you with food, culture, or even military units. If you attack a City-State, you may capture a new city to add to your mighty empire. (This might cause the other city-states to declare war on you, so do so with care.)",
+      "techYieldBonusHeader": "Tech Yield Bonus:",
       "requiredTechnologyHeader": "Prerequisite Techs:",
+      "adjacentCityYieldHeader": "Adjacent City Yield:",
       "requiredBuildingsHeader": "Required Buildings:",
       "civilizationsPageLabel": "Civ and Leaders Home Page",
       "homePageHelpText": "Welcome to the Civilopedia! Here you will find detailed descriptions of all aspects of the game. Use the \"Search\" field to search for articles on any specific subject. Clicking on the tabs on the top edge of the screen will take you to the various major sections of the Civilopedia. The Navigation Bar on the left side of the screen will display the various entries within a section. Click on an entry to go directly there.[NEWLINE][NEWLINE]In the upper left-hand portion of the screen you will find the forward and back buttons which will help you navigate between pages. Click on the \"X\" on the upper right portion of the screen to return to the game.[NEWLINE][NEWLINE]Welcome to Vox Populi, a mod that completely overhauls the game by rebalancing policies, leaders, buildings, wonders, and more! [COLOR_YELLOW]Game Concepts that have been modified in Vox Populi are highlighted in yellow in the Civilopedia.[ENDCOLOR] [COLOR_GREEN]Entirely new Game Concepts or Game Concepts that have been completely overhauled are highlighted in green[ENDCOLOR].",
       "unitsPageLabel": "Units Home Page",
       "bonusResourcesCategory": "Bonus Resources",
       "combatModifierHeader": "Combat Modifier:",
+      "summaryHeader": "Summary:",
+      "resourcesFoundHereHeader": "Resources Found On:",
       "noYieldText": "No Yield",
       "leaderTraitsHeader": "Unique Traits:",
       "freePromotionsHeader": "Free Promotions:",
@@ -39813,12 +41279,12 @@
       "tradeRouteBonusesHeader": "Trade Route Bonus:",
       "officeBonusesHeader": "Office Bonus:",
       "resourceBonusesHeader": "Resource Bonus:",
-      "resourcesFoundHereHeader": "Resources Found On:",
+      "techFreshWaterYieldBonusHeader": "Tech Yield Bonus (With Fresh Water):",
       "promotionsPageLabel": "Promotions Home Page",
       "movementCostHeader": "Movement Cost:",
       "specialistsLabel": "Specialists",
       "improvesResourcesHeader": "Improves Resources:",
-      "summaryHeader": "Summary:",
+      "techNoFreshWaterYieldBonusHeader": "Tech Yield Bonus (Without Fresh Water):",
       "greatPeopleHelpText": "Time and again throughout history, there have arisen men and women who have profoundly changed the world around them - artists, scientists, generals, merchants and others, whose genius sets them head and shoulders above the rest. In this game such visionaries are called \"Great People.\"[NEWLINE][NEWLINE]There are five different kinds of great people in the game: Great Merchants, Great Artists, Great Scientists, Great Engineers, and Great Generals (a sixth, the Great Diplomat, is added in CSD). Each has a special ability.[NEWLINE][NEWLINE]Your civilization acquires Great People by constructing certain buildings and wonders, and then staffing them with \"specialists\", citizens from your cities who have given up working in the field or the mines. While specialists do not work city tiles, they do greatly speed the arrival of Great People. Balancing the need for food and the desire for Great People is an important challenge of city management.[NEWLINE][NEWLINE]When a civilization has advanced technologically enough to be able to support citizens who are not directly involved in providing food, those citizens can be assigned as \"specialists.\" Specialists can increase a city's output of culture, gold, science or production. In addition, specialists speed the creation of \"Great People.\"[NEWLINE][NEWLINE]Great People are the artists, merchants, engineers, scientists and warriors who can, singlehandedly, change the course of a civilization. They're people like Leonardo Da Vinci, Andrew Carnegie, Louis Pasteur, and Robert E. Lee. Great People are extremely powerful. Great People are cool.",
       "cityStatesQuote": "[NEWLINE][TAB][TAB]\"The city is the teacher of the man.\"[NEWLINE][TAB][TAB]  - Simonides[NEWLINE][TAB]",
       "adjacentYieldsExplanation": "Note: Fractional adjacency bonuses are summed up and then rounded down to the nearest integer.",

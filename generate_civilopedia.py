@@ -996,6 +996,13 @@ SIDEBAR_TEMPLATE = """<!DOCTYPE html>
                                     {{ item.Help | civ5format | safe }}
                                 </div>
                             </div>
+                            {% elif item.IsNaturalWonder and item.Civilopedia %}
+                            <div class="summary">
+                                <h3>{{ labels.get('gameInfoLabel') }}</h3>
+                                <div class="text-box">
+                                    {{ item.Civilopedia | civ5format | safe }}
+                                </div>
+                            </div>
                             {% endif %}
                             {% if active_page == "resources" %}
                                 <div class="summary">
@@ -1113,6 +1120,84 @@ SIDEBAR_TEMPLATE = """<!DOCTYPE html>
                                     </div>
                                 </div>
                                 {% endif %}
+                                {% if item.FeatureYields and item.FeatureYields|length > 0 %}
+                                <div class="summary">
+                                    <h3>{{ labels.get('featureYieldBonusHeader') }}</h3>
+                                    <div class="text-box">
+                                        <ul class="item-list">
+                                            {% for group in item.FeatureYields %}
+                                            <li>
+                                                <strong>{{ group.Name | civ5format | safe }}:</strong>
+                                                {% for yield in group.Yields %}
+                                                    {% if yield.Yield > 0 %}+{% endif %}{{ yield.Yield }} {{ yield.YieldName | civ5format | safe }}{% if not loop.last %}, {% endif %}
+                                                {% endfor %}
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% if item.AdjacentCityYields and item.AdjacentCityYields|length > 0 %}
+                                <div class="summary">
+                                    <h3>{{ labels.get('adjacentCityYieldHeader') }}</h3>
+                                    <div class="text-box">
+                                        {% for yield in item.AdjacentCityYields %}
+                                            {% if yield.Yield > 0 %}+{% endif %}{{ yield.Yield }} {{ yield.YieldName | civ5format | safe }}{% if not loop.last %}, {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% if item.TechYields and item.TechYields|length > 0 %}
+                                <div class="summary">
+                                    <h3>{{ labels.get('techYieldBonusHeader') }}</h3>
+                                    <div class="text-box">
+                                        <ul class="item-list">
+                                            {% for group in item.TechYields %}
+                                            <li>
+                                                <strong>{{ group.Name | civ5format | safe }}:</strong>
+                                                {% for yield in group.Yields %}
+                                                    {% if yield.Yield > 0 %}+{% endif %}{{ yield.Yield }} {{ yield.YieldName | civ5format | safe }}{% if not loop.last %}, {% endif %}
+                                                {% endfor %}
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% if item.TechFreshWaterYields and item.TechFreshWaterYields|length > 0 %}
+                                <div class="summary">
+                                    <h3>{{ labels.get('techFreshWaterYieldBonusHeader') }}</h3>
+                                    <div class="text-box">
+                                        <ul class="item-list">
+                                            {% for group in item.TechFreshWaterYields %}
+                                            <li>
+                                                <strong>{{ group.Name | civ5format | safe }}:</strong>
+                                                {% for yield in group.Yields %}
+                                                    {% if yield.Yield > 0 %}+{% endif %}{{ yield.Yield }} {{ yield.YieldName | civ5format | safe }}{% if not loop.last %}, {% endif %}
+                                                {% endfor %}
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% if item.TechNoFreshWaterYields and item.TechNoFreshWaterYields|length > 0 %}
+                                <div class="summary">
+                                    <h3>{{ labels.get('techNoFreshWaterYieldBonusHeader') }}</h3>
+                                    <div class="text-box">
+                                        <ul class="item-list">
+                                            {% for group in item.TechNoFreshWaterYields %}
+                                            <li>
+                                                <strong>{{ group.Name | civ5format | safe }}:</strong>
+                                                {% for yield in group.Yields %}
+                                                    {% if yield.Yield > 0 %}+{% endif %}{{ yield.Yield }} {{ yield.YieldName | civ5format | safe }}{% if not loop.last %}, {% endif %}
+                                                {% endfor %}
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                                {% endif %}
                                 {% if (item.Terrains and item.Terrains|length > 0) or (item.Features and item.Features|length > 0) %}
                                 <div class="summary">
                                     <h3>{{ labels.get('canBeBuiltOnHeader') }}</h3>
@@ -1161,6 +1246,23 @@ SIDEBAR_TEMPLATE = """<!DOCTYPE html>
                                         {% for yield in item.EraYields %}
                                             {% if yield.Yield > 0 %}+{% endif %}{{ yield.Yield }} {{ yield.YieldName | civ5format | safe}}{% if not loop.last %}, {% endif %}
                                         {% endfor %}
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% if item.TechYields and item.TechYields|length > 0 %}
+                                <div class="summary">
+                                    <h3>{{ labels.get('techYieldBonusHeader') }}</h3>
+                                    <div class="text-box">
+                                        <ul class="item-list">
+                                            {% for group in item.TechYields %}
+                                            <li>
+                                                <strong>{{ group.Name | civ5format | safe }}:</strong>
+                                                {% for yield in group.Yields %}
+                                                    {% if yield.Yield > 0 %}+{% endif %}{{ yield.Yield }} {{ yield.YieldName | civ5format | safe }}{% if not loop.last %}, {% endif %}
+                                                {% endfor %}
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
                                     </div>
                                 </div>
                                 {% endif %}
@@ -1584,7 +1686,7 @@ SIDEBAR_TEMPLATE = """<!DOCTYPE html>
                                 </div>
                             </div>
                             {% endif %}
-                            {% if item.Civilopedia %}
+                            {% if item.Civilopedia and not item.IsNaturalWonder %}
                             <div class="summary">
                                 <h3>{{ labels.get('civilopediaHeader') }}</h3>
                                 <div class="text-box">
