@@ -15280,7 +15280,7 @@
           "Type": "BUILDING_PARTHENON",
           "Name": "Parthenon",
           "IconAtlas": "EXPANSION2_WONDER_ATLAS",
-          "IsNationalWonder": false,
+          "IsNationalWonder": true,
           "PortraitIndex": 10,
           "IsWonder": false
         }],
@@ -16955,7 +16955,7 @@
           "Type": "BUILDING_BALLHAUSPLATZ",
           "Name": "Ballhausplatz",
           "IconAtlas": "BUILDING_ATLAS_VP_1",
-          "IsNationalWonder": false,
+          "IsNationalWonder": true,
           "PortraitIndex": 7,
           "IsWonder": false
         }, {
@@ -17754,7 +17754,7 @@
           "Type": "BUILDING_NOBEL_COMMITTEE",
           "Name": "Nobel Committee",
           "IconAtlas": "BUILDING_ATLAS_VP_1",
-          "IsNationalWonder": false,
+          "IsNationalWonder": true,
           "PortraitIndex": 45,
           "IsWonder": false
         }, {
@@ -23684,7 +23684,7 @@
       "EraName": "Classical Era",
       "Maintenance": 0,
       "Cost": 60,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "SpecialistCount": 1,
       "SpecialistType": "SPECIALIST_CIVIL_SERVANT",
       "GreatPeopleRateChange": 1,
@@ -26205,7 +26205,7 @@
       "LeadsToBuildings": {},
       "UnlockedByBelief": false,
       "IsCorporation": false,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "IsWonder": false,
       "RequiredBuildings": {},
       "Name": "Scrivener's Office",
@@ -26240,7 +26240,7 @@
       "LeadsToBuildings": {},
       "UnlockedByBelief": false,
       "IsCorporation": false,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "IsWonder": false,
       "RequiredBuildings": [{
           "Name": "Chancery",
@@ -26278,7 +26278,7 @@
       "LeadsToBuildings": {},
       "UnlockedByBelief": false,
       "IsCorporation": false,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "IsWonder": false,
       "RequiredBuildings": [{
           "Name": "Wire Service",
@@ -26513,7 +26513,7 @@
       "LeadsToBuildings": {},
       "UnlockedByBelief": false,
       "IsCorporation": false,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "IsWonder": false,
       "RequiredBuildings": [{
           "Name": "Chancery",
@@ -26886,7 +26886,7 @@
       "LeadsToBuildings": {},
       "UnlockedByBelief": false,
       "IsCorporation": false,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "IsWonder": false,
       "RequiredBuildings": {},
       "Name": "[COLOR_POSITIVE_TEXT](Swedish)[ENDCOLOR] Nobel Committee",
@@ -26997,7 +26997,7 @@
       "LeadsToBuildings": {},
       "UnlockedByBelief": false,
       "IsCorporation": false,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "IsWonder": false,
       "RequiredBuildings": [{
           "Name": "National Monument",
@@ -27031,7 +27031,7 @@
       "LeadsToBuildings": {},
       "UnlockedByBelief": false,
       "IsCorporation": false,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "IsWonder": false,
       "RequiredBuildings": [{
           "Name": "National Monument",
@@ -27065,7 +27065,7 @@
       "LeadsToBuildings": {},
       "UnlockedByBelief": false,
       "IsCorporation": false,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "IsWonder": false,
       "RequiredBuildings": [{
           "Name": "National Monument",
@@ -27760,7 +27760,7 @@
       "EraName": "Ancient Era",
       "Maintenance": 0,
       "Cost": -1,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "SpecialistCount": 1,
       "SpecialistType": "SPECIALIST_MUSICIAN",
       "GreatPeopleRateChange": 0,
@@ -27812,7 +27812,7 @@
       "EraName": "Ancient Era",
       "Maintenance": 0,
       "Cost": -1,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "SpecialistCount": 1,
       "SpecialistType": "SPECIALIST_MERCHANT",
       "GreatPeopleRateChange": 0,
@@ -27842,7 +27842,7 @@
       "EraName": "Ancient Era",
       "Maintenance": 0,
       "Cost": -1,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "SpecialistCount": 1,
       "SpecialistType": "SPECIALIST_ENGINEER",
       "GreatPeopleRateChange": 0,
@@ -27872,7 +27872,7 @@
       "EraName": "Ancient Era",
       "Maintenance": 0,
       "Cost": -1,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "SpecialistCount": 1,
       "SpecialistType": "SPECIALIST_WRITER",
       "GreatPeopleRateChange": 0,
@@ -27902,7 +27902,7 @@
       "EraName": "Ancient Era",
       "Maintenance": 0,
       "Cost": -1,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "SpecialistCount": 1,
       "SpecialistType": "SPECIALIST_ARTIST",
       "GreatPeopleRateChange": 0,
@@ -27936,7 +27936,7 @@
       "EraName": "Ancient Era",
       "Maintenance": 0,
       "Cost": -1,
-      "IsNationalWonder": false,
+      "IsNationalWonder": true,
       "SpecialistCount": 1,
       "SpecialistType": "SPECIALIST_SCIENTIST",
       "GreatPeopleRateChange": 0,
@@ -34411,6 +34411,33 @@
     },
     {
       "LeadsToBuildings": {},
+      "Cost": 60,
+      "IsNationalWonder": true,
+      "Civilizations": [{
+          "Type": "CIVILIZATION_GREECE",
+          "Name": "Greece",
+          "Adjective": "Greek"
+        }],
+      "Help": "Greek Unique [COLOR_YIELD_FOOD]Scrivener's Office[ENDCOLOR][NEWLINE]----------------[NEWLINE]Cost: 60 [ICON_PRODUCTION][NEWLINE]Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_GOLD] Gold: +2[NEWLINE][ICON_BULLET][ICON_CULTURE] Culture: +3[NEWLINE][ICON_BULLET][ICON_PEACE] Faith: +1[NEWLINE][ICON_BULLET][ICON_STRENGTH] City Strength: +3[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Great Diplomat Points: 1[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Civil Servant Slots: 1[NEWLINE][ICON_BULLET]On Completion: 2 [COLOR_YELLOW]Emissary[ENDCOLOR] appear in or near City[NEWLINE][ICON_BULLET]Free [COLOR_POSITIVE_TEXT]Proxenos[ENDCOLOR] Promotion for all existing and future eligible Units trained in this City[NEWLINE][ICON_BULLET]Each friendly [ICON_CITY_STATE] City-State: +1 [ICON_FOOD][NEWLINE][ICON_BULLET]Each allied [ICON_CITY_STATE] City-State: +1 [ICON_PEACE][NEWLINE][ICON_BULLET][COLOR_WATER_TEXT]Diplomatic Mission by Proxenos Unit[ENDCOLOR]: +2 [ICON_GOLD][NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+25% [ICON_PRODUCTION] Production for [COLOR_YELLOW]Diplomacy Units[ENDCOLOR] in all Cities[NEWLINE][ICON_BULLET]+3 [ICON_CULTURE] to [COLOR_YIELD_FOOD]Market[ENDCOLOR] in all Cities[NEWLINE][ICON_BULLET]+2 [ICON_RES_PAPER] Paper[NEWLINE]----------------[NEWLINE]Prerequisite Technologies: [COLOR_CYAN]Writing[ENDCOLOR][NEWLINE]Max 1 per Player ",
+      "IconAtlas": "EXPANSION2_WONDER_ATLAS",
+      "ID": 132,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_PARTHENON",
+      "IsCorporation": false,
+      "RequiredBuildings": {},
+      "Name": "[COLOR_POSITIVE_TEXT](Greek)[ENDCOLOR] Parthenon",
+      "Civilopedia": "Built upon the Acropolis, dedicated to the goddess Athena, the Parthenon is considered the culmination of Doric architecture. Construction of the temple began in 447 BC; the last decorations were put into place in 432 BC and are important surviving examples of classical sculpture. It housed the chryselephantine statute of Athena sculpted by Phidius, and the outer facade was ornamented with 92 metopes. Like most Greek temples, the Parthenon also served as treasury, both for Athens itself and for the Delian League. Through the 1700s, European tourists and scholars enjoyed greater access to the picturesque ruins and its fame spread. When Greece regained its independence in 1832, the government took control of the site. Undertaking a restoration of the Acropolis in 1975, Greece has made the Parthenon an enduring symbol of ancient Greece, Athenian democratic ideals, Western civilization and one of the world's greatest cultural treasures.",
+      "GreatWorkCount": 0,
+      "IsProject": false,
+      "PortraitIndex": 10,
+      "PrereqTech": {
+        "Name": "Writing",
+        "Type": "TECH_WRITING"
+      }
+    },
+    {
+      "LeadsToBuildings": {},
       "Cost": -1,
       "IsNationalWonder": false,
       "Help": "[ICON_TROPHY_GOLD] Reward of [COLOR_PLAYER_MIDDLE_PURPLE_TEXT]International Space Station[ENDCOLOR][NEWLINE]----------------[NEWLINE]Cost: 8,250 [ICON_PRODUCTION] per Civilization at the start of the game[NEWLINE]Always Retained on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_CULTURE] Culture: +1[NEWLINE][ICON_BULLET]When researching a Technology: +100 [ICON_PRODUCTION], scaling with Era[NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+33% [ICON_RESEARCH] Science from Discover Technology[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] to [COLOR_POSITIVE_TEXT]Scientist[ENDCOLOR] in all Cities[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] to [COLOR_POSITIVE_TEXT]Engineer[ENDCOLOR] in all Cities[NEWLINE]----------------[NEWLINE]Max 1 in the World",
@@ -34426,6 +34453,81 @@
       "GreatWorkCount": 0,
       "IsProject": false,
       "PortraitIndex": 8
+    },
+    {
+      "LeadsToBuildings": {},
+      "Cost": 60,
+      "Strategy": "This National Wonder gives a small production boost when building diplomatic units in the capital, and one [ICON_RES_PAPER] Paper resource. Build this building if you want to secure a city-state ally or two during the first few eras of the game. The additional yields from City-State Friends and Allies increases the value of early positive City-State relations.",
+      "Help": "Cost: 60 [ICON_PRODUCTION][NEWLINE]Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_CULTURE] Culture: +1[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Great Diplomat Points: 1[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Civil Servant Slots: 1[NEWLINE][ICON_BULLET]+10% [ICON_PRODUCTION] Production for [COLOR_YELLOW]Diplomacy Units[ENDCOLOR][NEWLINE][ICON_BULLET]On Completion: 1 [COLOR_YELLOW]Emissary[ENDCOLOR] appears in or near City[NEWLINE][ICON_BULLET]Each friendly [ICON_CITY_STATE] City-State: +1 [ICON_FOOD][NEWLINE][ICON_BULLET]Each allied [ICON_CITY_STATE] City-State: +1 [ICON_PEACE][NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_RES_PAPER] Paper[NEWLINE]----------------[NEWLINE]Prerequisite Technologies: [COLOR_CYAN]Writing[ENDCOLOR][NEWLINE]National Population Required: [COLOR_POSITIVE_TEXT]12[ENDCOLOR] (scaling with number of Cities)[NEWLINE]Max 1 per Player ",
+      "IconAtlas": "BUILDING_ATLAS_VP_2",
+      "ID": 188,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_SCRIVENERS_OFFICE",
+      "IsCorporation": false,
+      "RequiredBuildings": {},
+      "GreatWorkCount": 0,
+      "IsProject": false,
+      "Name": "Scrivener's Office",
+      "Civilopedia": "The position of royal scrivener, and the office therein, is one of the oldest and most important positions within a civil service. Though the modern state has hundreds of civil servants that write, edit and issue government documentation, in the ancient world these tasks were usually given to one individual, the scrivener. Scrivener's wielded immense power, as they had control over the wording, translations and interpretations of the laws of the land. Because of this great power, a good, loyal scrivener was an invaluable resource.",
+      "IsNationalWonder": true,
+      "PortraitIndex": 54,
+      "PrereqTech": {
+        "Name": "Writing",
+        "Type": "TECH_WRITING"
+      }
+    },
+    {
+      "LeadsToBuildings": {},
+      "Cost": 200,
+      "Strategy": "This National Wonder cannot be built unless the city has a Chancery. Build it to receive a production speed increase for Diplomatic Units in the city where it is built, increased movement and influence for all your Diplomatic Units and the ability to allow your Diplomatic Units to ignore terrain penalties.",
+      "Help": "Cost: 200 [ICON_PRODUCTION][NEWLINE]Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_CULTURE] Culture: +1[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Great Diplomat Points: 1[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Civil Servant Slots: 1[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] Production for [COLOR_YELLOW]Diplomacy Units[ENDCOLOR][NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_RES_PAPER] Paper[NEWLINE][ICON_BULLET]Free [COLOR_POSITIVE_TEXT]Literacy[ENDCOLOR] Promotion for all existing and future eligible Units[NEWLINE]----------------[NEWLINE]Required Buildings: [COLOR_YIELD_FOOD]Chancery[ENDCOLOR][NEWLINE]Prerequisite Technologies: [COLOR_CYAN]Printing Press[ENDCOLOR][NEWLINE]National Population Required: [COLOR_POSITIVE_TEXT]25[ENDCOLOR] (scaling with number of Cities)[NEWLINE]Max 1 per Player [NEWLINE]----------------[NEWLINE]List of possible boosts to this Building:[NEWLINE][ICON_BULLET][COLOR_MAGENTA]Ceremony[ENDCOLOR]: +1 [ICON_HAPPINESS_1] Happiness",
+      "IconAtlas": "BUILDING_ATLAS_VP_2",
+      "ID": 189,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_PRINTING_PRESS",
+      "IsCorporation": false,
+      "RequiredBuildings": [{
+          "Name": "Chancery",
+          "Type": "BUILDING_CHANCERY"
+        }],
+      "GreatWorkCount": 0,
+      "IsProject": false,
+      "Name": "Printing Press",
+      "Civilopedia": "From a single print shop in Mainz, Germany, printing had spread to no less than around 270 cities in Central, Western and Eastern Europe by the end of the 15th century. As early as 1480, it is assumed that \"the printed book was in universal use in Europe\". By 1500, the printing presses in operation throughout Western Europe had already produced more than twenty million copies. European printing presses of around 1600 were capable of producing 3,600 impressions per workday. By comparison, movable type printing in the Far East, which did not know presses and was solely done by manually rubbing the back of the paper to the page, did not exceed an output of forty pages per day. The rapidity of typographical text production, as well as the sharp fall in unit costs, led to the issuing of the first newspapers which opened up an entirely new field for conveying up-to-date information to the public.",
+      "IsNationalWonder": true,
+      "PortraitIndex": 52,
+      "PrereqTech": {
+        "Name": "Printing Press",
+        "Type": "TECH_PRINTING_PRESS"
+      }
+    },
+    {
+      "LeadsToBuildings": {},
+      "Cost": 800,
+      "Strategy": "This National Wonder cannot be built unless the city has a Wire Service. Build it to receive a production speed increase for Diplomatic Units in the city where it is built, increased movement and influence for all your Diplomatic Units and the ability to send your Diplomatic Units through rival territory without an [COLOR_POSITIVE_TEXT]Open Borders[ENDCOLOR] agreement.",
+      "Help": "Cost: 800 [ICON_PRODUCTION][NEWLINE]Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_CULTURE] Culture: +1[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Great Diplomat Points: 1[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Civil Servant Slots: 1[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] Production for [COLOR_YELLOW]Diplomacy Units[ENDCOLOR][NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_RES_PAPER] Paper[NEWLINE][ICON_BULLET]Free [COLOR_POSITIVE_TEXT]Diplomatic Immunity[ENDCOLOR] Promotion for all existing and future eligible Units[NEWLINE]----------------[NEWLINE]Required Buildings: [COLOR_YIELD_FOOD]Wire Service[ENDCOLOR][NEWLINE]Prerequisite Technologies: [COLOR_CYAN]Radio[ENDCOLOR][NEWLINE]National Population Required: [COLOR_POSITIVE_TEXT]40[ENDCOLOR] (scaling with number of Cities)[NEWLINE]Max 1 per Player [NEWLINE]----------------[NEWLINE]List of possible boosts to this Building:[NEWLINE][ICON_BULLET][COLOR_MAGENTA]Ceremony[ENDCOLOR]: +1 [ICON_HAPPINESS_1] Happiness",
+      "IconAtlas": "BUILDING_ATLAS_VP_2",
+      "ID": 190,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_FOREIGN_BUREAU",
+      "IsCorporation": false,
+      "RequiredBuildings": [{
+          "Name": "Wire Service",
+          "Type": "BUILDING_WIRE_SERVICE"
+        }],
+      "GreatWorkCount": 0,
+      "IsProject": false,
+      "Name": "Foreign Bureau",
+      "Civilopedia": "The foreign office sits at the heart of the modern empire. Teeming with vast, unending legions of civil servants, diplomats and assistants, all news both critical and mundane passes through the halls of the Foreign Bureau.",
+      "IsNationalWonder": true,
+      "PortraitIndex": 44,
+      "PrereqTech": {
+        "Name": "Radio",
+        "Type": "TECH_RADIO"
+      }
     },
     {
       "LeadsToBuildings": {},
@@ -34547,6 +34649,37 @@
       "PrereqTech": {
         "Name": "Architecture",
         "Type": "TECH_ARCHITECTURE"
+      }
+    },
+    {
+      "LeadsToBuildings": {},
+      "Cost": 200,
+      "Strategy": "",
+      "Civilizations": [{
+          "Type": "CIVILIZATION_AUSTRIA",
+          "Name": "Austria",
+          "Adjective": "Austrian"
+        }],
+      "Help": "Austrian Unique [COLOR_YIELD_FOOD]Printing Press[ENDCOLOR][NEWLINE]----------------[NEWLINE]Cost: 200 [ICON_PRODUCTION][NEWLINE]Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_GOLD] Gold: +5[NEWLINE][ICON_BULLET][ICON_CULTURE] Culture: +5[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Great Diplomat Points: 3[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Civil Servant Slots: 2[NEWLINE][ICON_BULLET]+15% [ICON_GREAT_PEOPLE] Great Person Rate per active [ICON_RES_MARRIAGE] Diplomatic Marriage[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] Production for [COLOR_YELLOW]Diplomacy Units[ENDCOLOR][NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_GOLD] +2 [ICON_CULTURE] to [COLOR_YIELD_FOOD]Chancery[ENDCOLOR] in all Cities[NEWLINE][ICON_BULLET]+1 [ICON_RES_PAPER] Paper[NEWLINE][ICON_BULLET]Free [COLOR_POSITIVE_TEXT]Literacy[ENDCOLOR] Promotion for all existing and future eligible Units[NEWLINE]----------------[NEWLINE]Required Buildings: [COLOR_YIELD_FOOD]Chancery[ENDCOLOR][NEWLINE]Prerequisite Technologies: [COLOR_CYAN]Printing Press[ENDCOLOR][NEWLINE]Max 1 per Player [NEWLINE]----------------[NEWLINE]List of possible boosts to this Building:[NEWLINE][ICON_BULLET][COLOR_MAGENTA]Ceremony[ENDCOLOR]: +1 [ICON_HAPPINESS_1] Happiness",
+      "IconAtlas": "BUILDING_ATLAS_VP_1",
+      "ID": 195,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_BALLHAUSPLATZ",
+      "IsCorporation": false,
+      "RequiredBuildings": [{
+          "Name": "Chancery",
+          "Type": "BUILDING_CHANCERY"
+        }],
+      "GreatWorkCount": 0,
+      "IsProject": false,
+      "Name": "[COLOR_POSITIVE_TEXT](Austrian)[ENDCOLOR] Ballhausplatz",
+      "Civilopedia": "Ballhausplatz is a square in central Vienna containing the building (with the address Ballhausplatz 2) that for over two hundred years has been the official residence of the most senior Austrian Cabinet Minister, the State Chancellor, today the Chancellor of Austria (Prime Minister). As a result, Ballhausplatz is often used as shorthand for the Austrian Federal Chancellery. Until 1918 the Foreign Ministry of Austria-Hungary was also housed here. Similar to Downing Street or the Hotel Matignon, the word Ballhausplatz (or Ballplatz for short) is a synecdoche for the seat of power.",
+      "IsNationalWonder": true,
+      "PortraitIndex": 7,
+      "PrereqTech": {
+        "Name": "Printing Press",
+        "Type": "TECH_PRINTING_PRESS"
       }
     },
     {
@@ -34763,6 +34896,34 @@
       }
     },
     {
+      "LeadsToBuildings": {},
+      "Cost": 500,
+      "Strategy": "The Nobel Committee's main unique bonuses are that it's available two technology tiers earlier, extra [ICON_RESEARCH] Science to each [ICON_GREAT_WORK] Great Work, extra [ICON_CULTURE] Culture to each Academy, extra [ICON_RESEARCH] Science and [ICON_CULTURE] Culture to each Public School, and [ICON_GOLD] Gold scaling with Era plus [ICON_INFLUENCE] Influence to all City-States that you've met when expending a [ICON_GREAT_PEOPLE] Great Person.[NEWLINE][NEWLINE]To take advantage of all these bonuses, you primarily want to focus on building Public Schools in every City and focus on generating as many [ICON_GREAT_PEOPLE] Great People as possible. This synergizes well with Sweden's Unique Ability and the Bastu as they all provide bonuses based on expending [ICON_GREAT_PEOPLE] Great People.[NEWLINE][NEWLINE]The bonus [ICON_INFLUENCE] Influence to all City-States that you've met can be quite significant if you are generating [ICON_GREAT_PEOPLE] Great People frequently. This can allow Sweden to Ally many City-States to either shift towards a Diplomatic Victory or open additional fronts against your enemies to push towards a Domination Victory.",
+      "Civilizations": [{
+          "Type": "CIVILIZATION_SWEDEN",
+          "Name": "Sweden",
+          "Adjective": "Swedish"
+        }],
+      "Help": "Swedish Unique [COLOR_YIELD_FOOD]Foreign Bureau[ENDCOLOR][NEWLINE]----------------[NEWLINE]Cost: 500 [ICON_PRODUCTION][NEWLINE]Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_RESEARCH] Science: +5[NEWLINE][ICON_BULLET][ICON_CULTURE] Culture: +5[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Great Diplomat Points: 1[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Civil Servant Slots: 1[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] Production for [COLOR_YELLOW]Diplomacy Units[ENDCOLOR][NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] +3 [ICON_CULTURE] to [COLOR_YIELD_FOOD]Public School[ENDCOLOR] in all Cities[NEWLINE][ICON_BULLET]+3 [ICON_CULTURE] to [COLOR_POSITIVE_TEXT]Academy[ENDCOLOR] in all Cities[NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] to [ICON_GREAT_WORK] Great Works in all Cities[NEWLINE][ICON_BULLET]+1 [ICON_RES_PAPER] Paper[NEWLINE][ICON_BULLET]Free [COLOR_POSITIVE_TEXT]Diplomatic Immunity[ENDCOLOR] Promotion for all existing and future eligible Units[NEWLINE][ICON_BULLET]When expending a [ICON_GREAT_PEOPLE] Great Person: +10 [ICON_INFLUENCE] Influence with all [ICON_CITY_STATE] City-States[NEWLINE][ICON_BULLET]When expending a [ICON_GREAT_PEOPLE] Great Person: +50 [ICON_GOLD] in [ICON_CAPITAL] Capital, scaling with Era[NEWLINE]----------------[NEWLINE]Prerequisite Technologies: [COLOR_CYAN]Dynamite[ENDCOLOR][NEWLINE]Max 1 per Player [NEWLINE]----------------[NEWLINE]List of possible boosts to this Building:[NEWLINE][ICON_BULLET][COLOR_MAGENTA]Ceremony[ENDCOLOR]: +1 [ICON_HAPPINESS_1] Happiness",
+      "IconAtlas": "BUILDING_ATLAS_VP_1",
+      "ID": 203,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_NOBEL_COMMITTEE",
+      "IsCorporation": false,
+      "RequiredBuildings": {},
+      "GreatWorkCount": 0,
+      "IsProject": false,
+      "Name": "[COLOR_POSITIVE_TEXT](Swedish)[ENDCOLOR] Nobel Committee",
+      "Civilopedia": "The Nobel Prizes are awards administered by the Nobel Foundation and granted in accordance with the principle of \"for the greatest benefit to humankind\". The prizes were first awarded in 1901, marking the fifth anniversary of Alfred Nobel's death. Each laureate is required to give a public lecture on a subject related to the topic of their prize. The laureates are given a sum of money when they receive their prizes, depending upon how much money the Nobel Foundation can award each year. As of 2023, the monetary award per prize category is 11 million Swedish kronor (SEK), equivalent to approximately US$ 1.035 million. After the award ceremony in Sweden, a banquet is held in the Blue Hall at the Stockholm City Hall, which is attended by the Swedish Royal Family and around 1,300 guests. The Nobel Peace Prize banquet is held in Norway at the Oslo Grand Hotel after the award ceremony. The Nobel Prizes are widely regarded as the most prestigious awards available in their respective fields, and play a major role in the academic calendar and are widely reported on globally.",
+      "IsNationalWonder": true,
+      "PortraitIndex": 45,
+      "PrereqTech": {
+        "Name": "Dynamite",
+        "Type": "TECH_DYNAMITE"
+      }
+    },
+    {
       "LeadsToBuildings": [{
           "Type": "BUILDING_ARSENALE_DI_VENEZIA",
           "Name": "Arsenale di Venezia",
@@ -34804,6 +34965,85 @@
       "PrereqTech": {
         "Name": "Writing",
         "Type": "TECH_WRITING"
+      }
+    },
+    {
+      "LeadsToBuildings": {},
+      "Cost": 140,
+      "Strategy": "One of three mutually exclusive buildings that Venice can build in its capital after it has completed Piazza San Marco. This building boosts [ICON_PRODUCTION] Production and Internal [ICON_INTERNATIONAL_TRADE] Trade Routes; increases [ICON_STRENGTH] City Strength and [ICON_SILVER_FIST] Military Supply from population; and buffs the [ICON_STRENGTH] Combat Strength and [ICON_MOVES] Movement of all naval units.",
+      "Help": "Venetian Exclusive Building[NEWLINE]----------------[NEWLINE]Cost: 140 [ICON_PRODUCTION][NEWLINE]Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_STRENGTH] City Strength: +3[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Engineer Slots: 2[NEWLINE][ICON_BULLET]+15% [ICON_PRODUCTION] Production[NEWLINE][ICON_BULLET]+5% [ICON_STRENGTH] City Strength from Buildings[NEWLINE][ICON_BULLET]+5% [ICON_SILVER_FIST] Military Supply from Population[NEWLINE][ICON_BULLET]+4 [ICON_PRODUCTION] to [ICON_INTERNATIONAL_TRADE] Internal Trade Routes from this City[NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+10% [ICON_SILVER_FIST] Military Supply from Population in all Cities[NEWLINE][ICON_BULLET]Free [COLOR_POSITIVE_TEXT]Venetian Craftsmanship[ENDCOLOR] Promotion for all existing and future eligible Units[NEWLINE][COLOR_POSITIVE_TEXT]Team-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+10% [ICON_STRENGTH] City Strength from Buildings in all Cities of your Team[NEWLINE]----------------[NEWLINE]Required Buildings: [COLOR_YIELD_FOOD]National Monument[ENDCOLOR][NEWLINE]City must not have the following Buildings: [COLOR_NEGATIVE_TEXT]Murano Glassworks, Rialto District[ENDCOLOR][NEWLINE]Prerequisite Technologies: [COLOR_CYAN]Guilds[ENDCOLOR][NEWLINE]Max 1 per Player [NEWLINE]----------------[NEWLINE]List of possible boosts to this Building:[NEWLINE][ICON_BULLET][COLOR_YIELD_FOOD]Bank[ENDCOLOR] in any City: +2 [ICON_PRODUCTION] +2 [ICON_RESEARCH][NEWLINE][ICON_BULLET][COLOR_MAGENTA]Ceremony[ENDCOLOR]: +1 [ICON_HAPPINESS_1] Happiness",
+      "IconAtlas": "BUILDING_ATLAS_VP_1",
+      "ID": 205,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_ARSENALE_DI_VENEZIA",
+      "IsCorporation": false,
+      "RequiredBuildings": [{
+          "Name": "National Monument",
+          "Type": "BUILDING_NATIONAL_EPIC"
+        }],
+      "GreatWorkCount": 0,
+      "IsProject": false,
+      "Name": "Arsenale di Venezia",
+      "Civilopedia": "The Venetian Arsenal is a complex of former shipyards and armories clustered together in the city of Venice in northern Italy. Owned by the state, the Arsenal was responsible for the bulk of the Venetian republic's naval power during the middle part of the second millennium AD. It was one of the earliest large-scale industrial enterprises in history.",
+      "IsNationalWonder": true,
+      "PortraitIndex": 48,
+      "PrereqTech": {
+        "Name": "Guilds",
+        "Type": "TECH_GUILDS"
+      }
+    },
+    {
+      "LeadsToBuildings": {},
+      "Cost": 140,
+      "Strategy": "One of three mutually exclusive buildings that Venice can build in its capital after it has completed Piazza San Marco. Boosts the value of Great Person tile improvements and villages for all cities, enables or strengthens Historic Events on [ICON_INTERNATIONAL_TRADE] Trade Route completion, and contains 2 slots for [ICON_GREAT_WORK] Great Works of Art or Artifacts.",
+      "GreatWorkSlotType": "GREAT_WORK_SLOT_ART_ARTIFACT",
+      "Help": "Venetian Exclusive Building[NEWLINE]----------------[NEWLINE]Cost: 140 [ICON_PRODUCTION][NEWLINE]Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Artist Slots: 2[NEWLINE][ICON_BULLET][ICON_GREAT_WORK] Great Work of Art or Artifact slots: 2[NEWLINE][ICON_BULLET]Up to +5 [ICON_RESEARCH] +8 [ICON_CULTURE] +8 [ICON_TOURISM] when [COLOR_POSITIVE_TEXT]Themed[ENDCOLOR][NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_FOOD] +2 [ICON_TOURISM] to [COLOR_POSITIVE_TEXT]Village[ENDCOLOR], [COLOR_POSITIVE_TEXT]Academy[ENDCOLOR], [COLOR_POSITIVE_TEXT]Town[ENDCOLOR], [COLOR_POSITIVE_TEXT]Manufactory[ENDCOLOR], [COLOR_POSITIVE_TEXT]Citadel[ENDCOLOR], [COLOR_POSITIVE_TEXT]Holy Site[ENDCOLOR], [COLOR_POSITIVE_TEXT]Embassy[ENDCOLOR], [COLOR_POSITIVE_TEXT]Isibaya[ENDCOLOR], [COLOR_POSITIVE_TEXT]Oppidum[ENDCOLOR], [COLOR_POSITIVE_TEXT]Ordo[ENDCOLOR], and [COLOR_POSITIVE_TEXT]Tersane[ENDCOLOR] in all Cities[NEWLINE]Triggers or Enhances the following Historic Events:[NEWLINE][ICON_BULLET]Complete a [ICON_CARAVAN] Land Trade Route from this City targeting another Civilization (Relative Strength: [COLOR_POSITIVE_TEXT]10[ENDCOLOR])[NEWLINE][ICON_BULLET]Complete a [ICON_CARGO_SHIP] Sea Trade Route from this City targeting another Civilization (Relative Strength: [COLOR_POSITIVE_TEXT]10[ENDCOLOR])[NEWLINE]----------------[NEWLINE]Required Buildings: [COLOR_YIELD_FOOD]National Monument[ENDCOLOR][NEWLINE]City must not have the following Buildings: [COLOR_NEGATIVE_TEXT]Arsenale di Venezia, Rialto District[ENDCOLOR][NEWLINE]Prerequisite Technologies: [COLOR_CYAN]Guilds[ENDCOLOR][NEWLINE]Max 1 per Player [NEWLINE]----------------[NEWLINE]List of possible boosts to this Building:[NEWLINE][ICON_BULLET][COLOR_YIELD_FOOD]Bank[ENDCOLOR] in any City: +2 [ICON_CULTURE] +2 [ICON_TOURISM][NEWLINE][ICON_BULLET][COLOR_MAGENTA]Ceremony[ENDCOLOR]: +1 [ICON_HAPPINESS_1] Happiness[NEWLINE]----------------[NEWLINE]Possible Theming Bonuses:[NEWLINE][ICON_BULLET] +8 [ICON_CULTURE] and [ICON_TOURISM] for two [COLOR_POSITIVE_TEXT]Domestic[ENDCOLOR] [ICON_GREAT_WORK] Great Works.",
+      "IconAtlas": "BUILDING_ATLAS_VP_1",
+      "ID": 206,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_MURANO_GLASSWORKS",
+      "IsCorporation": false,
+      "RequiredBuildings": [{
+          "Name": "National Monument",
+          "Type": "BUILDING_NATIONAL_EPIC"
+        }],
+      "GreatWorkCount": 2,
+      "IsProject": false,
+      "Name": "Murano Glassworks",
+      "Civilopedia": "Murano's reputation as a center for glassmaking was born when the Venetian Republic, fearing fire and the destruction of the city's mostly wooden buildings, ordered glassmakers to move their foundries to Murano in 1291. Murano glass is still associated with Venetian glass. Murano's glassmakers were soon numbered among the island's most prominent citizens. By the fourteenth century, glassmakers were allowed to wear swords, enjoyed immunity from prosecution by the Venetian state and found their daughters married into Venice's most affluent families. While benefiting from certain statutory privileges, glassmakers were forbidden to leave the Republic. However, many of them took the risks associated with migration and established glass furnaces in surrounding cities and farther afield, even in England and the Netherlands.",
+      "IsNationalWonder": true,
+      "PortraitIndex": 49,
+      "PrereqTech": {
+        "Name": "Guilds",
+        "Type": "TECH_GUILDS"
+      }
+    },
+    {
+      "LeadsToBuildings": {},
+      "Cost": 140,
+      "Strategy": "One of three mutually exclusive buildings that Venice can build in its capital after it has completed Piazza San Marco. This building provides an additional [ICON_INTERNATIONAL_TRADE] trade route slot; boosts the value of [ICON_INTERNATIONAL_TRADE] Trade Routes to and from the City; generates [ICON_GOLD] Gold based on your empire population; reduces the [ICON_GOLD] Gold cost of purchasing Units and Buildings in the empire, and provides additional [ICON_DIPLOMAT] World Congress Delegates based on your [ICON_GOLD] Gold income.",
+      "Help": "Venetian Exclusive Building[NEWLINE]----------------[NEWLINE]Cost: 140 [ICON_PRODUCTION][NEWLINE]Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Merchant Slots: 2[NEWLINE][ICON_BULLET]-5% [ICON_GOLD] Gold cost for Purchase or Investment[NEWLINE][ICON_BULLET]+3 base [ICON_GOLD] Gold for the Destination City in [ICON_INTERNATIONAL_TRADE] International Trade Routes targeting this City[NEWLINE][ICON_BULLET]+3 base [ICON_GOLD] Gold for the Origin City in [ICON_INTERNATIONAL_TRADE] International Trade Routes targeting this City[NEWLINE][ICON_BULLET]Each [ICON_CITIZEN] Population in Empire: +0.34 [ICON_GOLD][NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]-10% [ICON_GOLD] Gold cost for Purchase or Investment in all Cities[NEWLINE][ICON_BULLET]+1 [ICON_DIPLOMAT] Delegate in the World Congress for every 200 Gross [ICON_GOLD] Gold per turn, capped at 1/4 of the number of [ICON_CITY_STATE] City-States originally in the World[NEWLINE][ICON_BULLET]+1 [ICON_INTERNATIONAL_TRADE] Trade Route[NEWLINE]----------------[NEWLINE]Required Buildings: [COLOR_YIELD_FOOD]National Monument[ENDCOLOR][NEWLINE]City must not have the following Buildings: [COLOR_NEGATIVE_TEXT]Arsenale di Venezia, Murano Glassworks[ENDCOLOR][NEWLINE]Prerequisite Technologies: [COLOR_CYAN]Guilds[ENDCOLOR][NEWLINE]Max 1 per Player [NEWLINE]----------------[NEWLINE]List of possible boosts to this Building:[NEWLINE][ICON_BULLET][COLOR_YIELD_FOOD]Bank[ENDCOLOR] in any City: +3 [ICON_FOOD] +3 [ICON_GOLD][NEWLINE][ICON_BULLET][COLOR_MAGENTA]Ceremony[ENDCOLOR]: +1 [ICON_HAPPINESS_1] Happiness",
+      "IconAtlas": "BUILDING_ATLAS_VP_1",
+      "ID": 207,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_RIALTO_DISTRICT",
+      "IsCorporation": false,
+      "RequiredBuildings": [{
+          "Name": "National Monument",
+          "Type": "BUILDING_NATIONAL_EPIC"
+        }],
+      "GreatWorkCount": 0,
+      "IsProject": false,
+      "Name": "Rialto District",
+      "Civilopedia": "The Rialto is and has been for many centuries the financial and commercial centre of Venice. It is an area of the San Polo sestiere of Venice, Italy, also known for its markets and for the Rialto Bridge across the Grand Canal. The area was settled by the ninth century, when a small area in the middle of the Realtine Islands on either side of the Rio Businiacus was known as the Rivoaltus, or \"high bank\". Eventually the Businiacus became known as the Grand Canal, and the district the Rialto, referring only to the area on the left bank.",
+      "IsNationalWonder": true,
+      "PortraitIndex": 50,
+      "PrereqTech": {
+        "Name": "Guilds",
+        "Type": "TECH_GUILDS"
       }
     },
     {
@@ -35212,6 +35452,117 @@
       "Civilopedia": "The office of a Consul is termed a Consulate, and is usually subordinate to the state's main representation in that foreign country, usually an Embassy, or High Commission between Commonwealth countries, in the capital city of the host state. Like the term embassy, the word consulate may refer not only to the office of consul, but also to the building occupied by the consul and his or her staff. The consulate may share premises with the embassy itself. In the modern age, many Consulates are affiliated with the United Nations and/or other international organizations.",
       "IsNationalWonder": true,
       "PortraitIndex": 10
+    },
+    {
+      "LeadsToBuildings": {},
+      "Cost": -1,
+      "IsNationalWonder": true,
+      "GreatWorkSlotType": "GREAT_WORK_SLOT_MUSIC",
+      "Help": "Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Musician Slots: 1[NEWLINE][ICON_BULLET][ICON_GW_MUSIC] Great Work of Music slots: 1[NEWLINE][ICON_BULLET]+10% [ICON_FOOD] Food[NEWLINE][ICON_BULLET]+10% [ICON_PRODUCTION] Production[NEWLINE][ICON_BULLET]+10% [ICON_GOLD] Gold[NEWLINE][ICON_BULLET]+10% [ICON_RESEARCH] Science[NEWLINE][ICON_BULLET]+10% [ICON_CULTURE] Culture[NEWLINE][ICON_BULLET]+10% [ICON_PEACE] Faith[NEWLINE][ICON_BULLET]+1 City Working Range[NEWLINE]----------------[NEWLINE][ICON_CAPITAL] Capital Only[NEWLINE]Max 1 per Player ",
+      "IconAtlas": "BUILDING_ATLAS_VP_2",
+      "ID": 227,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_THRONE_ROOM",
+      "IsCorporation": false,
+      "RequiredBuildings": {},
+      "Name": "Throne Room",
+      "Civilopedia": "A throne room is the room, often rather a hall, in the official residence of the crown, either a palace or a fortified castle, where the throne of a senior figure (usually a monarch) is set up with elaborate pomp - usually raised, often with steps, and under a canopy, both of which are part of the original notion of the Greek word thronos.",
+      "GreatWorkCount": 1,
+      "IsProject": false,
+      "PortraitIndex": 7
+    },
+    {
+      "LeadsToBuildings": {},
+      "Cost": -1,
+      "IsNationalWonder": true,
+      "Help": "Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_GOLD] Gold: +4[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Merchant Slots: 1[NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+2 [ICON_CULTURE] to [COLOR_YIELD_FOOD]Garden[ENDCOLOR], [COLOR_YIELD_FOOD]Monument[ENDCOLOR], and [COLOR_YIELD_FOOD]Bath[ENDCOLOR] in all Cities[NEWLINE]----------------[NEWLINE][ICON_CAPITAL] Capital Only[NEWLINE]Max 1 per Player ",
+      "IconAtlas": "BUILDING_ATLAS_VP_2",
+      "ID": 228,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_STATE_TREASURY",
+      "IsCorporation": false,
+      "RequiredBuildings": {},
+      "Name": "State Treasury",
+      "Civilopedia": "The term treasury was first used in Classical times to describe the votive buildings erected to house gifts to the gods, such as the Siphnian Treasury in Delphi or many similar buildings erected in Olympia, Greece by competing city-states to impress others during the ancient Olympic Games. In Ancient Greece treasuries were almost always physically incorporated within religious buildings such as temples, thus making state funds sacrosanct and adding moral constraints to the penal ones to those who would have access to these funds.",
+      "GreatWorkCount": 0,
+      "IsProject": false,
+      "PortraitIndex": 18
+    },
+    {
+      "LeadsToBuildings": {},
+      "Cost": -1,
+      "IsNationalWonder": true,
+      "Help": "Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_PRODUCTION] Production: +3[NEWLINE][ICON_BULLET][ICON_STRENGTH] City Strength: +2[NEWLINE][ICON_BULLET][ICON_STRENGTH] Hit Points: +50[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Engineer Slots: 1[NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+10% [ICON_SILVER_FIST] Military Supply from Population in all Cities[NEWLINE][ICON_BULLET]+1 [ICON_PRODUCTION] to [COLOR_YIELD_FOOD]Forge[ENDCOLOR] and [COLOR_YIELD_FOOD]Council[ENDCOLOR] in all Cities[NEWLINE]----------------[NEWLINE][ICON_CAPITAL] Capital Only[NEWLINE]Max 1 per Player ",
+      "IconAtlas": "BUILDING_ATLAS_VP_2",
+      "ID": 229,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_ROYAL_GUARDHOUSE",
+      "IsCorporation": false,
+      "RequiredBuildings": {},
+      "Name": "Royal Guardhouse",
+      "Civilopedia": "A Royal Guard describes any group of military bodyguards, soldiers or armed retainers responsible for the protection of a royal person, such as Emperor/Empress, King/Queen, or Prince/Princess. They often are an elite unit of the regular armed forces, or are designated as such, and may maintain special rights or privileges.",
+      "GreatWorkCount": 0,
+      "IsProject": false,
+      "PortraitIndex": 5
+    },
+    {
+      "LeadsToBuildings": {},
+      "Cost": -1,
+      "IsNationalWonder": true,
+      "GreatWorkSlotType": "GREAT_WORK_SLOT_LITERATURE",
+      "Help": "Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_FOOD] Food: +5[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Writer Slots: 1[NEWLINE][ICON_BULLET][ICON_GW_WRITING] Great Work of Writing slots: 1[NEWLINE][ICON_BULLET]+25% [ICON_GREAT_PEOPLE] Great Person Rate[NEWLINE][ICON_BULLET]+2 Specialists that do not produce [ICON_HAPPINESS_3] Unhappiness from [ICON_URBANIZATION] Urbanization[NEWLINE]----------------[NEWLINE][ICON_CAPITAL] Capital Only[NEWLINE]Max 1 per Player ",
+      "IconAtlas": "BUILDING_ATLAS_VP_2",
+      "ID": 230,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_PALACE_GARDEN",
+      "IsCorporation": false,
+      "RequiredBuildings": {},
+      "Name": "Palace Gardens",
+      "Civilopedia": "A garden is a planned space, usually outdoors, set aside for the display, cultivation, and enjoyment of plants and other forms of nature. The garden can incorporate both natural and man-made materials. The most common form today is known as a residential garden, but the term garden has traditionally been a more general one. Zoos, which display wild animals in simulated natural habitats, were formerly called zoological gardens.[1][2] Western gardens are almost universally based on plants, with garden often signifying a shortened form of botanical garden.",
+      "GreatWorkCount": 1,
+      "IsProject": false,
+      "PortraitIndex": 3
+    },
+    {
+      "LeadsToBuildings": {},
+      "Cost": -1,
+      "IsNationalWonder": true,
+      "GreatWorkSlotType": "GREAT_WORK_SLOT_ART_ARTIFACT",
+      "Help": "Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_PEACE] Faith: +3[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Artist Slots: 1[NEWLINE][ICON_BULLET][ICON_GREAT_WORK] Great Work of Art or Artifact slots: 1[NEWLINE][ICON_BULLET]+100% [ICON_CULTURE_LOCAL] Border Growth Points[NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+5 [ICON_CULTURE_LOCAL] to [COLOR_YIELD_FOOD]Shrine[ENDCOLOR] and [COLOR_YIELD_FOOD]Temple[ENDCOLOR] in all Cities[NEWLINE]----------------[NEWLINE][ICON_CAPITAL] Capital Only[NEWLINE]Max 1 per Player ",
+      "IconAtlas": "BUILDING_ATLAS_VP_2",
+      "ID": 231,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_COURT_CHAPEL",
+      "IsCorporation": false,
+      "RequiredBuildings": {},
+      "Name": "Court Chapel",
+      "Civilopedia": "A chapel is a religious place of fellowship, prayer and worship that is attached to a larger, often nonreligious institution or that is considered an extension of a primary religious institution. It may be part of a larger structure or complex, such as a college, hospital, palace, prison, funeral home, church, synagogue or mosque, located on board a military or commercial ship, or it may be an entirely free-standing building, sometimes with its own grounds. Many military installations have chapels for the use of military personnel, normally under the leadership of a military chaplain.",
+      "GreatWorkCount": 1,
+      "IsProject": false,
+      "PortraitIndex": 1
+    },
+    {
+      "LeadsToBuildings": {},
+      "Cost": -1,
+      "IsNationalWonder": true,
+      "Help": "Destroyed on Conquest[NEWLINE]----------------[NEWLINE][ICON_BULLET][ICON_RESEARCH] Science: +3[NEWLINE][ICON_BULLET][ICON_GREAT_PEOPLE] Scientist Slots: 1[NEWLINE][COLOR_POSITIVE_TEXT]Empire-Wide Effects:[ENDCOLOR][NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] to [COLOR_YIELD_FOOD]Smokehouse[ENDCOLOR] and [COLOR_YIELD_FOOD]Herbalist[ENDCOLOR] in all Cities[NEWLINE]----------------[NEWLINE][ICON_CAPITAL] Capital Only[NEWLINE]Max 1 per Player ",
+      "IconAtlas": "BUILDING_ATLAS_VP_2",
+      "ID": 232,
+      "IsWorldWonder": false,
+      "FaithCost": 0,
+      "Type": "BUILDING_ROYAL_ASTROLOGER",
+      "IsCorporation": false,
+      "RequiredBuildings": {},
+      "Name": "Royal Astrologer",
+      "Civilopedia": "Astrology, in its broadest sense, is the search for meaning in the sky. Early evidence for humans making conscious attempts to measure, record, and predict seasonal changes by reference to astronomical cycles, appears as markings on bones and cave walls, which show that lunar cycles were being noted as early as 25,000 years ago. This was a first step towards recording the Moon's influence upon tides and rivers, and towards organising a communal calendar. Farmers addressed agricultural needs with increasing knowledge of the constellations that appear in the different seasons - and used the rising of particular star-groups to herald annual floods or seasonal activities. By the 3rd millennium BCE, civilisations had sophisticated awareness of celestial cycles, and may have oriented temples in alignment with heliacal risings of the stars.",
+      "GreatWorkCount": 0,
+      "IsProject": false,
+      "PortraitIndex": 4
     },
     {
       "LeadsToBuildings": {},
@@ -44427,34 +44778,35 @@
       "EraName": "Classical Era",
       "WorkerActions": {},
       "UnlockedProjects": {},
-      "UnlockedWonders": [{
+      "UnlockedWonders": [
+        {
           "Name": "Great Library",
           "Type": "BUILDING_GREAT_LIBRARY"
-        }, {
+        },
+        {
           "Name": "Royal Library",
           "Type": "BUILDING_ROYAL_LIBRARY"
-        }, {
-          "Name": "Piazza San Marco",
-          "Type": "BUILDING_PIAZZA_SAN_MARCO"
-        }],
-      "UnlockedBuildings": [
-        {
-          "Name": "Library",
-          "Type": "BUILDING_LIBRARY"
         },
         {
           "Name": "Parthenon",
           "Type": "BUILDING_PARTHENON"
         },
         {
-          "Name": "Telpochcalli",
-          "Type": "BUILDING_TELPOCHCALLI"
-        },
-        {
           "Name": "Scrivener's Office",
           "Type": "BUILDING_SCRIVENERS_OFFICE"
+        },
+        {
+          "Name": "Piazza San Marco",
+          "Type": "BUILDING_PIAZZA_SAN_MARCO"
         }
       ],
+      "UnlockedBuildings": [{
+          "Name": "Library",
+          "Type": "BUILDING_LIBRARY"
+        }, {
+          "Name": "Telpochcalli",
+          "Type": "BUILDING_TELPOCHCALLI"
+        }],
       "Name": "Writing",
       "Civilopedia": "Writing is the art of recording information on material (paper, stone, clay, animal skins) so that others who look at the material can discern its meaning. Invented sometime around the fourth millennium BC, the earliest form of writing was \"pictography,\" in which the writer draws little pictures representing the subject matter. This may work adequately for very simple subjects, but other methods become necessary when more esoteric topics are discussed. (Drawing a picture of a sheep may be easy, but how about a picture of a thousand sheep, or a picture of the sound a sheep makes when it falls off of a pyramid? Not so easy.)[NEWLINE][NEWLINE]Logography probably came after pictography. In logography, symbols stand for individual words. There's a symbol for sheep, and another symbol for a thousand sheep, and yet another symbol for the sound a sheep makes when falling off of a pyramid. However, a full language may have tens of thousands of words in it, and learning the symbol for each word may be problematic.[NEWLINE][NEWLINE]A phonographic system provides a unique symbol for each different-sounding word. \"Sheep\" would have a unique symbol, but \"there,\" \"their,\" and \"they're\" would all share the same symbol. This results in a smaller number of symbols to memorize, but also in greater chances of misunderstanding.[NEWLINE][NEWLINE]In an alphabetic system, the language provides a set of symbols (the alphabet) which represent the various sounds which may occur in a language. These symbols can be strung together to replicate any spoken word in the language. Theoretically, anybody who can spell should be able to accurately \"sound out\" any written word. This is the system used in the English language, and is generally believed (especially by English-speakers) to be the most useful and flexible writing system yet devised.",
       "LeadsToTechs": [{
@@ -45433,13 +45785,28 @@
           }
         }],
       "UnlockedProjects": {},
-      "UnlockedWonders": [{
+      "UnlockedWonders": [
+        {
           "Name": "Chartered Company",
           "Type": "BUILDING_NATIONAL_TREASURY"
-        }, {
+        },
+        {
+          "Name": "Arsenale di Venezia",
+          "Type": "BUILDING_ARSENALE_DI_VENEZIA"
+        },
+        {
+          "Name": "Murano Glassworks",
+          "Type": "BUILDING_MURANO_GLASSWORKS"
+        },
+        {
+          "Name": "Rialto District",
+          "Type": "BUILDING_RIALTO_DISTRICT"
+        },
+        {
           "Name": "Karlstejn",
           "Type": "BUILDING_KARLSTEJN"
-        }],
+        }
+      ],
       "UnlockedBuildings": [
         {
           "Name": "Customs House",
@@ -45456,18 +45823,6 @@
         {
           "Name": "Pogost",
           "Type": "BUILDING_POGOST"
-        },
-        {
-          "Name": "Arsenale di Venezia",
-          "Type": "BUILDING_ARSENALE_DI_VENEZIA"
-        },
-        {
-          "Name": "Murano Glassworks",
-          "Type": "BUILDING_MURANO_GLASSWORKS"
-        },
-        {
-          "Name": "Rialto District",
-          "Type": "BUILDING_RIALTO_DISTRICT"
         }
       ],
       "Name": "Guilds",
@@ -46095,14 +46450,14 @@
       "UnlockedWonders": [{
           "Name": "Globe Theatre",
           "Type": "BUILDING_GLOBE_THEATER"
-        }],
-      "UnlockedBuildings": [{
+        }, {
           "Name": "Printing Press",
           "Type": "BUILDING_PRINTING_PRESS"
         }, {
           "Name": "Ballhausplatz",
           "Type": "BUILDING_BALLHAUSPLATZ"
         }],
+      "UnlockedBuildings": {},
       "Name": "Printing Press",
       "Civilopedia": "While movable type was invented in China, as far as can be determined, the first mechanized printing press was invented in the mid-fifteenth century by German printer Johannes Gutenberg. The earliest printing presses were wooden machines, very similar in design to the wine and olive oil presses which had been used around the Mediterranean for centuries.[NEWLINE][NEWLINE]In the original presses, the type was laid out in reverse on a wooden \"platen\" which held it tightly in position. Ink was applied to the type on the platen, then the paper was placed atop the platen in the press. The craftsmen turned the screw to put pressure on the paper and bring it into contact with the inked type. The printer then removed the paper and reinked the type, and the process began once again. Gutenberg's press could turn out some 250 sheets per hour (printed on one side). His design remained unchanged for some three hundred years, until it was supplanted by metal machines. By the nineteenth century, presses were powered by steam, and capable of producing some 7500 sheets per hour.[NEWLINE][NEWLINE]The value of the printing press to human knowledge cannot be overstated. Before the press, few books were in print, and those that were might cost more than the average worker made in a year. Cambridge University Library had just over 100 books when the press was invented; within an astonishingly short time common folks could afford to have bibles and other books in their homes. Within 60 years the first printed \"news book\" (forerunner to the newspaper) appeared in England.",
       "LeadsToTechs": [{
@@ -46928,11 +47283,11 @@
       "UnlockedWonders": [{
           "Name": "Eiffel Tower",
           "Type": "BUILDING_EIFFEL_TOWER"
-        }],
-      "UnlockedBuildings": [{
+        }, {
           "Name": "Nobel Committee",
           "Type": "BUILDING_NOBEL_COMMITTEE"
         }],
+      "UnlockedBuildings": {},
       "Name": "Dynamite",
       "Civilopedia": "Dynamite is an explosive material invented by Swedish chemist and engineer Alfred Nobel in 1867. Dynamite is created by soaking an absorbent material like diatomaceous earth (interestingly, the same material used in many pool filters) in nitroglycerin. Nitroglycerin is an extremely powerful but terrifyingly unstable explosive; dynamite is less powerful but a lot more stable.[NEWLINE][NEWLINE]Dynamite is primarily used in mining and construction. Historically, it has been used in military applications, but the explosive component nitroglycerin remains too unstable for the rather volatile conditions found in a battlefield, so generally militaries prefer a modified product called \"military dynamite\" which contains no nitroglycerin but instead uses other chemicals including TNT to create a product which is 60% less powerful but much less apt to explode when it's not supposed to.",
       "LeadsToTechs": [{
@@ -47010,13 +47365,13 @@
       "UnlockedWonders": [{
           "Name": "Broadway",
           "Type": "BUILDING_BROADWAY"
+        }, {
+          "Name": "Foreign Bureau",
+          "Type": "BUILDING_FOREIGN_BUREAU"
         }],
       "UnlockedBuildings": [{
           "Name": "Broadcast Tower",
           "Type": "BUILDING_BROADCAST_TOWER"
-        }, {
-          "Name": "Foreign Bureau",
-          "Type": "BUILDING_FOREIGN_BUREAU"
         }],
       "Name": "Radio",
       "Civilopedia": "Radio is the technology of transmitting information to a remote receiver by modifying a \"carrier wave's\" amplitude, frequency, or duration. In less technical terms, somewhere a transmitter translates sounds into waves which it broadcasts into the atmosphere. Distant radio receivers can pick up these waves and translate them back into sound.[NEWLINE][NEWLINE]A radio is a complicated and intricate machine. It required hundreds of years of research and development by scientists and physicists like Michael Faraday, James Maxwell, Heinrich Hertz, and Guglielmo Marconi.[NEWLINE][NEWLINE]Marconi was an Italian physicist working on creating a wireless telegraph. In 1894 Marconi managed to send a signal some 30 yards. He continued to refine the technology and by 1901 he successfully transmitted a signal across the Atlantic Ocean. He continued to work in the field, and by the '20s began development of shortwave wireless, which would become the basis for most modern long-distance radio communication.[NEWLINE][NEWLINE]The first radio program was broadcast on Christmas Eve, 1906. The first newscast was made on August 31, 1920, in Detroit, Michigan. By the end of the '20s radios were becoming ubiquitous in the United States and Europe.[NEWLINE][NEWLINE]Radios played an important role in the Second World War. In addition to allowing communication between airplanes and ships, they also allowed the combatant governments to broadcast news and propaganda to their own citizens and to enemies alike. Hitler, Churchill, and Roosevelt were all masters of the medium. Radio remained wildly popular in the postwar years, particularly in the United States, which saw a huge growth of networks and transmitting stations. It remained the dominant form of entertainment until the advent of television in the 1950s.[NEWLINE][NEWLINE]Although diminished by the upstart technologies of TV and the Internet, radio remains a viable and important source of news and entertainment for people around the world. Like rock and roll, it's here to stay.",

@@ -5046,12 +5046,6 @@ window.globalSearchIndex = [
     "page": "buildings"
   },
   {
-    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Greek)</span> Parthenon",
-    "name": "[COLOR_POSITIVE_TEXT](Greek)[ENDCOLOR] Parthenon",
-    "type": "BUILDING_PARTHENON",
-    "page": "buildings"
-  },
-  {
     "nameFormatted": "Council",
     "name": "Council",
     "type": "BUILDING_COUNCIL",
@@ -5373,90 +5367,6 @@ window.globalSearchIndex = [
     "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Carthaginian)</span> Tophet",
     "name": "[COLOR_POSITIVE_TEXT](Carthaginian)[ENDCOLOR] Tophet",
     "type": "BUILDING_TOPHET",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "Scrivener's Office",
-    "name": "Scrivener's Office",
-    "type": "BUILDING_SCRIVENERS_OFFICE",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "Printing Press",
-    "name": "Printing Press",
-    "type": "BUILDING_PRINTING_PRESS",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "Foreign Bureau",
-    "name": "Foreign Bureau",
-    "type": "BUILDING_FOREIGN_BUREAU",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Austrian)</span> Ballhausplatz",
-    "name": "[COLOR_POSITIVE_TEXT](Austrian)[ENDCOLOR] Ballhausplatz",
-    "type": "BUILDING_BALLHAUSPLATZ",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Swedish)</span> Nobel Committee",
-    "name": "[COLOR_POSITIVE_TEXT](Swedish)[ENDCOLOR] Nobel Committee",
-    "type": "BUILDING_NOBEL_COMMITTEE",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "Arsenale di Venezia",
-    "name": "Arsenale di Venezia",
-    "type": "BUILDING_ARSENALE_DI_VENEZIA",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "Murano Glassworks",
-    "name": "Murano Glassworks",
-    "type": "BUILDING_MURANO_GLASSWORKS",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "Rialto District",
-    "name": "Rialto District",
-    "type": "BUILDING_RIALTO_DISTRICT",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "Throne Room",
-    "name": "Throne Room",
-    "type": "BUILDING_THRONE_ROOM",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "State Treasury",
-    "name": "State Treasury",
-    "type": "BUILDING_STATE_TREASURY",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "Royal Guardhouse",
-    "name": "Royal Guardhouse",
-    "type": "BUILDING_ROYAL_GUARDHOUSE",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "Palace Gardens",
-    "name": "Palace Gardens",
-    "type": "BUILDING_PALACE_GARDEN",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "Court Chapel",
-    "name": "Court Chapel",
-    "type": "BUILDING_COURT_CHAPEL",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "Royal Astrologer",
-    "name": "Royal Astrologer",
-    "type": "BUILDING_ROYAL_ASTROLOGER",
     "page": "buildings"
   },
   {
@@ -5940,9 +5850,33 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Greek)</span> Parthenon",
+    "name": "[COLOR_POSITIVE_TEXT](Greek)[ENDCOLOR] Parthenon",
+    "type": "BUILDING_PARTHENON",
+    "page": "wonders"
+  },
+  {
     "nameFormatted": "International Space Station",
     "name": "International Space Station",
     "type": "BUILDING_INTERNATIONAL_SPACE_STATION",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Scrivener's Office",
+    "name": "Scrivener's Office",
+    "type": "BUILDING_SCRIVENERS_OFFICE",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Printing Press",
+    "name": "Printing Press",
+    "type": "BUILDING_PRINTING_PRESS",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Foreign Bureau",
+    "name": "Foreign Bureau",
+    "type": "BUILDING_FOREIGN_BUREAU",
     "page": "wonders"
   },
   {
@@ -5967,6 +5901,12 @@ window.globalSearchIndex = [
     "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(American)</span> Independence Hall",
     "name": "[COLOR_POSITIVE_TEXT](American)[ENDCOLOR] Independence Hall",
     "type": "BUILDING_INDEPENDENCE_HALL",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Austrian)</span> Ballhausplatz",
+    "name": "[COLOR_POSITIVE_TEXT](Austrian)[ENDCOLOR] Ballhausplatz",
+    "type": "BUILDING_BALLHAUSPLATZ",
     "page": "wonders"
   },
   {
@@ -6012,9 +5952,33 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Swedish)</span> Nobel Committee",
+    "name": "[COLOR_POSITIVE_TEXT](Swedish)[ENDCOLOR] Nobel Committee",
+    "type": "BUILDING_NOBEL_COMMITTEE",
+    "page": "wonders"
+  },
+  {
     "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Venetian)</span> Piazza San Marco",
     "name": "[COLOR_POSITIVE_TEXT](Venetian)[ENDCOLOR] Piazza San Marco",
     "type": "BUILDING_PIAZZA_SAN_MARCO",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Arsenale di Venezia",
+    "name": "Arsenale di Venezia",
+    "type": "BUILDING_ARSENALE_DI_VENEZIA",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Murano Glassworks",
+    "name": "Murano Glassworks",
+    "type": "BUILDING_MURANO_GLASSWORKS",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Rialto District",
+    "name": "Rialto District",
+    "type": "BUILDING_RIALTO_DISTRICT",
     "page": "wonders"
   },
   {
@@ -6129,6 +6093,42 @@ window.globalSearchIndex = [
     "nameFormatted": "Consulate",
     "name": "Consulate",
     "type": "BUILDING_CONSULATE",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Throne Room",
+    "name": "Throne Room",
+    "type": "BUILDING_THRONE_ROOM",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "State Treasury",
+    "name": "State Treasury",
+    "type": "BUILDING_STATE_TREASURY",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Royal Guardhouse",
+    "name": "Royal Guardhouse",
+    "type": "BUILDING_ROYAL_GUARDHOUSE",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Palace Gardens",
+    "name": "Palace Gardens",
+    "type": "BUILDING_PALACE_GARDEN",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Court Chapel",
+    "name": "Court Chapel",
+    "type": "BUILDING_COURT_CHAPEL",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Royal Astrologer",
+    "name": "Royal Astrologer",
+    "type": "BUILDING_ROYAL_ASTROLOGER",
     "page": "wonders"
   },
   {
