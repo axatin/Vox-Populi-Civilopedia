@@ -10126,7 +10126,7 @@
       "Description": "Missiles",
       "CivilopediaHeaderType": "HEADER_AIRCOMBAT",
       "HeaderName": "Air Combat Rules",
-      "Summary": "Missiles are one-shot weapons. They perform a single air strike mission against a target, and then, win or lose, they are destroyed. Unlike normal aircraft, missiles cannot be intercepted.",
+      "Summary": "Missiles are one-shot weapons. They perform a single air strike mission against a target, and then, win or lose, they are destroyed. They can be intercepted.",
       "Topic": "Air Power",
       "ID": 335,
       "AdvisorQuestion": "What are the rules for missiles?",
