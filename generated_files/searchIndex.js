@@ -5082,6 +5082,12 @@ window.globalSearchIndex = [
     "page": "buildings"
   },
   {
+    "nameFormatted": "Printing House",
+    "name": "Printing House",
+    "type": "BUILDING_PRINTING_HOUSE",
+    "page": "buildings"
+  },
+  {
     "nameFormatted": "Grocer",
     "name": "Grocer",
     "type": "BUILDING_GROCER",
@@ -5115,6 +5121,30 @@ window.globalSearchIndex = [
     "nameFormatted": "Wire Service",
     "name": "Wire Service",
     "type": "BUILDING_WIRE_SERVICE",
+    "page": "buildings"
+  },
+  {
+    "nameFormatted": "Jail",
+    "name": "Jail",
+    "type": "BUILDING_JAIL",
+    "page": "buildings"
+  },
+  {
+    "nameFormatted": "Penitentiary",
+    "name": "Penitentiary",
+    "type": "BUILDING_PENITENTIARY",
+    "page": "buildings"
+  },
+  {
+    "nameFormatted": "Sorting Office",
+    "name": "Sorting Office",
+    "type": "BUILDING_SORTING_OFFICE",
+    "page": "buildings"
+  },
+  {
+    "nameFormatted": "Casino",
+    "name": "Casino",
+    "type": "BUILDING_CASINO",
     "page": "buildings"
   },
   {
@@ -5256,15 +5286,9 @@ window.globalSearchIndex = [
     "page": "buildings"
   },
   {
-    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Japanese)</span> Dojo",
-    "name": "[COLOR_POSITIVE_TEXT](Japanese)[ENDCOLOR] Dojo",
-    "type": "BUILDING_DOJO",
-    "page": "buildings"
-  },
-  {
-    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Japanese)</span> Kabuki Theater",
-    "name": "[COLOR_POSITIVE_TEXT](Japanese)[ENDCOLOR] Kabuki Theater",
-    "type": "BUILDING_KABUKI_THEATER",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Japanese)</span> Tatara",
+    "name": "[COLOR_POSITIVE_TEXT](Japanese)[ENDCOLOR] Tatara",
+    "type": "BUILDING_TATARA",
     "page": "buildings"
   },
   {
@@ -5409,6 +5433,12 @@ window.globalSearchIndex = [
     "nameFormatted": "Gurdwara",
     "name": "Gurdwara",
     "type": "BUILDING_GURDWARA",
+    "page": "buildings"
+  },
+  {
+    "nameFormatted": "Daoguan",
+    "name": "Daoguan",
+    "type": "BUILDING_DAOGUAN",
     "page": "buildings"
   },
   {
@@ -5868,9 +5898,15 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
-    "nameFormatted": "Printing Press",
-    "name": "Printing Press",
-    "type": "BUILDING_PRINTING_PRESS",
+    "nameFormatted": "Ministerial District",
+    "name": "Ministerial District",
+    "type": "BUILDING_MINISTERIAL_DISTRICT",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "General Post Office",
+    "name": "General Post Office",
+    "type": "BUILDING_GENERAL_POST_OFFICE",
     "page": "wonders"
   },
   {
@@ -6000,9 +6036,27 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
+    "nameFormatted": "Alamut Fortress",
+    "name": "Alamut Fortress",
+    "type": "BUILDING_ALAMUT_FORTRESS",
+    "page": "wonders"
+  },
+  {
     "nameFormatted": "Summer Palace",
     "name": "Summer Palace",
     "type": "BUILDING_SUMMER_PALACE",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Port Royal",
+    "name": "Port Royal",
+    "type": "BUILDING_PORT_ROYAL",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Chateau d'If",
+    "name": "Chateau d'If",
+    "type": "BUILDING_CHATEAU_DIF",
     "page": "wonders"
   },
   {
@@ -6027,6 +6081,12 @@ window.globalSearchIndex = [
     "nameFormatted": "Empire State Building",
     "name": "Empire State Building",
     "type": "BUILDING_EMPIRE_STATE_BUILDING",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Alcatraz",
+    "name": "Alcatraz",
+    "type": "BUILDING_ALCATRAZ",
     "page": "wonders"
   },
   {
@@ -6183,6 +6243,12 @@ window.globalSearchIndex = [
     "nameFormatted": "Grand Ossuary",
     "name": "Grand Ossuary",
     "type": "BUILDING_GRAND_OSSUARY",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "Heavenly Grotto",
+    "name": "Heavenly Grotto",
+    "type": "BUILDING_HEAVENLY_GROTTO",
     "page": "wonders"
   },
   {
@@ -7866,6 +7932,12 @@ window.globalSearchIndex = [
     "page": "beliefs"
   },
   {
+    "nameFormatted": "City of God",
+    "name": "City of God",
+    "type": "BELIEF_CITY_OF_GOD",
+    "page": "beliefs"
+  },
+  {
     "nameFormatted": "Gurdwaras",
     "name": "Gurdwaras",
     "type": "BELIEF_GURDWARA",
@@ -7878,9 +7950,27 @@ window.globalSearchIndex = [
     "page": "beliefs"
   },
   {
+    "nameFormatted": "Daoguans",
+    "name": "Daoguans",
+    "type": "BELIEF_DAOGUAN",
+    "page": "beliefs"
+  },
+  {
     "nameFormatted": "Cooperation",
     "name": "Cooperation",
     "type": "BELIEF_COMMUNALISM",
+    "page": "beliefs"
+  },
+  {
+    "nameFormatted": "Animism",
+    "name": "Animism",
+    "type": "BELIEF_ANIMISM",
+    "page": "beliefs"
+  },
+  {
+    "nameFormatted": "Work Ethic",
+    "name": "Work Ethic",
+    "type": "BELIEF_WORK_ETHIC_VP",
     "page": "beliefs"
   },
   {
@@ -8115,6 +8205,12 @@ window.globalSearchIndex = [
     "nameFormatted": "Combat Bonus in Forest/Jungle (33)",
     "name": "Combat Bonus in Forest/Jungle (33)",
     "type": "PROMOTION_JAGUAR",
+    "page": "promotions"
+  },
+  {
+    "nameFormatted": "Enhanced Medic",
+    "name": "Enhanced Medic",
+    "type": "PROMOTION_MEDIC_GENERAL",
     "page": "promotions"
   },
   {
@@ -8826,8 +8922,8 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
-    "nameFormatted": "All tiles cost 1 <span class=\"icon-wrap\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAC10lEQVR4nM2UW0iTYRyHf322b04y14nKgkXgzARZTDO1rDQwKSvMoLnKNGJ4Edhp1k1KSa2IIIq0cmJ0cEqWUml5zjYtN1vlCSS6CyEMrKSNJv3iBS+8yilCPbcfPLzv+3/+H/CPUQNYCWApAHmmpLO1Wk1KdvbO92p1SAmAZTMlVup02tzi4jPejRujPQAyAQTNiFivjzB/+PCIbnctNZrQYQCbAAROR6YAoAIQIN5Upws/4XDc5djYAOvrS6lWhwwCiJnOey83mw+ZAcQBmB8VtSq9pubqb4+nl15vD63WIgYHB70EEClmMBXxloaG2z9LSgq/AtgLYHVm5rbK/v7nHB11c2TExQsXjlOtDrYBWDF+M7/YPzDwjMPDTlosZs+4PM5k2tvsctVwdPQth4bszM01UKEIuAxgib/irMHB5/T5PvLLl9e0WPKF3AAgwWQytjnsFRz55uSnT01MT08mgLzxxsVs/sqB3t5aejz9/PHdzc+f23n6tEnUsA5AbEZGSk9nh41DQ+18667m5qS1vwMD5QIA8yY9sc12md2uh+zpe8J2+wOui9d5ARwW4tTUxL66F1a+dlXT9a6WBuMOyirZ7s/yZJWWFrLDcZ+NTWWMi9NRpZJFBbvTdm1ufVJ3ky2v7rO9s5JHjmVTVsriNidFQZOJ99lsl9jWdpcJCWsoSVKHJEkH9+zZ6njRcJvNrXfoeFPFs+ePUqmUvwPIAbAAgDSZONlyMc+7IVHvkyTJAcCo10fWdzmr2NJazo5OG6/dKGCIeq4PQD6AhfCT0KSk2FNBgYrrANZLkpRjtZ6j3VHBN11VvFdxhUtDF4saxPflAGb5K1YAmANgEYC5Wq0mr6y8iM7uaj6tu8WIyDAhfQwgfKqbNxE5LExz/OatQjY232H8hhghFQXo/en2b8jR0ZHG4uKCXwbjdiHtGu95Wn83TEBMWmxVMoA0AKtmQvr/8Qd5Sy/4HmT7HwAAAABJRU5ErkJggg==\" class=\"civ5-icon\" alt=\"\" /><span class=\"icon-alt\">:c5moves:</span></span> Movement.<br><span style=\"color: rgba(255, 77, 77, 1)\">Cannot use Roads and Railroads.</span>",
-    "name": "All tiles cost 1 [ICON_MOVES] Movement.[NEWLINE][COLOR_NEGATIVE_TEXT]Cannot use Roads and Railroads.[ENDCOLOR]",
+    "nameFormatted": "Flat Movement Cost",
+    "name": "Flat Movement Cost",
     "type": "PROMOTION_FLAT_MOVEMENT_COST",
     "page": "promotions"
   },
@@ -9105,12 +9201,6 @@ window.globalSearchIndex = [
     "nameFormatted": "Haka War Dance",
     "name": "Haka War Dance",
     "type": "PROMOTION_HAKA_WAR_DANCE",
-    "page": "promotions"
-  },
-  {
-    "nameFormatted": "Khaaaan!",
-    "name": "Khaaaan!",
-    "type": "PROMOTION_MEDIC_GENERAL",
     "page": "promotions"
   },
   {
@@ -9498,12 +9588,6 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
-    "nameFormatted": "Minelayer",
-    "name": "Minelayer",
-    "type": "PROMOTION_MINELAYER",
-    "page": "promotions"
-  },
-  {
     "nameFormatted": "Aerial Torpedo",
     "name": "Aerial Torpedo",
     "type": "PROMOTION_AERIAL_TORPEDO",
@@ -9591,6 +9675,18 @@ window.globalSearchIndex = [
     "nameFormatted": "Sun Never Sets",
     "name": "Sun Never Sets",
     "type": "PROMOTION_SUN_NEVER_SETS",
+    "page": "promotions"
+  },
+  {
+    "nameFormatted": "Eight Virtues of Bushido",
+    "name": "Eight Virtues of Bushido",
+    "type": "PROMOTION_BUSHIDO",
+    "page": "promotions"
+  },
+  {
+    "nameFormatted": "Chasqui Training",
+    "name": "Chasqui Training",
+    "type": "PROMOTION_CHASQUI_TRAINING",
     "page": "promotions"
   },
   {
@@ -9684,6 +9780,12 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
+    "nameFormatted": "Animist",
+    "name": "Animist",
+    "type": "PROMOTION_ANIMISM",
+    "page": "promotions"
+  },
+  {
     "nameFormatted": "Royal Signet",
     "name": "Royal Signet",
     "type": "PROMOTION_ROYAL_SIGNET",
@@ -9738,12 +9840,6 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
-    "nameFormatted": "Eight Virtues of Bushido",
-    "name": "Eight Virtues of Bushido",
-    "type": "PROMOTION_BUSHIDO",
-    "page": "promotions"
-  },
-  {
     "nameFormatted": "Schützenkönig",
     "name": "Schützenkönig",
     "type": "PROMOTION_SCHUTZENKONIG",
@@ -9765,6 +9861,12 @@ window.globalSearchIndex = [
     "nameFormatted": "Treasure Fleet",
     "name": "Treasure Fleet",
     "type": "PROMOTION_TREASURE_FLEET",
+    "page": "promotions"
+  },
+  {
+    "nameFormatted": "Triumph",
+    "name": "Triumph",
+    "type": "PROMOTION_TRIUMPH",
     "page": "promotions"
   },
   {
@@ -10080,9 +10182,9 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
-    "nameFormatted": "Legacy",
-    "name": "Legacy",
-    "type": "PROMOTION_LEGACY",
+    "nameFormatted": "Spear Wall",
+    "name": "Spear Wall",
+    "type": "PROMOTION_SPEAR_WALL",
     "page": "promotions"
   },
   {
@@ -10194,9 +10296,9 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
-    "nameFormatted": "Cetbang",
-    "name": "Cetbang",
-    "type": "PROMOTION_CETBANG",
+    "nameFormatted": "Retaliation",
+    "name": "Retaliation",
+    "type": "PROMOTION_RETALIATION",
     "page": "promotions"
   },
   {
@@ -11073,6 +11175,12 @@ window.globalSearchIndex = [
     "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Roman)</span> Villa",
     "name": "[COLOR_POSITIVE_TEXT](Roman)[ENDCOLOR] Villa",
     "type": "IMPROVEMENT_VILLA",
+    "page": "improvements"
+  },
+  {
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Japanese)</span> Torii",
+    "name": "[COLOR_POSITIVE_TEXT](Japanese)[ENDCOLOR] Torii",
+    "type": "IMPROVEMENT_TORII",
     "page": "improvements"
   },
   {
