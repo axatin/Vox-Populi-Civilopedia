@@ -2262,8 +2262,8 @@ window.globalSearchIndex = [
     "page": "concepts"
   },
   {
-    "nameFormatted": "Spies and Diplomats",
-    "name": "Spies and Diplomats",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 0, 1)\">Spies and Diplomats</span>",
+    "name": "[COLOR_YELLOW]Spies and Diplomats[ENDCOLOR]",
     "type": "CONCEPT_ESPIONAGE_SPIES",
     "page": "concepts"
   },
@@ -2274,68 +2274,68 @@ window.globalSearchIndex = [
     "page": "concepts"
   },
   {
-    "nameFormatted": "Earning More Spies",
-    "name": "Earning More Spies",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">Statecraft</span>",
+    "name": "[COLOR_POSITIVE_TEXT]Statecraft[ENDCOLOR]",
     "type": "CONCEPT_ESPIONAGE_MORE",
     "page": "concepts"
   },
   {
-    "nameFormatted": "Stealing Technology",
-    "name": "Stealing Technology",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">Spy Missions</span>",
+    "name": "[COLOR_POSITIVE_TEXT]Spy Missions[ENDCOLOR]",
     "type": "CONCEPT_ESPIONAGE_STEALING_TECHS",
     "page": "concepts"
   },
   {
-    "nameFormatted": "Less Advanced Civilizations",
-    "name": "Less Advanced Civilizations",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">Network Points</span>",
+    "name": "[COLOR_POSITIVE_TEXT]Network Points[ENDCOLOR]",
     "type": "CONCEPT_ESPIONAGE_CANT_STEAL_ANYMORE",
     "page": "concepts"
   },
   {
-    "nameFormatted": "<span style=\"color: rgba(255, 255, 0, 1)\">Spies and City-States</span>",
-    "name": "[COLOR_YELLOW]Spies and City-States[ENDCOLOR]",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 0, 1)\">Rigging City-State Elections</span>",
+    "name": "[COLOR_YELLOW]Rigging City-State Elections[ENDCOLOR]",
     "type": "CONCEPT_ESPIONAGE_RIG_ELECTION",
     "page": "concepts"
   },
   {
-    "nameFormatted": "Establishing Surveillance",
-    "name": "Establishing Surveillance",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 0, 1)\">Residency Bonuses</span>",
+    "name": "[COLOR_YELLOW]Residency Bonuses[ENDCOLOR]",
     "type": "CONCEPT_ESPIONAGE_SURVEILLANCE",
     "page": "concepts"
   },
   {
-    "nameFormatted": "Counter-Intelligence",
-    "name": "Counter-Intelligence",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 0, 1)\">Counter-Intelligence</span>",
+    "name": "[COLOR_YELLOW]Counter-Intelligence[ENDCOLOR]",
     "type": "CONCEPT_ESPIONAGE_COUNTER_INTEL",
     "page": "concepts"
   },
   {
-    "nameFormatted": "Constabularies and Police",
-    "name": "Constabularies and Police",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">City Security</span>",
+    "name": "[COLOR_POSITIVE_TEXT]City Security[ENDCOLOR]",
     "type": "CONCEPT_ESPIONAGE_POLICE_STATION",
     "page": "concepts"
   },
   {
-    "nameFormatted": "National Intelligence Agency",
-    "name": "National Intelligence Agency",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 0, 1)\">National Wonders</span>",
+    "name": "[COLOR_YELLOW]National Wonders[ENDCOLOR]",
     "type": "CONCEPT_ESPIONAGE_NATIONAL_INTELLIGENCE",
     "page": "concepts"
   },
   {
-    "nameFormatted": "The Great Firewall",
-    "name": "The Great Firewall",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 0, 1)\">World Wonders</span>",
+    "name": "[COLOR_YELLOW]World Wonders[ENDCOLOR]",
     "type": "CONCEPT_ESPIONAGE_GREAT_FIREWALL",
     "page": "concepts"
   },
   {
-    "nameFormatted": "Spy Experience",
-    "name": "Spy Experience",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">Ideologies</span>",
+    "name": "[COLOR_POSITIVE_TEXT]Ideologies[ENDCOLOR]",
     "type": "CONCEPT_ESPIONAGE_PROMOTIONS",
     "page": "concepts"
   },
   {
-    "nameFormatted": "Detecting a Spy",
-    "name": "Detecting a Spy",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 0, 1)\">Identifying and Killing Spies</span>",
+    "name": "[COLOR_YELLOW]Identifying and Killing Spies[ENDCOLOR]",
     "type": "CONCEPT_ESPIONAGE_GETTING_CAUGHT",
     "page": "concepts"
   },
