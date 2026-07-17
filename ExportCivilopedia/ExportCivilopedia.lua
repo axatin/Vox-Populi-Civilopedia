@@ -800,7 +800,23 @@ function ExportBuildings()
         if #civNames > 0 then
             buildingData.Civilizations = civilizations
             buildingData.Name = "[COLOR_POSITIVE_TEXT](" .. table.concat(civNames, ", ") .. ")[ENDCOLOR] " .. buildingData.Name
-        end
+        elseif safeGet(row, "CivilizationRequired") ~= nil then
+				buildingData.Name = "[COLOR_POSITIVE_TEXT](" .. Locale.ConvertTextKey(GameInfo.Civilizations[safeGet(row, "CivilizationRequired")].Adjective) .. ")[ENDCOLOR] " .. buildingData.Name;
+			end
+
+			-- If it comes from a policy, prepend that information
+			if safeGet(row, "PolicyType") ~= nil then
+				local policy = GameInfo.Policies[safeGet(row, "PolicyType")]
+				local ppbranch = safeGet(row, "PolicyBranchType")
+				if ppbranch then
+				    buildingData.Name = "[COLOR_MAGENTA](" .. Locale.Lookup(GameInfo.PolicyBranchTypes[ppbranch].Description ) .. ")[ENDCOLOR] " .. buildingData.Name;
+				-- if not, its an opener or finisher, so the policy name is the branch name
+				else
+					buildingData.Name = "[COLOR_MAGENTA](" .. Locale.Lookup( policy.Description ) .. ")[ENDCOLOR] " .. buildingData.Name;
+				end
+			elseif safeGet(row, "PolicyBranchType") ~= nil then
+				buildingData.Name = "[COLOR_MAGENTA](" .. Locale.Lookup(GameInfo.PolicyBranchTypes[safeGet(row, "PolicyBranchType")].Description ) .. ")[ENDCOLOR] " .. buildingData.Name;
+            end
 
         table.insert(buildings, buildingData)
     end
@@ -2083,6 +2099,27 @@ function ExportWonders()
             if #civNames > 0 then
                 wonderData.Civilizations = civilizations
                 wonderData.Name = "[COLOR_POSITIVE_TEXT](" .. table.concat(civNames, ", ") .. ")[ENDCOLOR] " .. wonderData.Name
+			elseif safeGet(row, "CivilizationRequired") ~= nil then
+				wonderData.Name = "[COLOR_POSITIVE_TEXT](" .. Locale.ConvertTextKey(GameInfo.Civilizations[safeGet(row, "CivilizationRequired")].Adjective) .. ")[ENDCOLOR] " .. wonderData.Name;
+			end
+			
+			-- If it's a reformation wonder, prepend that information
+			if row.IsReformation then
+				wonderData.Name = "[COLOR_WHITE](Reformation)[ENDCOLOR] " .. wonderData.Name;
+			end
+
+			-- If it comes from a policy, prepend that information
+			if safeGet(row, "PolicyType") ~= nil then
+				local policy = GameInfo.Policies[safeGet(row, "PolicyType")]
+				local ppbranch = safeGet(row, "PolicyBranchType")
+				if ppbranch then
+				    wonderData.Name = "[COLOR_MAGENTA](" .. Locale.Lookup(GameInfo.PolicyBranchTypes[ppbranch].Description ) .. ")[ENDCOLOR] " .. wonderData.Name;
+				-- if not, its an opener or finisher, so the policy name is the branch name
+				else
+					wonderData.Name = "[COLOR_MAGENTA](" .. Locale.Lookup( policy.Description ) .. ")[ENDCOLOR] " .. wonderData.Name;
+				end
+			elseif safeGet(row, "PolicyBranchType") ~= nil then
+				wonderData.Name = "[COLOR_MAGENTA](" .. Locale.Lookup(GameInfo.PolicyBranchTypes[safeGet(row, "PolicyBranchType")].Description ) .. ")[ENDCOLOR] " .. wonderData.Name;
             end
 
             table.insert(wonders, wonderData)
@@ -2135,6 +2172,7 @@ function ExportWonders()
                 wonderData.Civilizations = civilizations
                 wonderData.Name = "[COLOR_POSITIVE_TEXT](" .. table.concat(civNames, ", ") .. ")[ENDCOLOR] " .. wonderData.Name
             end
+			
 
             table.insert(wonders, wonderData)
         end

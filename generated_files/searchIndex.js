@@ -4704,8 +4704,8 @@ window.globalSearchIndex = [
     "page": "buildings"
   },
   {
-    "nameFormatted": "Monastery",
-    "name": "Monastery",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Fealty)</span> Monastery",
+    "name": "[COLOR_MAGENTA](Fealty)[ENDCOLOR] Monastery",
     "type": "BUILDING_MONASTERY",
     "page": "buildings"
   },
@@ -5688,14 +5688,14 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
-    "nameFormatted": "Kremlin",
-    "name": "Kremlin",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Order)</span> Kremlin",
+    "name": "[COLOR_MAGENTA](Order)[ENDCOLOR] Kremlin",
     "type": "BUILDING_KREMLIN",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Forbidden Palace",
-    "name": "Forbidden Palace",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Progress)</span> Forbidden Palace",
+    "name": "[COLOR_MAGENTA](Progress)[ENDCOLOR] Forbidden Palace",
     "type": "BUILDING_FORBIDDEN_PALACE",
     "page": "wonders"
   },
@@ -5706,14 +5706,14 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
-    "nameFormatted": "Palace of Westminster",
-    "name": "Palace of Westminster",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Statecraft)</span> Palace of Westminster",
+    "name": "[COLOR_MAGENTA](Statecraft)[ENDCOLOR] Palace of Westminster",
     "type": "BUILDING_BIG_BEN",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Louvre",
-    "name": "Louvre",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Artistry)</span> Louvre",
+    "name": "[COLOR_MAGENTA](Artistry)[ENDCOLOR] Louvre",
     "type": "BUILDING_LOUVRE",
     "page": "wonders"
   },
@@ -5724,8 +5724,8 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
-    "nameFormatted": "Statue of Liberty",
-    "name": "Statue of Liberty",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Freedom)</span> Statue of Liberty",
+    "name": "[COLOR_MAGENTA](Freedom)[ENDCOLOR] Statue of Liberty",
     "type": "BUILDING_STATUE_OF_LIBERTY",
     "page": "wonders"
   },
@@ -5742,8 +5742,8 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
-    "nameFormatted": "Pentagon",
-    "name": "Pentagon",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Imperialism)</span> Pentagon",
+    "name": "[COLOR_MAGENTA](Imperialism)[ENDCOLOR] Pentagon",
     "type": "BUILDING_PENTAGON",
     "page": "wonders"
   },
@@ -5778,8 +5778,8 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
-    "nameFormatted": "Alhambra",
-    "name": "Alhambra",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Authority)</span> Alhambra",
+    "name": "[COLOR_MAGENTA](Authority)[ENDCOLOR] Alhambra",
     "type": "BUILDING_ALHAMBRA",
     "page": "wonders"
   },
@@ -5802,8 +5802,8 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
-    "nameFormatted": "University of Sankore",
-    "name": "University of Sankore",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Tradition)</span> University of Sankore",
+    "name": "[COLOR_MAGENTA](Tradition)[ENDCOLOR] University of Sankore",
     "type": "BUILDING_MOSQUE_OF_DJENNE",
     "page": "wonders"
   },
@@ -5856,20 +5856,20 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
-    "nameFormatted": "Broadway",
-    "name": "Broadway",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Industry)</span> Broadway",
+    "name": "[COLOR_MAGENTA](Industry)[ENDCOLOR] Broadway",
     "type": "BUILDING_BROADWAY",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Red Fort",
-    "name": "Red Fort",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Fealty)</span> Red Fort",
+    "name": "[COLOR_MAGENTA](Fealty)[ENDCOLOR] Red Fort",
     "type": "BUILDING_RED_FORT",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Prora",
-    "name": "Prora",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Autocracy)</span> Prora",
+    "name": "[COLOR_MAGENTA](Autocracy)[ENDCOLOR] Prora",
     "type": "BUILDING_PRORA_RESORT",
     "page": "wonders"
   },
@@ -5916,20 +5916,20 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
-    "nameFormatted": "Palace of Culture and Science",
-    "name": "Palace of Culture and Science",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Order)</span> Palace of Culture and Science",
+    "name": "[COLOR_MAGENTA](Order)[ENDCOLOR] Palace of Culture and Science",
     "type": "BUILDING_PALACE_CULTURE_SCIENCE",
     "page": "wonders"
   },
   {
-    "nameFormatted": "International Finance Center",
-    "name": "International Finance Center",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Freedom)</span> International Finance Center",
+    "name": "[COLOR_MAGENTA](Freedom)[ENDCOLOR] International Finance Center",
     "type": "BUILDING_INTERNATIONAL_FINANCE_CENTER",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Hall of Honor",
-    "name": "Hall of Honor",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Autocracy)</span> Hall of Honor",
+    "name": "[COLOR_MAGENTA](Autocracy)[ENDCOLOR] Hall of Honor",
     "type": "BUILDING_HALL_OF_HONOR",
     "page": "wonders"
   },
@@ -6000,20 +6000,20 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
-    "nameFormatted": "Arsenale di Venezia",
-    "name": "Arsenale di Venezia",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Venetian)</span> Arsenale di Venezia",
+    "name": "[COLOR_POSITIVE_TEXT](Venetian)[ENDCOLOR] Arsenale di Venezia",
     "type": "BUILDING_ARSENALE_DI_VENEZIA",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Murano Glassworks",
-    "name": "Murano Glassworks",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Venetian)</span> Murano Glassworks",
+    "name": "[COLOR_POSITIVE_TEXT](Venetian)[ENDCOLOR] Murano Glassworks",
     "type": "BUILDING_MURANO_GLASSWORKS",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Rialto District",
-    "name": "Rialto District",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(Venetian)</span> Rialto District",
+    "name": "[COLOR_POSITIVE_TEXT](Venetian)[ENDCOLOR] Rialto District",
     "type": "BUILDING_RIALTO_DISTRICT",
     "page": "wonders"
   },
@@ -6072,8 +6072,8 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
-    "nameFormatted": "Bletchley Park",
-    "name": "Bletchley Park",
+    "nameFormatted": "<span style=\"color: rgba(255, 0, 255, 1)\">(Rationalism)</span> Bletchley Park",
+    "name": "[COLOR_MAGENTA](Rationalism)[ENDCOLOR] Bletchley Park",
     "type": "BUILDING_BLETCHLEY_PARK",
     "page": "wonders"
   },
@@ -6102,20 +6102,20 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
-    "nameFormatted": "West Point",
-    "name": "West Point",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(American)</span> West Point",
+    "name": "[COLOR_POSITIVE_TEXT](American)[ENDCOLOR] West Point",
     "type": "BUILDING_WEST_POINT",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Smithsonian Institution",
-    "name": "Smithsonian Institution",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(American)</span> Smithsonian Institution",
+    "name": "[COLOR_POSITIVE_TEXT](American)[ENDCOLOR] Smithsonian Institution",
     "type": "BUILDING_SMITHSONIAN_INSTITUTION",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Slater Mill",
-    "name": "Slater Mill",
+    "nameFormatted": "<span style=\"color: rgba(128, 255, 26, 1)\">(American)</span> Slater Mill",
+    "name": "[COLOR_POSITIVE_TEXT](American)[ENDCOLOR] Slater Mill",
     "type": "BUILDING_SLATER_MILL",
     "page": "wonders"
   },
@@ -6192,63 +6192,63 @@ window.globalSearchIndex = [
     "page": "wonders"
   },
   {
-    "nameFormatted": "Mausoleum",
-    "name": "Mausoleum",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 255, 1)\">(Reformation)</span> Mausoleum",
+    "name": "[COLOR_WHITE](Reformation)[ENDCOLOR] Mausoleum",
     "type": "BUILDING_MAUSOLEUM",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Celestial Throne",
-    "name": "Celestial Throne",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 255, 1)\">(Reformation)</span> Celestial Throne",
+    "name": "[COLOR_WHITE](Reformation)[ENDCOLOR] Celestial Throne",
     "type": "BUILDING_CELESTIAL_THRONE",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Great Altar",
-    "name": "Great Altar",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 255, 1)\">(Reformation)</span> Great Altar",
+    "name": "[COLOR_WHITE](Reformation)[ENDCOLOR] Great Altar",
     "type": "BUILDING_GREAT_ALTAR",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Chartarium",
-    "name": "Chartarium",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 255, 1)\">(Reformation)</span> Chartarium",
+    "name": "[COLOR_WHITE](Reformation)[ENDCOLOR] Chartarium",
     "type": "BUILDING_CHARTARIUM",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Divine Court",
-    "name": "Divine Court",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 255, 1)\">(Reformation)</span> Divine Court",
+    "name": "[COLOR_WHITE](Reformation)[ENDCOLOR] Divine Court",
     "type": "BUILDING_DIVINE_COURT",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Sacred Garden",
-    "name": "Sacred Garden",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 255, 1)\">(Reformation)</span> Sacred Garden",
+    "name": "[COLOR_WHITE](Reformation)[ENDCOLOR] Sacred Garden",
     "type": "BUILDING_SACRED_GARDEN",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Holy Council",
-    "name": "Holy Council",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 255, 1)\">(Reformation)</span> Heavenly Grotto",
+    "name": "[COLOR_WHITE](Reformation)[ENDCOLOR] Heavenly Grotto",
+    "type": "BUILDING_HEAVENLY_GROTTO",
+    "page": "wonders"
+  },
+  {
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 255, 1)\">(Reformation)</span> Holy Council",
+    "name": "[COLOR_WHITE](Reformation)[ENDCOLOR] Holy Council",
     "type": "BUILDING_HOLY_COUNCIL",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Apostolic Palace",
-    "name": "Apostolic Palace",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 255, 1)\">(Reformation)</span> Apostolic Palace",
+    "name": "[COLOR_WHITE](Reformation)[ENDCOLOR] Apostolic Palace",
     "type": "BUILDING_APOSTOLIC_PALACE",
     "page": "wonders"
   },
   {
-    "nameFormatted": "Grand Ossuary",
-    "name": "Grand Ossuary",
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 255, 1)\">(Reformation)</span> Grand Ossuary",
+    "name": "[COLOR_WHITE](Reformation)[ENDCOLOR] Grand Ossuary",
     "type": "BUILDING_GRAND_OSSUARY",
-    "page": "wonders"
-  },
-  {
-    "nameFormatted": "Heavenly Grotto",
-    "name": "Heavenly Grotto",
-    "type": "BUILDING_HEAVENLY_GROTTO",
     "page": "wonders"
   },
   {
@@ -10428,6 +10428,12 @@ window.globalSearchIndex = [
     "page": "promotions"
   },
   {
+    "nameFormatted": "Lost Prototype",
+    "name": "Lost Prototype",
+    "type": "PROMOTION_LOST_PROTOTYPE",
+    "page": "promotions"
+  },
+  {
     "nameFormatted": "Righteousness",
     "name": "Righteousness",
     "type": "PROMOTION_RIGHTEOUSNESS",
@@ -11826,8 +11832,8 @@ window.globalSearchIndex = [
     "page": "cityStates"
   },
   {
-    "nameFormatted": "Bornu",
-    "name": "Bornu",
+    "nameFormatted": "Ngazargamu",
+    "name": "Ngazargamu",
     "type": "MINOR_CIV_BORNU",
     "page": "cityStates"
   },
@@ -11838,15 +11844,15 @@ window.globalSearchIndex = [
     "page": "cityStates"
   },
   {
-    "nameFormatted": "Luba",
-    "name": "Luba",
+    "nameFormatted": "Lealui",
+    "name": "Lealui",
     "type": "MINOR_CIV_LUBA",
     "page": "cityStates"
   },
   {
     "nameFormatted": "Ouagadougou",
     "name": "Ouagadougou",
-    "type": "MINOR_CIV_OUAGADOUGOU",
+    "type": "MINOR_CIV_OUGADOUGOU",
     "page": "cityStates"
   },
   {
@@ -11934,6 +11940,12 @@ window.globalSearchIndex = [
     "page": "cityStates"
   },
   {
+    "nameFormatted": "Ghulja",
+    "name": "Ghulja",
+    "type": "MINOR_CIV_GHULJA",
+    "page": "cityStates"
+  },
+  {
     "nameFormatted": "Harappa",
     "name": "Harappa",
     "type": "MINOR_CIV_HARAPPA",
@@ -11955,6 +11967,12 @@ window.globalSearchIndex = [
     "nameFormatted": "Huari",
     "name": "Huari",
     "type": "MINOR_CIV_HUARI",
+    "page": "cityStates"
+  },
+  {
+    "nameFormatted": "Kumasi",
+    "name": "Kumasi",
+    "type": "MINOR_CIV_KUMASI",
     "page": "cityStates"
   },
   {
@@ -12099,12 +12117,6 @@ window.globalSearchIndex = [
     "nameFormatted": "Yamatai",
     "name": "Yamatai",
     "type": "MINOR_CIV_YAMATAI",
-    "page": "cityStates"
-  },
-  {
-    "nameFormatted": "Zuunmod",
-    "name": "Zuunmod",
-    "type": "MINOR_CIV_ZUUNMOD",
     "page": "cityStates"
   },
   {
