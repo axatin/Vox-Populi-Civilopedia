@@ -2573,6 +2573,59 @@ function ExportIconAtlases()
     return atlases
 end
 
+-- Export colors from database
+function ExportColors()
+    print("Exporting colors...")
+    local colors = {}
+
+    for row in GameInfo.Colors() do
+        table.insert(colors, {
+            Type = row.Type,
+            Red = safeGet(row, "Red"),
+            Green = safeGet(row, "Green"),
+            Blue = safeGet(row, "Blue"),
+            Alpha = safeGet(row, "Alpha")
+        })
+    end
+
+    print("Exported " .. #colors .. " colors")
+    return colors
+end
+
+-- Export icon font mappings from database
+function ExportIconFontMappings()
+    print("Exporting icon font mappings...")
+    local mappings = {}
+
+    for row in GameInfo.IconFontMapping() do
+        table.insert(mappings, {
+            IconName = row.IconName,
+            IconFontTexture = safeGet(row, "IconFontTexture"),
+            IconMapping = safeGet(row, "IconMapping")
+        })
+    end
+
+    print("Exported " .. #mappings .. " icon font mappings")
+    return mappings
+end
+
+-- Export icon font texture metadata from database
+function ExportIconFontTextures()
+    print("Exporting icon font textures...")
+    local textures = {}
+
+    for row in GameInfo.IconFontTextures() do
+        table.insert(textures, {
+            IconFontTexture = row.IconFontTexture,
+            IconFontTextureFile = safeGet(row, "IconFontTextureFile") 
+        })
+    end
+
+    print("Exported " .. #textures .. " icon font textures")
+    return textures
+end
+
+
 -- Main export function
 function ExportAllData()
 
@@ -2770,7 +2823,10 @@ function ExportAllData()
         cityStates = ExportCityStates(),
         resolutions = ExportResolutions(),
         leagueProjects = ExportLeagueProjects(),
-        corporations = ExportCorporations()
+        corporations = ExportCorporations(),
+        colors = ExportColors(),
+        iconFontMappings = ExportIconFontMappings(),
+        iconFontTextures = ExportIconFontTextures()
     }
 
     print("==================================")
