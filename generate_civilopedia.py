@@ -2118,12 +2118,28 @@ def load_json_data(file_path):
     except FileNotFoundError:
         return {}
 
+_COLORS_DICT = None
+_ICONS_DICT = None
+
+def get_colors_dict():
+    global _COLORS_DICT
+    if _COLORS_DICT is None:
+        _COLORS_DICT = load_json_data('./colors.json')
+    return _COLORS_DICT
+
+def get_icons_dict():
+    global _ICONS_DICT
+    if _ICONS_DICT is None:
+        _ICONS_DICT = load_json_data('./icons.json')
+    return _ICONS_DICT
+
 def convert_civ5_formatting(text):
     if not text:
         return text
 
-    colors_dict = load_json_data('./colors.json')
-    icons_dict = load_json_data('./icons.json')
+    colors_dict = get_colors_dict()
+    icons_dict = get_icons_dict()
+
 
     text = text.replace('[NEWLINE]', '<br>')
     text = text.replace('[TAB]', '&emsp;')
