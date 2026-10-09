@@ -169,6 +169,10 @@ main {
     width: 300px;
     background: #283a4c;
     border-right: 2px solid #ddd;
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+    position: sticky;
+    top: 0;
 }
 
 .sidebar-header {
@@ -247,6 +251,8 @@ main {
 .pediapage-content {
     flex: 1;
     padding: 2rem;
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
 }
 
 .placeholder {
