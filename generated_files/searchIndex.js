@@ -2880,6 +2880,18 @@ window.globalSearchIndex = [
     "page": "concepts"
   },
   {
+    "nameFormatted": "<span style=\"color: rgba(255, 255, 0, 1)\">Holy Cities</span>",
+    "name": "[COLOR_YELLOW]Holy Cities[ENDCOLOR]",
+    "type": "CONCEPT_RELIGION_HOLY_CITY",
+    "page": "concepts"
+  },
+  {
+    "nameFormatted": "<span style=\"color: rgba(0, 255, 0, 1)\">Reforming a religion</span>",
+    "name": "[COLOR_GREEN]Reforming a religion[ENDCOLOR]",
+    "type": "CONCEPT_RELIGION_REFORMATION",
+    "page": "concepts"
+  },
+  {
     "nameFormatted": "America",
     "name": "America",
     "type": "CIVILIZATION_AMERICA",
